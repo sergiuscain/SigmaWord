@@ -10,5 +10,6 @@ namespace SigmaWord.Models
     {
         public string Word { get; set; }
         public string Translation { get; set; }
+        public string ExampleSentence { get; set; }
     }
 }

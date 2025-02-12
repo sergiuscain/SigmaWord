@@ -63,4 +63,20 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Views\DictionaryPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\TeachPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ViewModels\" />
+	</ItemGroup>
+
 </Project>

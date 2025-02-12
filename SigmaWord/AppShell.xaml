@@ -4,12 +4,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:SigmaWord"
+    xmlns:views="clr-namespace:SigmaWord.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="SigmaWord">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Учить"
+            Icon="cat.png">
+            <ShellContent ContentTemplate="{DataTemplate views:TeachPage}" />
+        </Tab>
+        <Tab Title="Словарь"
+             Icon="Dictionary">
+            <ShellContent ContentTemplate="{DataTemplate views:DictionaryPage}"/>
+        </Tab>
+        <Tab Title="Настройки"
+            Icon="dog.png">
+            <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
+        </Tab>
+    </TabBar>
 
 </Shell>

@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using SigmaWord.Services;
+using SigmaWord.ViewModels;
 
 namespace SigmaWord
 {
@@ -14,6 +16,9 @@ namespace SigmaWord
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+
+            builder.Services.AddSingleton<VocabularyService>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
