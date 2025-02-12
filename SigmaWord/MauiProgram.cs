@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
 using SigmaWord.Services;
-using SigmaWord.ViewModels;
 
 namespace SigmaWord
 {
