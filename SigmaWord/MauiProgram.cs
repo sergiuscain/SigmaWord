@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using SigmaWord.DataBase;
 using SigmaWord.Services;
 using SigmaWord.ViewModels;
 using SigmaWord.Views;
@@ -20,6 +22,13 @@ namespace SigmaWord
 
             //Сервис по обработки слов.
             builder.Services.AddSingleton<VocabularyService>();
+
+            //Добавляем сервис для работы с базой данных SQLite
+            builder.Services.AddDbContext<SigmaDatabaseContext>(
+                options =>
+                {
+                    options.UseSqlite("Data Source=SigmaWord.db");
+                });
 
             //Сервисы для каждой вьбшки и её модели представления.
             builder.Services.AddTransient<DictionaryViewModel>();
