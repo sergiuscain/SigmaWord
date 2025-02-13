@@ -6,18 +6,19 @@
     xmlns:local="clr-namespace:SigmaWord"
     xmlns:views="clr-namespace:SigmaWord.Views"
     Shell.FlyoutBehavior="Disabled"
-    Title="SigmaWord">
+    Title="SigmaWord"
+    Style="{StaticResource DarkTabBarStyle}"
+    >
 
     <TabBar>
-        <Tab Title="Учить"
-            Icon="cat.png">
+        <Tab Title="УЧИТЬ">
             <ShellContent ContentTemplate="{DataTemplate views:TeachPage}" />
         </Tab>
-        <Tab Title="Словарь"
+        <Tab Title="СЛОВАРЬ"
              Icon="Dictionary">
             <ShellContent ContentTemplate="{DataTemplate views:DictionaryPage}"/>
         </Tab>
-        <Tab Title="Настройки"
+        <Tab Title="НАСТРОЙКИ"
             Icon="dog.png">
             <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
         </Tab>

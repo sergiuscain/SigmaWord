@@ -4,7 +4,7 @@
              x:Class="SigmaWord.Views.SettingsPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              x:DataType="viewmodel:SettingsViewModel">
-    <VerticalStackLayout>
+    <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
         <Label 
             Text="{Binding Text}"
             VerticalOptions="Center" 

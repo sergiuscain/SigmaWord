@@ -4,7 +4,7 @@
              x:Class="SigmaWord.Views.TeachPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              x:DataType="viewmodel:TeachViewModel">
-    <VerticalStackLayout>
+    <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
         <Label 
             Text="{Binding Text}"
             VerticalOptions="Center" 
