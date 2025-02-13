@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using SigmaWord.Services;
+using SigmaWord.ViewModels;
+using SigmaWord.Views;
 
 namespace SigmaWord
 {
@@ -16,8 +18,16 @@ namespace SigmaWord
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-
+            //Сервис по обработки слов.
             builder.Services.AddSingleton<VocabularyService>();
+
+            //Сервисы для каждой вьбшки и её модели представления.
+            builder.Services.AddTransient<DictionaryViewModel>();
+            builder.Services.AddTransient<DictionaryPage>();
+            builder.Services.AddTransient<TeachViewModel>();
+            builder.Services.AddTransient<TeachPage>();
+            builder.Services.AddTransient<SettingsViewModel>();
+            builder.Services.AddTransient<SettingsPage>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

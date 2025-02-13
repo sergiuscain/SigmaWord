@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SigmaWord.Views.SettingsPage"
-             Title="SettingsPage">
+             xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
+             x:DataType="viewmodel:SettingsViewModel">
     <VerticalStackLayout>
         <Label 
-            Text="Settings page"
+            Text="{Binding Text}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
