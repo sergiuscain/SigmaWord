@@ -1,0 +1,382 @@
+[
+  {
+    "word": "tree",
+    "translations": [ "дерево", "растение", "древесина" ],
+    "examples": [
+      {
+        "sentence": "The tree is very tall.",
+        "translation": "Дерево очень высокое."
+      },
+      {
+        "sentence": "We sat under the tree.",
+        "translation": "Мы сидели под деревом."
+      },
+      {
+        "sentence": "Trees provide oxygen.",
+        "translation": "Деревья обеспечивают кислород."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "river",
+    "translations": [ "река", "поток", "водоток" ],
+    "examples": [
+      {
+        "sentence": "The river flows through the valley.",
+        "translation": "Река течет через долину."
+      },
+      {
+        "sentence": "We went fishing in the river.",
+        "translation": "Мы ходили на рыбалку в реку."
+      },
+      {
+        "sentence": "Rivers are essential for ecosystems.",
+        "translation": "Реки необходимы для экосистем."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "mountain",
+    "translations": [ "гора", "возвышенность", "горный массив" ],
+    "examples": [
+      {
+        "sentence": "The mountain is covered in snow.",
+        "translation": "Гора покрыта снегом."
+      },
+      {
+        "sentence": "We hiked up the mountain.",
+        "translation": "Мы поднялись на гору."
+      },
+      {
+        "sentence": "Mountains are beautiful in the spring.",
+        "translation": "Горы красивы весной."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "ocean",
+    "translations": [ "океан", "море", "водный простор" ],
+    "examples": [
+      {
+        "sentence": "The ocean is vast and deep.",
+        "translation": "Океан обширен и глубок."
+      },
+      {
+        "sentence": "We swam in the ocean.",
+        "translation": "Мы плавали в океане."
+      },
+      {
+        "sentence": "The ocean is home to many creatures.",
+        "translation": "Океан является домом для многих существ."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "flower",
+    "translations": [ "цветок", "растение", "цветение" ],
+    "examples": [
+      {
+        "sentence": "The flower is blooming.",
+        "translation": "Цветок распускается."
+      },
+      {
+        "sentence": "She picked a beautiful flower.",
+        "translation": "Она сорвала красивый цветок."
+      },
+      {
+        "sentence": "Flowers attract bees.",
+        "translation": "Цветы привлекают пчел."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "sun",
+    "translations": [ "солнце", "светило", "свет" ],
+    "examples": [
+      {
+        "sentence": "The sun is shining brightly.",
+        "translation": "Солнце ярко светит."
+      },
+      {
+        "sentence": "We enjoy the warm sun.",
+        "translation": "Мы наслаждаемся теплым солнцем."
+      },
+      {
+        "sentence": "The sun sets in the west.",
+        "translation": "Солнце садится на западе."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "moon",
+    "translations": [ "луна", "месяц", "светило" ],
+    "examples": [
+      {
+        "sentence": "The moon is full tonight.",
+        "translation": "Луна полная сегодня ночью."
+      },
+      {
+        "sentence": "We watched the moonrise.",
+        "translation": "Мы смотрели на восход луны."
+      },
+      {
+        "sentence": "The moon affects the tides.",
+        "translation": "Луна влияет на приливы."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "sky",
+    "translations": [ "небо", "атмосфера", "воздушное пространство" ],
+    "examples": [
+      {
+        "sentence": "The sky is clear today.",
+        "translation": "Небо сегодня ясное."
+      },
+      {
+        "sentence": "Birds fly in the sky.",
+        "translation": "Птицы летают в небе."
+      },
+      {
+        "sentence": "The sky turned dark before the storm.",
+        "translation": "Небо потемнело перед бурей."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "cloud",
+    "translations": [ "облако", "туман", "влага" ],
+    "examples": [
+      {
+        "sentence": "The cloud is fluffy.",
+        "translation": "Облако пушистое."
+      },
+      {
+        "sentence": "Clouds can bring rain.",
+        "translation": "Облака могут приносить дождь."
+      },
+      {
+        "sentence": "We watched the clouds drift by.",
+        "translation": "Мы смотрели, как облака плывут мимо."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "grass",
+    "translations": [ "трава", "зеленый покров", "растительность" ],
+    "examples": [
+      {
+        "sentence": "The grass is green.",
+        "translation": "Трава зеленая."
+      },
+      {
+        "sentence": "We walked on the grass.",
+        "translation": "Мы шли по траве."
+      },
+      {
+        "sentence": "Grass grows in the spring.",
+        "translation": "Трава растет весной."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "lake",
+    "translations": [ "озеро", "водоем", "пруд" ],
+    "examples": [
+      {
+        "sentence": "The lake is calm today.",
+        "translation": "Озеро сегодня спокойное."
+      },
+      {
+        "sentence": "We went boating on the lake.",
+        "translation": "Мы катались на лодке по озеру."
+      },
+      {
+        "sentence": "Lakes are great for fishing.",
+        "translation": "Озера отлично подходят для рыбалки."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "beach",
+    "translations": [ "пляж", "берег", "песчаный берег" ],
+    "examples": [
+      {
+        "sentence": "We spent the day at the beach.",
+        "translation": "Мы провели день на пляже."
+      },
+      {
+        "sentence": "The beach is crowded in summer.",
+        "translation": "Пляж переполнен летом."
+      },
+      {
+        "sentence": "Children build sandcastles on the beach.",
+        "translation": "Дети строят песчаные замки на пляже."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "desert",
+    "translations": [ "пустыня", "безлюдная местность", "песчаная местность" ],
+    "examples": [
+      {
+        "sentence": "The desert is very hot.",
+        "translation": "Пустыня очень жаркая."
+      },
+      {
+        "sentence": "Cacti grow in the desert.",
+        "translation": "Кактусы растут в пустыне."
+      },
+      {
+        "sentence": "Deserts have little rainfall.",
+        "translation": "В пустынях мало осадков."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "valley",
+    "translations": [ "долина", "низменность", "падина" ],
+    "examples": [
+      {
+        "sentence": "The valley is surrounded by mountains.",
+        "translation": "Долина окружена горами."
+      },
+      {
+        "sentence": "We hiked down into the valley.",
+        "translation": "Мы спустились в долину."
+      },
+      {
+        "sentence": "Valleys can be fertile.",
+        "translation": "Долины могут быть плодородными."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "island",
+    "translations": [ "остров", "земля", "клон" ],
+    "examples": [
+      {
+        "sentence": "The island is a tropical paradise.",
+        "translation": "Остров — это тропический рай."
+      },
+      {
+        "sentence": "We visited the island last summer.",
+        "translation": "Мы посетили остров прошлым летом."
+      },
+      {
+        "sentence": "Islands are often surrounded by water.",
+        "translation": "Острова часто окружены водой."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "forest",
+    "translations": [ "лес", "древесный массив", "зеленая зона" ],
+    "examples": [
+      {
+        "sentence": "The forest is full of wildlife.",
+        "translation": "Лес полон дикой природы."
+      },
+      {
+        "sentence": "We went for a walk in the forest.",
+        "translation": "Мы пошли на прогулку в лес."
+      },
+      {
+        "sentence": "Forests help to clean the air.",
+        "translation": "Леса помогают очищать воздух."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "hill",
+    "translations": [ "холм", "возвышенность", "пагорб" ],
+    "examples": [
+      {
+        "sentence": "We climbed the hill to see the view.",
+        "translation": "Мы поднялись на холм, чтобы увидеть вид."
+      },
+      {
+        "sentence": "The hill is covered in grass.",
+        "translation": "Холм покрыт травой."
+      },
+      {
+        "sentence": "Hills are often great for hiking.",
+        "translation": "Холмы часто подходят для пеших прогулок."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "pond",
+    "translations": [ "пруд", "водоем", "небольшое озеро" ],
+    "examples": [
+      {
+        "sentence": "The pond is home to frogs.",
+        "translation": "Пруд является домом для лягушек."
+      },
+      {
+        "sentence": "We saw ducks swimming in the pond.",
+        "translation": "Мы видели уток, плавающих в пруду."
+      },
+      {
+        "sentence": "Ponds can be found in parks.",
+        "translation": "Пруды можно найти в парках."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "rain",
+    "translations": [ "дождь", "осадки", "влага" ],
+    "examples": [
+      {
+        "sentence": "The rain is refreshing.",
+        "translation": "Дождь освежает."
+      },
+      {
+        "sentence": "We stayed inside because of the rain.",
+        "translation": "Мы остались внутри из-за дождя."
+      },
+      {
+        "sentence": "Rain helps plants to grow.",
+        "translation": "Дождь помогает растениям расти."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "snow",
+    "translations": [ "снег", "снежный покров", "снежинки" ],
+    "examples": [
+      {
+        "sentence": "The snow covers the ground.",
+        "translation": "Снег покрывает землю."
+      },
+      {
+        "sentence": "We built a snowman in the snow.",
+        "translation": "Мы построили снеговика из снега."
+      },
+      {
+        "sentence": "Snow falls in winter.",
+        "translation": "Снег падает зимой."
+      }
+    ],
+    "category": "Nature"
+  }
+]

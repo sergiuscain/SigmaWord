@@ -1,4 +1,7 @@
 ﻿using SQLite;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 
 namespace SigmaWord.Models
 {
@@ -9,22 +12,33 @@ namespace SigmaWord.Models
         [AutoIncrement]
         [Column("id")]
         public Guid Id { get; set; }
+
+        [JsonProperty("category")]
         [Column("category")]
         public string CategoryName { get; set; }
+
+        [JsonProperty("word")]
         [Column("word_original")]
         public string Word { get; set; }
-        [Column("word_translate")]
-        public int NeedToRepeat { get; set; }
-        [Column("already_repeated")]
-        public int AlreadyRepeated { get; set; }
-        [Column("is_in_studying")]
-        public bool IsInStudying { get; set; }
 
-        // Связи с примерами предложений и переводами
+        [JsonProperty("translations")]
+        [Ignore]
+        public List<string> Translations { get; set; }
+
+        [JsonProperty("examples")]
         [Ignore]
         public List<ExampleSentence> ExampleSentences { get; set; }
 
+        [Column("word_translate")]
+        public double NeedToRepeat { get; set; }
+
+        [Column("already_repeated")]
+        public double AlreadyRepeated { get; set; }
+
+        [Column("is_in_studying")]
+        public bool IsInStudying { get; set; }
+
         [Ignore]
-        public List<Translation> Translations { get; set; }
+        public string ProgressBar => IsInStudying ? $"Прогресс: {(AlreadyRepeated / (float)NeedToRepeat) * 100}%" : "не изучается";
     }
 }

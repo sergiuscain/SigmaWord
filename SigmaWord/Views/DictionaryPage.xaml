@@ -1,13 +1,35 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SigmaWord.Views.DictionaryPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
+             xmlns:models="clr-namespace:SigmaWord.Models"
              x:DataType="viewmodel:DictionaryViewModel">
-    <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
-        <Label 
-            Text="{Binding Text}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Стереть всё" Command="{Binding ClearAllCommand}" />
+        <ToolbarItem Text="Загрузить" Command="{Binding ReadFromJsonCommand}" />
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!-- Для Toolbar -->
+            <RowDefinition Height="*" />
+            <!-- Для CollectionView -->
+        </Grid.RowDefinitions>
+        <ScrollView Style="{StaticResource DarkBackgroundStyle}" Grid.Row="1">
+            <CollectionView ItemsSource="{Binding FlashCards}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:FlashCard">
+                        <Frame>
+                            <Grid ColumnDefinitions="2*,2*,2*,*">
+                                <Label Grid.Column="0" Text="{Binding Word}" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Text="{Binding ProgressBar}" />
+                                <Label Grid.Column="2" Text="{Binding CategoryName}"/>
+                                <Button Grid.Column="3" Text="..." Command="{Binding Source={RelativeSource AncestorType={x:Type Frame}}, Path=BindingContext.ShowMenuCommand}" CommandParameter="{Binding}" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
 </ContentPage>
