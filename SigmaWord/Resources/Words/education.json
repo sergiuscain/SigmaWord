@@ -1,0 +1,288 @@
+[
+  {
+    "word": "school",
+    "translations": [ "школа", "учебное заведение", "учреждение" ],
+    "examples": [
+      {
+        "sentence": "The school is located downtown.",
+        "translation": "Школа находится в центре города."
+      },
+      {
+        "sentence": "We attended school from 8 AM to 3 PM.",
+        "translation": "Мы ходили в школу с 8 утра до 3 дня."
+      },
+      {
+        "sentence": "Schools provide education for children.",
+        "translation": "Школы обеспечивают образование для детей."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "teacher",
+    "translations": [ "учитель", "преподаватель", "педагог" ],
+    "examples": [
+      {
+        "sentence": "The teacher explained the lesson clearly.",
+        "translation": "Учитель объяснил урок понятно."
+      },
+      {
+        "sentence": "We thanked the teacher for her help.",
+        "translation": "Мы поблагодарили учителя за помощь."
+      },
+      {
+        "sentence": "Teachers play a vital role in education.",
+        "translation": "Учителя играют важную роль в образовании."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "student",
+    "translations": [ "ученик", "студент", "обучающийся" ],
+    "examples": [
+      {
+        "sentence": "The student studied hard for the exam.",
+        "translation": "Ученик усердно готовился к экзамену."
+      },
+      {
+        "sentence": "We met many students at the university.",
+        "translation": "Мы встретили много студентов в университете."
+      },
+      {
+        "sentence": "Students are the future of society.",
+        "translation": "Студенты — это будущее общества."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "classroom",
+    "translations": [ "классная комната", "аудитория", "учебное помещение" ],
+    "examples": [
+      {
+        "sentence": "The classroom is bright and spacious.",
+        "translation": "Классная комната светлая и просторная."
+      },
+      {
+        "sentence": "We decorated the classroom for the party.",
+        "translation": "Мы украсили классную комнату для вечеринки."
+      },
+      {
+        "sentence": "Classrooms are where learning happens.",
+        "translation": "Классные комнаты — это место, где происходит обучение."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "homework",
+    "translations": [ "домашнее задание", "задание", "работа на дом" ],
+    "examples": [
+      {
+        "sentence": "The homework was challenging but interesting.",
+        "translation": "Домашнее задание было сложным, но интересным."
+      },
+      {
+        "sentence": "We completed our homework before dinner.",
+        "translation": "Мы сделали домашнее задание до ужина."
+      },
+      {
+        "sentence": "Homework helps reinforce learning.",
+        "translation": "Домашнее задание помогает закрепить знания."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "exam",
+    "translations": [ "экзамен", "тест", "испытание" ],
+    "examples": [
+      {
+        "sentence": "The exam was difficult but fair.",
+        "translation": "Экзамен был сложным, но справедливым."
+      },
+      {
+        "sentence": "We studied all night for the exam.",
+        "translation": "Мы учились всю ночь для экзамена."
+      },
+      {
+        "sentence": "Exams assess students' knowledge.",
+        "translation": "Экзамены оценивают знания студентов."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "lesson",
+    "translations": [ "урок", "занятие", "лекция" ],
+    "examples": [
+      {
+        "sentence": "The lesson was about history.",
+        "translation": "Урок был об истории."
+      },
+      {
+        "sentence": "We learned a lot from the lesson.",
+        "translation": "Мы многое узнали из урока."
+      },
+      {
+        "sentence": "Lessons are the foundation of education.",
+        "translation": "Уроки — это основа образования."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "book",
+    "translations": [ "книга", "учебник", "издание" ],
+    "examples": [
+      {
+        "sentence": "The book is full of useful information.",
+        "translation": "Книга полна полезной информации."
+      },
+      {
+        "sentence": "We read the book for class.",
+        "translation": "Мы читали книгу для занятий."
+      },
+      {
+        "sentence": "Books are essential for learning.",
+        "translation": "Книги необходимы для обучения."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "library",
+    "translations": [ "библиотека", "книгохранилище", "читальный зал" ],
+    "examples": [
+      {
+        "sentence": "The library is quiet and peaceful.",
+        "translation": "Библиотека тихая и спокойная."
+      },
+      {
+        "sentence": "We borrowed books from the library.",
+        "translation": "Мы взяли книги в библиотеке."
+      },
+      {
+        "sentence": "Libraries are a treasure trove of knowledge.",
+        "translation": "Библиотеки — это сокровищница знаний."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "university",
+    "translations": [ "университет", "вуз", "высшее учебное заведение" ],
+    "examples": [
+      {
+        "sentence": "The university is known for its research.",
+        "translation": "Университет известен своими исследованиями."
+      },
+      {
+        "sentence": "We applied to several universities.",
+        "translation": "Мы подали заявки в несколько университетов."
+      },
+      {
+        "sentence": "Universities offer higher education.",
+        "translation": "Университеты предлагают высшее образование."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "degree",
+    "translations": [ "степень", "диплом", "квалификация" ],
+    "examples": [
+      {
+        "sentence": "The degree requires four years of study.",
+        "translation": "Для получения степени требуется четыре года обучения."
+      },
+      {
+        "sentence": "We earned our degrees in engineering.",
+        "translation": "Мы получили наши степени в инженерии."
+      },
+      {
+        "sentence": "Degrees are important for career advancement.",
+        "translation": "Степени важны для карьерного роста."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "course",
+    "translations": [ "курс", "предмет", "программа обучения" ],
+    "examples": [
+      {
+        "sentence": "The course covers advanced mathematics.",
+        "translation": "Курс охватывает продвинутую математику."
+      },
+      {
+        "sentence": "We enrolled in an online course.",
+        "translation": "Мы записались на онлайн-курс."
+      },
+      {
+        "sentence": "Courses provide specialized knowledge.",
+        "translation": "Курсы предоставляют специализированные знания."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "lecture",
+    "translations": [ "лекция", "доклад", "выступление" ],
+    "examples": [
+      {
+        "sentence": "The lecture was informative and engaging.",
+        "translation": "Лекция была информативной и увлекательной."
+      },
+      {
+        "sentence": "We attended a lecture on history.",
+        "translation": "Мы посетили лекцию по истории."
+      },
+      {
+        "sentence": "Lectures are a common teaching method.",
+        "translation": "Лекции — это распространенный метод обучения."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "assignment",
+    "translations": [ "задание", "работа", "проект" ],
+    "examples": [
+      {
+        "sentence": "The assignment was challenging but rewarding.",
+        "translation": "Задание было сложным, но полезным."
+      },
+      {
+        "sentence": "We completed the assignment on time.",
+        "translation": "Мы выполнили задание вовремя."
+      },
+      {
+        "sentence": "Assignments help students practice skills.",
+        "translation": "Задания помогают студентам практиковать навыки."
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "word": "research",
+    "translations": [ "исследование", "изучение", "научная работа" ],
+    "examples": [
+      {
+        "sentence": "The research was published in a journal.",
+        "translation": "Исследование было опубликовано в журнале."
+      },
+      {
+        "sentence": "We conducted research on climate change.",
+        "translation": "Мы провели исследование по изменению климата."
+      },
+      {
+        "sentence": "Research is essential for scientific progress.",
+        "translation": "Исследования необходимы для научного прогресса."
+      }
+    ],
+    "category": "Education"
+  },
+
+]

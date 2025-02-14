@@ -17,7 +17,7 @@ namespace SigmaWord.Services
         {
             List<FlashCard> flashcards = new List<FlashCard>();
             var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = $"SigmaWord.Resources.Words.technology.json";
+            var resourceName = $"SigmaWord.Resources.Words.dailylife.json";
             var files = assembly.GetManifestResourceNames();
             using (Stream stream = assembly.GetManifestResourceStream(resourceName))
             {

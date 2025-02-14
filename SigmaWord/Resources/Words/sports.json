@@ -1,0 +1,382 @@
+[
+  {
+    "word": "football",
+    "translations": [ "футбол", "американский футбол", "игра" ],
+    "examples": [
+      {
+        "sentence": "The football match was exciting.",
+        "translation": "Футбольный матч был захватывающим."
+      },
+      {
+        "sentence": "We played football in the park.",
+        "translation": "Мы играли в футбол в парке."
+      },
+      {
+        "sentence": "Football is a popular sport worldwide.",
+        "translation": "Футбол — популярный вид спорта во всем мире."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "basketball",
+    "translations": [ "баскетбол", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The basketball game was intense.",
+        "translation": "Баскетбольная игра была напряженной."
+      },
+      {
+        "sentence": "We watched basketball on TV.",
+        "translation": "Мы смотрели баскетбол по телевизору."
+      },
+      {
+        "sentence": "Basketball requires teamwork and skill.",
+        "translation": "Баскетбол требует командной работы и мастерства."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "tennis",
+    "translations": [ "теннис", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The tennis match lasted three hours.",
+        "translation": "Теннисный матч длился три часа."
+      },
+      {
+        "sentence": "We played tennis at the club.",
+        "translation": "Мы играли в теннис в клубе."
+      },
+      {
+        "sentence": "Tennis is a great way to stay fit.",
+        "translation": "Теннис — отличный способ поддерживать форму."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "swimming",
+    "translations": [ "плавание", "спорт", "активность" ],
+    "examples": [
+      {
+        "sentence": "The swimming pool is open all day.",
+        "translation": "Бассейн открыт весь день."
+      },
+      {
+        "sentence": "We went swimming at the beach.",
+        "translation": "Мы плавали на пляже."
+      },
+      {
+        "sentence": "Swimming is a full-body workout.",
+        "translation": "Плавание — это тренировка для всего тела."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "running",
+    "translations": [ "бег", "пробежка", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The running event was a marathon.",
+        "translation": "Соревнование по бегу было марафоном."
+      },
+      {
+        "sentence": "We went running in the morning.",
+        "translation": "Мы бегали утром."
+      },
+      {
+        "sentence": "Running improves cardiovascular health.",
+        "translation": "Бег улучшает сердечно-сосудистую систему."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "cycling",
+    "translations": [ "велоспорт", "езда на велосипеде", "активность" ],
+    "examples": [
+      {
+        "sentence": "The cycling race was challenging.",
+        "translation": "Велосипедная гонка была сложной."
+      },
+      {
+        "sentence": "We went cycling in the countryside.",
+        "translation": "Мы катались на велосипеде за городом."
+      },
+      {
+        "sentence": "Cycling is eco-friendly and healthy.",
+        "translation": "Езда на велосипеде экологична и полезна для здоровья."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "gym",
+    "translations": [ "тренажерный зал", "спортзал", "фитнес-клуб" ],
+    "examples": [
+      {
+        "sentence": "The gym is equipped with modern machines.",
+        "translation": "Тренажерный зал оснащен современными тренажерами."
+      },
+      {
+        "sentence": "We go to the gym three times a week.",
+        "translation": "Мы ходим в тренажерный зал три раза в неделю."
+      },
+      {
+        "sentence": "The gym is a great place to exercise.",
+        "translation": "Тренажерный зал — отличное место для тренировок."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "yoga",
+    "translations": [ "йога", "практика", "упражнения" ],
+    "examples": [
+      {
+        "sentence": "The yoga class was relaxing.",
+        "translation": "Занятие йогой было расслабляющим."
+      },
+      {
+        "sentence": "We practice yoga every morning.",
+        "translation": "Мы занимаемся йогой каждое утро."
+      },
+      {
+        "sentence": "Yoga improves flexibility and mental health.",
+        "translation": "Йога улучшает гибкость и психическое здоровье."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "volleyball",
+    "translations": [ "волейбол", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The volleyball match was exciting.",
+        "translation": "Волейбольный матч был захватывающим."
+      },
+      {
+        "sentence": "We played volleyball on the beach.",
+        "translation": "Мы играли в волейбол на пляже."
+      },
+      {
+        "sentence": "Volleyball is a team sport.",
+        "translation": "Волейбол — это командный вид спорта."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "golf",
+    "translations": [ "гольф", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The golf course is beautiful.",
+        "translation": "Поле для гольфа красивое."
+      },
+      {
+        "sentence": "We played golf on the weekend.",
+        "translation": "Мы играли в гольф на выходных."
+      },
+      {
+        "sentence": "Golf requires precision and patience.",
+        "translation": "Гольф требует точности и терпения."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "hockey",
+    "translations": [ "хоккей", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The hockey game was intense.",
+        "translation": "Хоккейный матч был напряженным."
+      },
+      {
+        "sentence": "We watched hockey on TV.",
+        "translation": "Мы смотрели хоккей по телевизору."
+      },
+      {
+        "sentence": "Hockey is popular in cold climates.",
+        "translation": "Хоккей популярен в холодных регионах."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "boxing",
+    "translations": [ "бокс", "единоборство", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The boxing match was thrilling.",
+        "translation": "Боксерский поединок был захватывающим."
+      },
+      {
+        "sentence": "We trained boxing at the gym.",
+        "translation": "Мы тренировались в боксе в зале."
+      },
+      {
+        "sentence": "Boxing requires strength and strategy.",
+        "translation": "Бокс требует силы и стратегии."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "skiing",
+    "translations": [ "катание на лыжах", "лыжный спорт", "активность" ],
+    "examples": [
+      {
+        "sentence": "The skiing trip was amazing.",
+        "translation": "Поездка на лыжах была потрясающей."
+      },
+      {
+        "sentence": "We went skiing in the mountains.",
+        "translation": "Мы катались на лыжах в горах."
+      },
+      {
+        "sentence": "Skiing is a popular winter sport.",
+        "translation": "Катание на лыжах — популярный зимний вид спорта."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "soccer",
+    "translations": [ "футбол", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The soccer match ended in a tie.",
+        "translation": "Футбольный матч закончился вничью."
+      },
+      {
+        "sentence": "We played soccer after school.",
+        "translation": "Мы играли в футбол после школы."
+      },
+      {
+        "sentence": "Soccer is the most popular sport in the world.",
+        "translation": "Футбол — самый популярный вид спорта в мире."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "baseball",
+    "translations": [ "бейсбол", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The baseball game was exciting.",
+        "translation": "Бейсбольный матч был захватывающим."
+      },
+      {
+        "sentence": "We watched baseball at the stadium.",
+        "translation": "Мы смотрели бейсбол на стадионе."
+      },
+      {
+        "sentence": "Baseball is a traditional American sport.",
+        "translation": "Бейсбол — традиционный американский вид спорта."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "cricket",
+    "translations": [ "крикет", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The cricket match lasted all day.",
+        "translation": "Матч по крикету длился весь день."
+      },
+      {
+        "sentence": "We played cricket in the park.",
+        "translation": "Мы играли в крикет в парке."
+      },
+      {
+        "sentence": "Cricket is popular in many countries.",
+        "translation": "Крикет популярен во многих странах."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "rugby",
+    "translations": [ "регби", "игра", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The rugby match was intense.",
+        "translation": "Матч по регби был напряженным."
+      },
+      {
+        "sentence": "We watched rugby on TV.",
+        "translation": "Мы смотрели регби по телевизору."
+      },
+      {
+        "sentence": "Rugby is a physically demanding sport.",
+        "translation": "Регби — это физически сложный вид спорта."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "surfing",
+    "translations": [ "серфинг", "катание на волнах", "активность" ],
+    "examples": [
+      {
+        "sentence": "The surfing conditions were perfect.",
+        "translation": "Условия для серфинга были идеальными."
+      },
+      {
+        "sentence": "We went surfing in Hawaii.",
+        "translation": "Мы занимались серфингом на Гавайях."
+      },
+      {
+        "sentence": "Surfing is a thrilling water sport.",
+        "translation": "Серфинг — это захватывающий водный вид спорта."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "skating",
+    "translations": [ "катание на коньках", "фигурное катание", "активность" ],
+    "examples": [
+      {
+        "sentence": "The skating rink was crowded.",
+        "translation": "Каток был переполнен."
+      },
+      {
+        "sentence": "We went skating in the park.",
+        "translation": "Мы катались на коньках в парке."
+      },
+      {
+        "sentence": "Skating is a fun winter activity.",
+        "translation": "Катание на коньках — это веселое зимнее занятие."
+      }
+    ],
+    "category": "Sports"
+  },
+  {
+    "word": "diving",
+    "translations": [ "дайвинг", "погружение", "спорт" ],
+    "examples": [
+      {
+        "sentence": "The diving spot was breathtaking.",
+        "translation": "Место для дайвинга было потрясающим."
+      },
+      {
+        "sentence": "We went diving in the ocean.",
+        "translation": "Мы занимались дайвингом в океане."
+      },
+      {
+        "sentence": "Diving allows you to explore underwater worlds.",
+        "translation": "Дайвинг позволяет исследовать подводный мир."
+      }
+    ],
+    "category": "Sports"
+  }
+]

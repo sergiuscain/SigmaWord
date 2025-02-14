@@ -58,19 +58,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Words\dailylife.json" />
 	  <None Remove="Resources\Words\food.json" />
-	  <None Remove="Resources\Words\health .json" />
 	  <None Remove="Resources\Words\nature.json" />
 	  <None Remove="Resources\Words\technology.json" />
-	  <None Remove="Resources\Words\travel .json" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Words\dailylife.json" />
+	  <EmbeddedResource Include="Resources\Words\education.json" />
 	  <EmbeddedResource Include="Resources\Words\food.json" />
-	  <EmbeddedResource Include="Resources\Words\health .json" />
+	  <EmbeddedResource Include="Resources\Words\health.json" />
 	  <EmbeddedResource Include="Resources\Words\nature.json" />
+	  <EmbeddedResource Include="Resources\Words\sports.json" />
 	  <EmbeddedResource Include="Resources\Words\technology.json" />
-	  <EmbeddedResource Include="Resources\Words\travel .json" />
+	  <EmbeddedResource Include="Resources\Words\travel.json" />
 	</ItemGroup>
 
 	<ItemGroup>

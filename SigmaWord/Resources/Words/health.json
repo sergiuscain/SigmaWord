@@ -1,0 +1,288 @@
+[
+  {
+    "word": "doctor",
+    "translations": [ "врач", "доктор", "медик" ],
+    "examples": [
+      {
+        "sentence": "The doctor examined the patient.",
+        "translation": "Врач осмотрел пациента."
+      },
+      {
+        "sentence": "We visited the doctor for a check-up.",
+        "translation": "Мы посетили врача для осмотра."
+      },
+      {
+        "sentence": "Doctors provide medical care.",
+        "translation": "Врачи обеспечивают медицинскую помощь."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "hospital",
+    "translations": [ "больница", "госпиталь", "медицинское учреждение" ],
+    "examples": [
+      {
+        "sentence": "The hospital is equipped with modern technology.",
+        "translation": "Больница оснащена современными технологиями."
+      },
+      {
+        "sentence": "We took him to the hospital.",
+        "translation": "Мы отвезли его в больницу."
+      },
+      {
+        "sentence": "Hospitals provide emergency care.",
+        "translation": "Больницы предоставляют неотложную помощь."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "medicine",
+    "translations": [ "лекарство", "медицина", "препарат" ],
+    "examples": [
+      {
+        "sentence": "The medicine helped relieve the pain.",
+        "translation": "Лекарство помогло облегчить боль."
+      },
+      {
+        "sentence": "We bought medicine at the pharmacy.",
+        "translation": "Мы купили лекарство в аптеке."
+      },
+      {
+        "sentence": "Medicine is essential for treating illnesses.",
+        "translation": "Лекарства необходимы для лечения болезней."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "pharmacy",
+    "translations": [ "аптека", "фармация", "место продажи лекарств" ],
+    "examples": [
+      {
+        "sentence": "The pharmacy is open 24 hours.",
+        "translation": "Аптека открыта 24 часа."
+      },
+      {
+        "sentence": "We picked up the prescription at the pharmacy.",
+        "translation": "Мы забрали рецепт в аптеке."
+      },
+      {
+        "sentence": "Pharmacies provide medications and advice.",
+        "translation": "Аптеки предоставляют лекарства и консультации."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "patient",
+    "translations": [ "пациент", "больной", "человек под наблюдением" ],
+    "examples": [
+      {
+        "sentence": "The patient is recovering well.",
+        "translation": "Пациент хорошо восстанавливается."
+      },
+      {
+        "sentence": "We visited the patient in the hospital.",
+        "translation": "Мы навестили пациента в больнице."
+      },
+      {
+        "sentence": "Patients rely on doctors for care.",
+        "translation": "Пациенты полагаются на врачей в уходе."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "nurse",
+    "translations": [ "медсестра", "медбрат", "сиделка" ],
+    "examples": [
+      {
+        "sentence": "The nurse took care of the patient.",
+        "translation": "Медсестра заботилась о пациенте."
+      },
+      {
+        "sentence": "We thanked the nurse for her help.",
+        "translation": "Мы поблагодарили медсестру за помощь."
+      },
+      {
+        "sentence": "Nurses play a vital role in healthcare.",
+        "translation": "Медсестры играют важную роль в здравоохранении."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "appointment",
+    "translations": [ "назначение", "встреча", "запись" ],
+    "examples": [
+      {
+        "sentence": "The appointment is at 3 PM.",
+        "translation": "Встреча назначена на 3 часа дня."
+      },
+      {
+        "sentence": "We scheduled an appointment with the doctor.",
+        "translation": "Мы запланировали встречу с врачом."
+      },
+      {
+        "sentence": "Appointments are necessary for consultations.",
+        "translation": "Назначения необходимы для консультаций."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "symptom",
+    "translations": [ "симптом", "признак", "проявление" ],
+    "examples": [
+      {
+        "sentence": "The symptom was a high fever.",
+        "translation": "Симптомом была высокая температура."
+      },
+      {
+        "sentence": "We listed all the symptoms to the doctor.",
+        "translation": "Мы перечислили все симптомы врачу."
+      },
+      {
+        "sentence": "Symptoms help diagnose illnesses.",
+        "translation": "Симптомы помогают диагностировать болезни."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "treatment",
+    "translations": [ "лечение", "терапия", "уход" ],
+    "examples": [
+      {
+        "sentence": "The treatment was effective.",
+        "translation": "Лечение было эффективным."
+      },
+      {
+        "sentence": "We discussed the treatment options.",
+        "translation": "Мы обсудили варианты лечения."
+      },
+      {
+        "sentence": "Treatment is essential for recovery.",
+        "translation": "Лечение необходимо для выздоровления."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "vaccine",
+    "translations": [ "вакцина", "прививка", "иммунизация" ],
+    "examples": [
+      {
+        "sentence": "The vaccine protects against diseases.",
+        "translation": "Вакцина защищает от болезней."
+      },
+      {
+        "sentence": "We received the vaccine at the clinic.",
+        "translation": "Мы получили вакцину в клинике."
+      },
+      {
+        "sentence": "Vaccines are crucial for public health.",
+        "translation": "Вакцины важны для общественного здоровья."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "exercise",
+    "translations": [ "упражнение", "тренировка", "физическая активность" ],
+    "examples": [
+      {
+        "sentence": "The exercise improved my fitness.",
+        "translation": "Упражнение улучшило мою физическую форму."
+      },
+      {
+        "sentence": "We do exercise every morning.",
+        "translation": "Мы делаем упражнения каждое утро."
+      },
+      {
+        "sentence": "Exercise is important for health.",
+        "translation": "Физическая активность важна для здоровья."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "diet",
+    "translations": [ "диета", "питание", "рацион" ],
+    "examples": [
+      {
+        "sentence": "The diet includes fruits and vegetables.",
+        "translation": "Диета включает фрукты и овощи."
+      },
+      {
+        "sentence": "We followed a healthy diet.",
+        "translation": "Мы придерживались здорового питания."
+      },
+      {
+        "sentence": "A balanced diet is key to good health.",
+        "translation": "Сбалансированное питание — ключ к хорошему здоровью."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "vitamin",
+    "translations": [ "витамин", "питательное вещество", "добавка" ],
+    "examples": [
+      {
+        "sentence": "The vitamin boosts the immune system.",
+        "translation": "Витамин укрепляет иммунную систему."
+      },
+      {
+        "sentence": "We take vitamins daily.",
+        "translation": "Мы принимаем витамины ежедневно."
+      },
+      {
+        "sentence": "Vitamins are essential for health.",
+        "translation": "Витамины необходимы для здоровья."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "pain",
+    "translations": [ "боль", "страдание", "дискомфорт" ],
+    "examples": [
+      {
+        "sentence": "The pain was unbearable.",
+        "translation": "Боль была невыносимой."
+      },
+      {
+        "sentence": "We took medicine to relieve the pain.",
+        "translation": "Мы приняли лекарство, чтобы облегчить боль."
+      },
+      {
+        "sentence": "Pain is a signal that something is wrong.",
+        "translation": "Боль — это сигнал, что что-то не так."
+      }
+    ],
+    "category": "Health"
+  },
+  {
+    "word": "recovery",
+    "translations": [ "выздоровление", "восстановление", "реабилитация" ],
+    "examples": [
+      {
+        "sentence": "The recovery process takes time.",
+        "translation": "Процесс выздоровления требует времени."
+      },
+      {
+        "sentence": "We supported him during his recovery.",
+        "translation": "Мы поддерживали его во время выздоровления."
+      },
+      {
+        "sentence": "Recovery is a key part of treatment.",
+        "translation": "Выздоровление — важная часть лечения."
+      }
+    ],
+    "category": "Health"
+  },
+
+]
