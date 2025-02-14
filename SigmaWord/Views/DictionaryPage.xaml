@@ -12,10 +12,12 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <!-- Для Toolbar -->
-            <RowDefinition Height="*" />
+            <RowDefinition Height="1*" />
             <!-- Для CollectionView -->
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
-        <ScrollView Style="{StaticResource DarkBackgroundStyle}" Grid.Row="1">
+        <Label FontSize="20" TextColor="DarkBlue" Text="{Binding FlashCards.Count}" Grid.Row="1"/>
+        <ScrollView Style="{StaticResource DarkBackgroundStyle}" Grid.Row="2">
             <CollectionView ItemsSource="{Binding FlashCards}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:FlashCard">

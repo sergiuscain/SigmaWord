@@ -15,6 +15,7 @@ namespace SigmaWord.Services
         }
         public async Task<List<FlashCard>> LoadWordsAsync()
         {
+            List<FlashCard> flashcards = new List<FlashCard>();
             var assembly = Assembly.GetExecutingAssembly();
             var resourceName = $"SigmaWord.Resources.Words.nature.json";
             var files = assembly.GetManifestResourceNames();
@@ -26,11 +27,11 @@ namespace SigmaWord.Services
                     {
                         var jsonFile = await reader.ReadToEndAsync();
                         var deserializeResult = JsonConvert.DeserializeObject<List<FlashCard>>(jsonFile);
-                        return deserializeResult;
+                        flashcards.AddRange(deserializeResult);
                     }
                 }
             }
-            return null;
+            return flashcards;
         }
     }
 }
