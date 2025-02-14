@@ -1,0 +1,232 @@
+[
+  {
+    "word": "apple",
+    "translations": [ "яблоко" ],
+    "examples": [
+      {
+        "sentence": "An apple a day keeps the doctor away.",
+        "translation": "Яблоко в день держит врача подальше."
+      }
+    ]
+  },
+  {
+    "word": "banana",
+    "translations": [ "банан" ],
+    "examples": [
+      {
+        "sentence": "Bananas are rich in potassium.",
+        "translation": "Бананы богаты калием."
+      }
+    ]
+  },
+  {
+    "word": "carrot",
+    "translations": [ "морковь" ],
+    "examples": [
+      {
+        "sentence": "Carrots are good for your eyesight.",
+        "translation": "Морковь полезна для зрения."
+      }
+    ]
+  },
+  {
+    "word": "bread",
+    "translations": [ "хлеб" ],
+    "examples": [
+      {
+        "sentence": "Bread is a staple food in many cultures.",
+        "translation": "Хлеб — основной продукт в многих культурах."
+      }
+    ]
+  },
+  {
+    "word": "cheese",
+    "translations": [ "сыр" ],
+    "examples": [
+      {
+        "sentence": "Cheese comes in many varieties.",
+        "translation": "Сыр бывает в разных вариантах."
+      }
+    ]
+  },
+  {
+    "word": "chicken",
+    "translations": [ "курица" ],
+    "examples": [
+      {
+        "sentence": "Chicken is a popular source of protein.",
+        "translation": "Курица — популярный источник белка."
+      }
+    ]
+  },
+  {
+    "word": "rice",
+    "translations": [ "рис" ],
+    "examples": [
+      {
+        "sentence": "Rice is a common side dish.",
+        "translation": "Рис — это обычный гарнир."
+      }
+    ]
+  },
+  {
+    "word": "fish",
+    "translations": [ "рыба" ],
+    "examples": [
+      {
+        "sentence": "Fish is rich in omega-3 fatty acids.",
+        "translation": "Рыба богата омега-3 жирными кислотами."
+      }
+    ]
+  },
+  {
+    "word": "egg",
+    "translations": [ "яйцо" ],
+    "examples": [
+      {
+        "sentence": "Eggs are a versatile ingredient.",
+        "translation": "Яйца — универсальный ингредиент."
+      }
+    ]
+  },
+  {
+    "word": "potato",
+    "translations": [ "картофель" ],
+    "examples": [
+      {
+        "sentence": "Potatoes can be prepared in many ways.",
+        "translation": "Картофель можно приготовить разными способами."
+      }
+    ]
+  },
+  {
+    "word": "tomato",
+    "translations": [ "помидор" ],
+    "examples": [
+      {
+        "sentence": "Tomatoes are used in salads and sauces.",
+        "translation": "Помидоры используются в салатах и соусах."
+      }
+    ]
+  },
+  {
+    "word": "onion",
+    "translations": [ "лук" ],
+    "examples": [
+      {
+        "sentence": "Onions add flavor to many dishes.",
+        "translation": "Лук добавляет вкус многим блюдам."
+      }
+    ]
+  },
+  {
+    "word": "grape",
+    "translations": [ "виноград" ],
+    "examples": [
+      {
+        "sentence": "Grapes can be eaten fresh or dried.",
+        "translation": "Виноград можно есть свежим или сушеным."
+      }
+    ]
+  },
+  {
+    "word": "peach",
+    "translations": [ "персик" ],
+    "examples": [
+      {
+        "sentence": "Peaches are sweet and juicy.",
+        "translation": "Персики сладкие и сочные."
+      }
+    ]
+  },
+  {
+    "word": "cake",
+    "translations": [ "торт" ],
+    "examples": [
+      {
+        "sentence": "Cake is often served at celebrations.",
+        "translation": "Торт часто подают на праздниках."
+      }
+    ]
+  },
+  {
+    "word": "cookie",
+    "translations": [ "печенье" ],
+    "examples": [
+      {
+        "sentence": "Cookies are a popular snack.",
+        "translation": "Печенье — популярная закуска."
+      }
+    ]
+  },
+  {
+    "word": "soup",
+    "translations": [ "суп" ],
+    "examples": [
+      {
+        "sentence": "Soup can be made with various ingredients.",
+        "translation": "Суп можно приготовить с различными ингредиентами."
+      }
+    ]
+  },
+  {
+    "word": "salad",
+    "translations": [ "салат" ],
+    "examples": [
+      {
+        "sentence": "Salad is a healthy option.",
+        "translation": "Салат — это полезный вариант."
+      }
+    ]
+  },
+  {
+    "word": "juice",
+    "translations": [ "сок" ],
+    "examples": [
+      {
+        "sentence": "Juice is refreshing on a hot day.",
+        "translation": "Сок освежает в жаркий день."
+      }
+    ]
+  },
+  {
+    "word": "coffee",
+    "translations": [ "кофе" ],
+    "examples": [
+      {
+        "sentence": "Coffee is a popular morning drink.",
+        "translation": "Кофе — популярный утренний напиток."
+      }
+    ]
+  },
+  {
+    "word": "tea",
+    "translations": [ "чай" ],
+    "examples": [
+      {
+        "sentence": "Tea can be served hot or cold.",
+        "translation": "Чай можно подавать горячим или холодным."
+      }
+    ]
+  },
+  {
+    "word": "nut",
+    "translations": [ "орех" ],
+    "examples": [
+      {
+        "sentence": "Nuts are a great source of healthy fats.",
+        "translation": "Орехи — отличный источник здоровых жиров."
+      }
+    ]
+  },
+  {
+    "word": "cereal",
+    "translations": [ "злаки" ],
+    "examples": [
+      {
+        "sentence": "Cereal is often eaten for breakfast.",
+        "translation": "Злаки часто едят на завтрак."
+      }
+    ]
+  }
+]

@@ -1,241 +1,145 @@
 [
   {
     "word": "forest",
-    "translations": [ "лес" ],
+    "translations": [ "лес", "чаща", "лесной массив" ],
     "examples": [
       {
-        "sentence": "The forest is home to many species.",
-        "translation": "Лес является домом для многих видов."
-      }
-    ]
-  },
-  {
-    "word": "river",
-    "translations": [ "река" ],
-    "examples": [
+        "sentence": "The forest is dense and mysterious.",
+        "translation": "Лес густой и загадочный."
+      },
       {
-        "sentence": "The river flows through the valley.",
-        "translation": "Река течет через долину."
-      }
-    ]
-  },
-  {
-    "word": "mountain",
-    "translations": [ "гора" ],
-    "examples": [
+        "sentence": "We walked through the forest.",
+        "translation": "Мы прошли через лес."
+      },
       {
-        "sentence": "The mountain is covered in snow.",
-        "translation": "Гора покрыта снегом."
-      }
-    ]
-  },
-  {
-    "word": "ocean",
-    "translations": [ "океан" ],
-    "examples": [
-      {
-        "sentence": "The ocean is vast and deep.",
-        "translation": "Океан огромен и глубок."
+        "sentence": "Forests are vital for the planet.",
+        "translation": "Леса жизненно важны для планеты."
       }
     ]
   },
   {
     "word": "desert",
-    "translations": [ "пустыня" ],
+    "translations": [ "пустыня", "пустошь", "песчаная пустыня" ],
     "examples": [
       {
-        "sentence": "The desert is known for its extreme temperatures.",
-        "translation": "Пустыня известна своими экстремальными температурами."
-      }
-    ]
-  },
-  {
-    "word": "cliff",
-    "translations": [ "обрыв" ],
-    "examples": [
+        "sentence": "The desert is hot and dry.",
+        "translation": "Пустыня горячая и сухая."
+      },
       {
-        "sentence": "The cliff offers a stunning view.",
-        "translation": "Скала предлагает потрясающий вид."
+        "sentence": "Camels are well-suited for the desert.",
+        "translation": "Верблюды хорошо приспособлены для пустыни."
+      },
+      {
+        "sentence": "The desert stretches for miles.",
+        "translation": "Пустыня простирается на мили."
       }
     ]
   },
   {
     "word": "valley",
-    "translations": [ "долина" ],
+    "translations": [ "долина", "ложбина", "низина" ],
     "examples": [
       {
-        "sentence": "The valley is lush and green.",
-        "translation": "Долина пышная и зеленая."
-      }
-    ]
-  },
-  {
-    "word": "island",
-    "translations": [ "остров" ],
-    "examples": [
+        "sentence": "The valley is surrounded by mountains.",
+        "translation": "Долина окружена горами."
+      },
       {
-        "sentence": "The island is surrounded by water.",
-        "translation": "Остров окружен водой."
+        "sentence": "We camped in the valley.",
+        "translation": "Мы разбили лагерь в долине."
+      },
+      {
+        "sentence": "The valley is fertile and green.",
+        "translation": "Долина плодородная и зеленая."
       }
     ]
   },
   {
     "word": "lake",
-    "translations": [ "озеро" ],
+    "translations": [ "озеро", "водоем", "озерный" ],
     "examples": [
       {
-        "sentence": "The lake is perfect for fishing.",
-        "translation": "Озеро идеально для рыбалки."
+        "sentence": "The lake is calm and peaceful.",
+        "translation": "Озеро спокойное и мирное."
+      },
+      {
+        "sentence": "We swam in the lake.",
+        "translation": "Мы плавали в озере."
+      },
+      {
+        "sentence": "The lake is home to many fish.",
+        "translation": "Озеро является домом для многих рыб."
       }
     ]
   },
   {
-    "word": "swamp",
-    "translations": [ "болото" ],
+    "word": "waterfall",
+    "translations": [ "водопад", "каскад", "поток" ],
     "examples": [
       {
-        "sentence": "The swamp is rich in biodiversity.",
-        "translation": "Болото богато биоразнообразием."
+        "sentence": "The waterfall is breathtaking.",
+        "translation": "Водопад захватывает дух."
+      },
+      {
+        "sentence": "We hiked to the waterfall.",
+        "translation": "Мы поднялись к водопаду."
+      },
+      {
+        "sentence": "The sound of the waterfall is soothing.",
+        "translation": "Звук водопада успокаивает."
       }
     ]
   },
   {
-    "word": "tundra",
-    "translations": [ "тундра" ],
+    "word": "sun",
+    "translations": [ "солнце", "светило", "солнечный свет" ],
     "examples": [
       {
-        "sentence": "The tundra is cold and treeless.",
-        "translation": "Тундра холодная и безлесная."
+        "sentence": "The sun rises in the east.",
+        "translation": "Солнце встает на востоке."
+      },
+      {
+        "sentence": "We enjoyed the warm sun.",
+        "translation": "Мы наслаждались теплым солнцем."
+      },
+      {
+        "sentence": "The sun provides energy for life.",
+        "translation": "Солнце обеспечивает энергию для жизни."
       }
     ]
   },
   {
-    "word": "glacier",
-    "translations": [ "ледник" ],
+    "word": "moon",
+    "translations": [ "луна", "спутник", "месяц" ],
     "examples": [
       {
-        "sentence": "The glacier is slowly melting.",
-        "translation": "Ледник медленно тает."
+        "sentence": "The moon is full tonight.",
+        "translation": "Сегодня ночью полная луна."
+      },
+      {
+        "sentence": "We walked under the moonlight.",
+        "translation": "Мы гуляли при лунном свете."
+      },
+      {
+        "sentence": "The moon affects the tides.",
+        "translation": "Луна влияет на приливы."
       }
     ]
   },
   {
-    "word": "volcano",
-    "translations": [ "вулкан" ],
+    "word": "star",
+    "translations": [ "звезда", "светило", "звездочка" ],
     "examples": [
       {
-        "sentence": "The volcano erupted last year.",
-        "translation": "Вулкан извергся в прошлом году."
-      }
-    ]
-  },
-  {
-    "word": "canyon",
-    "translations": [ "каньон" ],
-    "examples": [
+        "sentence": "The star shines brightly.",
+        "translation": "Звезда ярко светит."
+      },
       {
-        "sentence": "The canyon is breathtaking.",
-        "translation": "Каньон захватывает дух."
-      }
-    ]
-  },
-  {
-    "word": "ecosystem",
-    "translations": [ "экосистема" ],
-    "examples": [
+        "sentence": "We saw a shooting star.",
+        "translation": "Мы увидели падающую звезду."
+      },
       {
-        "sentence": "The ecosystem is balanced.",
-        "translation": "Экосистема сбалансирована."
-      }
-    ]
-  },
-  {
-    "word": "habitat",
-    "translations": [ "среда обитания" ],
-    "examples": [
-      {
-        "sentence": "Every species has its habitat.",
-        "translation": "У каждого вида есть своя среда обитания."
-      }
-    ]
-  },
-  {
-    "word": "biodiversity",
-    "translations": [ "биоразнообразие" ],
-    "examples": [
-      {
-        "sentence": "Biodiversity is essential for health.",
-        "translation": "Биоразнообразие необходимо для здоровья."
-      }
-    ]
-  },
-  {
-    "word": "pollution",
-    "translations": [ "загрязнение" ],
-    "examples": [
-      {
-        "sentence": "Pollution affects our health.",
-        "translation": "Загрязнение влияет на наше здоровье."
-      }
-    ]
-  },
-  {
-    "word": "climate",
-    "translations": [ "климат" ],
-    "examples": [
-      {
-        "sentence": "The climate is changing.",
-        "translation": "Климат меняется."
-      }
-    ]
-  },
-  {
-    "word": "sustainability",
-    "translations": [ "устойчивость" ],
-    "examples": [
-      {
-        "sentence": "Sustainability is key to our future.",
-        "translation": "Устойчивость — ключ к нашему будущему."
-      }
-    ]
-  },
-  {
-    "word": "energy",
-    "translations": [ "энергия" ],
-    "examples": [
-      {
-        "sentence": "We need renewable energy.",
-        "translation": "Нам нужна возобновляемая энергия."
-      }
-    ]
-  },
-  {
-    "word": "conservation",
-    "translations": [ "сохранение" ],
-    "examples": [
-      {
-        "sentence": "Conservation is vital for nature.",
-        "translation": "Сохранение жизненно важно для природы."
-      }
-    ]
-  },
-  {
-    "word": "species",
-    "translations": [ "вид" ],
-    "examples": [
-      {
-        "sentence": "Many species are endangered.",
-        "translation": "Многие виды находятся под угрозой."
-      }
-    ]
-  },
-  {
-    "word": "forest",
-    "translations": [ "лес" ],
-    "examples": [
-      {
-        "sentence": "The forest is home to many species.",
-        "translation": "Лес является домом для многих видов."
+        "sentence": "Stars are distant suns.",
+        "translation": "Звезды — это далекие солнца."
       }
     ]
   },
@@ -370,363 +274,1741 @@
     ]
   },
   {
-    "word": "eagle",
-    "translations": [ "орел" ],
+    "word": "cloud",
+    "translations": [ "облако", "туча", "облачность" ],
     "examples": [
       {
-        "sentence": "The eagle is a powerful bird of prey.",
-        "translation": "Орел — это мощная хищная птица."
-      }
-    ]
-  },
-  {
-    "word": "owl",
-    "translations": [ "сова" ],
-    "examples": [
+        "sentence": "The cloud is fluffy and white.",
+        "translation": "Облако пушистое и белое."
+      },
       {
-        "sentence": "The owl is known for its wisdom.",
-        "translation": "Сова известна своей мудростью."
-      }
-    ]
-  },
-  {
-    "word": "shark",
-    "translations": [ "акула" ],
-    "examples": [
+        "sentence": "The sky is full of clouds.",
+        "translation": "Небо полно облаков."
+      },
       {
-        "sentence": "The shark is a top predator in the ocean.",
-        "translation": "Акула — это верхний хищник в океане."
-      }
-    ]
-  },
-  {
-    "word": "octopus",
-    "translations": [ "осьминог" ],
-    "examples": [
-      {
-        "sentence": "The octopus has eight arms.",
-        "translation": "У осьминога восемь щупалец."
-      }
-    ]
-  },
-  {
-    "word": "rabbit",
-    "translations": [ "кролик" ],
-    "examples": [
-      {
-        "sentence": "The rabbit is a popular pet.",
-        "translation": "Кролик — популярный питомец."
-      }
-    ]
-  },
-  {
-    "word": "horse",
-    "translations": [ "лошадь" ],
-    "examples": [
-      {
-        "sentence": "The horse is known for its strength.",
-        "translation": "Лошадь известна своей силой."
-      }
-    ]
-  },
-  {
-    "word": "cat",
-    "translations": [ "кот" ],
-    "examples": [
-      {
-        "sentence": "Cats are independent animals.",
-        "translation": "Коты — независимые животные."
-      }
-    ]
-  },
-  {
-    "word": "dog",
-    "translations": [ "собака" ],
-    "examples": [
-      {
-        "sentence": "Dogs are known as man's best friend.",
-        "translation": "Собаки известны как лучшие друзья человека."
-      }
-    ]
-  },
-  {
-    "word": "fish",
-    "translations": [ "рыба" ],
-    "examples": [
-      {
-        "sentence": "Fish live in water.",
-        "translation": "Рыбы живут в воде."
-      }
-    ]
-  },
-  {
-    "word": "snake",
-    "translations": [ "змея" ],
-    "examples": [
-      {
-        "sentence": "The snake can be venomous.",
-        "translation": "Змея может быть ядовитой."
-      }
-    ]
-  },
-  {
-    "word": "frog",
-    "translations": [ "лягушка" ],
-    "examples": [
-      {
-        "sentence": "The frog is known for its jumping ability.",
-        "translation": "Лягушка известна своей способностью прыгать."
-      }
-    ]
-  },
-  {
-    "word": "ant",
-    "translations": [ "муравей" ],
-    "examples": [
-      {
-        "sentence": "The ant works hard to gather food.",
-        "translation": "Муравей усердно работает, чтобы собрать еду."
-      }
-    ]
-  },
-  {
-    "word": "bee",
-    "translations": [ "пчела" ],
-    "examples": [
-      {
-        "sentence": "Bees are essential for pollination.",
-        "translation": "Пчелы необходимы для опыления."
-      }
-    ]
-  },
-  {
-    "word": "butterfly",
-    "translations": [ "бабочка" ],
-    "examples": [
-      {
-        "sentence": "The butterfly has beautiful wings.",
-        "translation": "У бабочки красивые крылья."
-      }
-    ]
-  },
-  {
-    "word": "sun",
-    "translations": [ "солнце" ],
-    "examples": [
-      {
-        "sentence": "The sun rises in the east.",
-        "translation": "Солнце восходит на востоке."
+        "sentence": "Clouds bring rain.",
+        "translation": "Облака приносят дождь."
       }
     ]
   },
   {
     "word": "rain",
-    "translations": [ "дождь" ],
+    "translations": [ "дождь", "осадки", "ливень" ],
     "examples": [
       {
-        "sentence": "Rain is essential for plants.",
-        "translation": "Дождь необходим растениям."
+        "sentence": "The rain is falling gently.",
+        "translation": "Дождь падает мягко."
+      },
+      {
+        "sentence": "We got caught in the rain.",
+        "translation": "Мы попали под дождь."
+      },
+      {
+        "sentence": "Rain is essential for crops.",
+        "translation": "Дождь необходим для урожая."
       }
-    ]
+    ],
+    "category": "Nature"
   },
   {
     "word": "snow",
-    "translations": [ "снег" ],
+    "translations": [ "снег", "снежный покров", "снегопад" ],
     "examples": [
       {
-        "sentence": "Snow covers the ground in winter.",
-        "translation": "Снег покрывает землю зимой."
+        "sentence": "The snow is falling softly.",
+        "translation": "Снег падает мягко."
+      },
+      {
+        "sentence": "We built a snowman.",
+        "translation": "Мы слепили снеговика."
+      },
+      {
+        "sentence": "Snow covers the ground.",
+        "translation": "Снег покрывает землю."
       }
-    ]
+    ],
+    "category": "Nature"
   },
   {
     "word": "wind",
-    "translations": [ "ветер" ],
+    "translations": [ "ветер", "ветерок", "воздушный поток" ],
     "examples": [
       {
         "sentence": "The wind is strong today.",
-        "translation": "Ветер сегодня сильный."
+        "translation": "Сегодня сильный ветер."
+      },
+      {
+        "sentence": "We felt the cool wind.",
+        "translation": "Мы почувствовали прохладный ветер."
+      },
+      {
+        "sentence": "Wind can generate energy.",
+        "translation": "Ветер может генерировать энергию."
       }
-    ]
+    ],
+    "category": "Nature"
   },
   {
     "word": "storm",
-    "translations": [ "шторм", "буря" ],
+    "translations": [ "шторм", "буря", "гроза" ],
     "examples": [
       {
-        "sentence": "A storm is approaching.",
+        "sentence": "The storm is approaching.",
         "translation": "Шторм приближается."
+      },
+      {
+        "sentence": "We stayed indoors during the storm.",
+        "translation": "Мы оставались внутри во время шторма."
+      },
+      {
+        "sentence": "The storm caused damage.",
+        "translation": "Шторм причинил ущерб."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "thunder",
+    "translations": [ "гром", "раскат грома", "громовой звук" ],
+    "examples": [
+      {
+        "sentence": "The thunder was loud.",
+        "translation": "Гром был громким."
+      },
+      {
+        "sentence": "We heard thunder in the distance.",
+        "translation": "Мы услышали гром вдалеке."
+      },
+      {
+        "sentence": "Thunder often follows lightning.",
+        "translation": "Гром часто следует за молнией."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "lightning",
+    "translations": [ "молния", "вспышка молнии", "электрический разряд" ],
+    "examples": [
+      {
+        "sentence": "The lightning lit up the sky.",
+        "translation": "Молния осветила небо."
+      },
+      {
+        "sentence": "We saw lightning during the storm.",
+        "translation": "Мы видели молнию во время шторма."
+      },
+      {
+        "sentence": "Lightning can be dangerous.",
+        "translation": "Молния может быть опасной."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "earth",
+    "translations": [ "земля", "почва", "планета Земля" ],
+    "examples": [
+      {
+        "sentence": "The earth is our home.",
+        "translation": "Земля — наш дом."
+      },
+      {
+        "sentence": "We planted seeds in the earth.",
+        "translation": "Мы посадили семена в землю."
+      },
+      {
+        "sentence": "The earth rotates around the sun.",
+        "translation": "Земля вращается вокруг солнца."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "sky",
+    "translations": [ "небо", "небосвод", "воздушное пространство" ],
+    "examples": [
+      {
+        "sentence": "The sky is clear today.",
+        "translation": "Сегодня небо ясное."
+      },
+      {
+        "sentence": "We watched the birds in the sky.",
+        "translation": "Мы наблюдали за птицами в небе."
+      },
+      {
+        "sentence": "The sky turns red at sunset.",
+        "translation": "Небо краснеет на закате."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "grass",
+    "translations": [ "трава", "зелень", "газон" ],
+    "examples": [
+      {
+        "sentence": "The grass is green and soft.",
+        "translation": "Трава зеленая и мягкая."
+      },
+      {
+        "sentence": "We sat on the grass.",
+        "translation": "Мы сидели на траве."
+      },
+      {
+        "sentence": "Grass needs water to grow.",
+        "translation": "Траве нужна вода, чтобы расти."
       }
     ]
   },
   {
-    "word": "fog",
-    "translations": [ "туман" ],
+    "word": "rock",
+    "translations": [ "камень", "скала", "горная порода" ],
     "examples": [
+      {
+        "sentence": "The rock is heavy.",
+        "translation": "Камень тяжелый."
+      },
+      {
+        "sentence": "We climbed the rock.",
+        "translation": "Мы взобрались на скалу."
+      },
+      {
+        "sentence": "Rocks are formed over millions of years.",
+        "translation": "Камни формируются миллионы лет."
+      }
+    ]
+  },
+  {
+    "word": "sand",
+    "translations": [ "песок", "песчаный пляж", "песчинка" ],
+    "examples": [
+      {
+        "sentence": "The sand is warm underfoot.",
+        "translation": "Песок теплый под ногами."
+      },
+      {
+        "sentence": "We built a castle in the sand.",
+        "translation": "Мы построили замок из песка."
+      },
+      {
+        "sentence": "Sand is made of tiny rocks.",
+        "translation": "Песок состоит из мелких камней."
+      }
+    ]
+  },
+  {
+    "word": "riverbank",
+    "translations": [ "берег реки", "речной берег", "прибрежная зона" ],
+    "examples": [
+      {
+        "sentence": "We sat on the riverbank.",
+        "translation": "Мы сидели на берегу реки."
+      },
+      {
+        "sentence": "The riverbank is muddy.",
+        "translation": "Берег реки грязный."
+      },
+      {
+        "sentence": "Plants grow along the riverbank.",
+        "translation": "Растения растут вдоль берега реки."
+      }
+    ]
+  },
+  {
+    "word": "meadow",
+    "translations": [ "луг", "поляна", "пастбище" ],
+    "examples": [
+      {
+        "sentence": "The meadow is full of flowers.",
+        "translation": "Луг полон цветов."
+      },
+      {
+        "sentence": "We walked through the meadow.",
+        "translation": "Мы прошли через луг."
+      },
+      {
+        "sentence": "The meadow is peaceful.",
+        "translation": "Луг спокойный."
+      }
+    ]
+  },
+  {
+    "word": "cave",
+    "translations": [ "пещера", "грот", "подземелье" ],
+    "examples": [
+      {
+        "sentence": "The cave is dark and cold.",
+        "translation": "Пещера темная и холодная."
+      },
+      {
+        "sentence": "We explored the cave.",
+        "translation": "Мы исследовали пещеру."
+      },
+      {
+        "sentence": "Caves are formed by water erosion.",
+        "translation": "Пещеры образуются из-за водной эрозии."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "cliff",
+    "translations": [ "утес", "скала", "обрыв" ],
+    "examples": [
+      {
+        "sentence": "The cliff is steep.",
+        "translation": "Утес крутой."
+      },
+      {
+        "sentence": "We stood at the edge of the cliff.",
+        "translation": "Мы стояли на краю утеса."
+      },
+      {
+        "sentence": "The ocean waves crash against the cliff.",
+        "translation": "Океанские волны разбиваются об утес."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "island",
+    "translations": [ "остров", "островок", "земля" ],
+    "examples": [
+      {
+        "sentence": "The island is surrounded by water.",
+        "translation": "Остров окружен водой."
+      },
+      {
+        "sentence": "We visited a tropical island.",
+        "translation": "Мы посетили тропический остров."
+      },
+      {
+        "sentence": "Islands can be small or large.",
+        "translation": "Острова могут быть маленькими или большими."
+      }
+    ]
+  },
+  {
+    "word": "volcano",
+    "translations": [ "вулкан", "огненная гора", "кратер" ],
+    "examples": [
+      {
+        "sentence": "The volcano is active.",
+        "translation": "Вулкан активный."
+      },
+      {
+        "sentence": "We saw lava flowing from the volcano.",
+        "translation": "Мы видели, как лава течет из вулкана."
+      },
+      {
+        "sentence": "Volcanoes can be dangerous.",
+        "translation": "Вулканы могут быть опасными."
+      }
+    ]
+  },
+  {
+    "word": "glacier",
+    "translations": [ "ледник", "глетчер", "ледяная масса" ],
+    "examples": [
+      {
+        "sentence": "The glacier is melting.",
+        "translation": "Ледник тает."
+      },
+      {
+        "sentence": "We hiked near the glacier.",
+        "translation": "Мы гуляли рядом с ледником."
+      },
+      {
+        "sentence": "Glaciers store fresh water.",
+        "translation": "Ледники хранят пресную воду."
+      }
+    ]
+  },
+  {
+    "word": "swamp",
+    "translations": [ "болото", "трясина", "заболоченная местность" ],
+    "examples": [
+      {
+        "sentence": "The swamp is full of life.",
+        "translation": "Болото полно жизни."
+      },
+      {
+        "sentence": "We avoided the swamp.",
+        "translation": "Мы избегали болота."
+      },
+      {
+        "sentence": "Swamps are important ecosystems.",
+        "translation": "Болота — важные экосистемы."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "jungle",
+    "translations": [ "джунгли", "тропический лес", "чаща" ],
+    "examples": [
+      {
+        "sentence": "The jungle is dense and humid.",
+        "translation": "Джунгли густые и влажные."
+      },
+      {
+        "sentence": "We explored the jungle.",
+        "translation": "Мы исследовали джунгли."
+      },
+      {
+        "sentence": "Jungles are home to many species.",
+        "translation": "Джунгли являются домом для многих видов."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "canyon",
+    "translations": [ "каньон", "ущелье", "долина" ],
+    "examples": [
+      {
+        "sentence": "The canyon is deep and narrow.",
+        "translation": "Каньон глубокий и узкий."
+      },
+      {
+        "sentence": "We hiked through the canyon.",
+        "translation": "Мы прошли через каньон."
+      },
+      {
+        "sentence": "Canyons are formed by rivers.",
+        "translation": "Каньоны образуются реками."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "prairie",
+    "translations": [ "прерия", "степь", "равнина" ],
+    "examples": [
+      {
+        "sentence": "The prairie stretches for miles.",
+        "translation": "Прерия простирается на мили."
+      },
+      {
+        "sentence": "We saw bison on the prairie.",
+        "translation": "Мы видели бизонов в прерии."
+      },
+      {
+        "sentence": "Prairies are home to many grasses.",
+        "translation": "Прерии являются домом для многих видов трав."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "tundra",
+    "translations": [ "тундра", "арктическая равнина", "холодная пустыня" ],
+    "examples": [
+      {
+        "sentence": "The tundra is frozen most of the year.",
+        "translation": "Тундра замерзшая большую часть года."
+      },
+      {
+        "sentence": "We saw reindeer in the tundra.",
+        "translation": "Мы видели оленей в тундре."
+      },
+      {
+        "sentence": "The tundra has a unique ecosystem.",
+        "translation": "Тундра имеет уникальную экосистему."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "reef",
+    "translations": [ "риф", "коралловый риф", "подводная скала" ],
+    "examples": [
+      {
+        "sentence": "The reef is full of colorful fish.",
+        "translation": "Риф полон красочных рыб."
+      },
+      {
+        "sentence": "We went snorkeling near the reef.",
+        "translation": "Мы занимались сноркелингом возле рифа."
+      },
+      {
+        "sentence": "Reefs are important for marine life.",
+        "translation": "Рифы важны для морской жизни."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "pond",
+    "translations": [ "пруд", "водоем", "озерцо" ],
+    "examples": [
+      {
+        "sentence": "The pond is small and quiet.",
+        "translation": "Пруд маленький и тихий."
+      },
+      {
+        "sentence": "We fed the ducks in the pond.",
+        "translation": "Мы кормили уток в пруду."
+      },
+      {
+        "sentence": "Ponds are home to frogs and fish.",
+        "translation": "Пруды являются домом для лягушек и рыб."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "stream",
+    "translations": [ "ручей", "поток", "речка" ],
+    "examples": [
+      {
+        "sentence": "The stream flows gently.",
+        "translation": "Ручей течет мягко."
+      },
+      {
+        "sentence": "We crossed the stream.",
+        "translation": "Мы перешли ручей."
+      },
+      {
+        "sentence": "Streams often lead to rivers.",
+        "translation": "Ручьи часто ведут к рекам."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "water",
+    "translations": [ "вода", "водный", "жидкость" ],
+    "examples": [
+      {
+        "sentence": "Water is essential for life.",
+        "translation": "Вода необходима для жизни."
+      },
+      {
+        "sentence": "We drank cold water.",
+        "translation": "Мы пили холодную воду."
+      },
+      {
+        "sentence": "The water in the lake is clear.",
+        "translation": "Вода в озере прозрачная."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "ice",
+    "translations": [ "лед", "льдина", "замороженная вода" ],
+    "examples": [
+      {
+        "sentence": "The ice is melting.",
+        "translation": "Лед тает."
+      },
+      {
+        "sentence": "We skated on the ice.",
+        "translation": "Мы катались на льду."
+      },
+      {
+        "sentence": "Ice can be slippery.",
+        "translation": "Лед может быть скользким."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "fire",
+    "translations": [ "огонь", "пламя", "костер" ],
+    "examples": [
+      {
+        "sentence": "The fire is warm.",
+        "translation": "Огонь теплый."
+      },
+      {
+        "sentence": "We sat around the fire.",
+        "translation": "Мы сидели вокруг костра."
+      },
+      {
+        "sentence": "Fire can be dangerous.",
+        "translation": "Огонь может быть опасным."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "air",
+    "translations": [ "воздух", "атмосфера", "ветер" ],
+    "examples": [
+      {
+        "sentence": "The air is fresh in the mountains.",
+        "translation": "Воздух свежий в горах."
+      },
+      {
+        "sentence": "We breathed the cool air.",
+        "translation": "Мы дышали прохладным воздухом."
+      },
+      {
+        "sentence": "Air is essential for breathing.",
+        "translation": "Воздух необходим для дыхания."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "soil",
+    "translations": [ "почва", "земля", "грунт" ],
+    "examples": [
+      {
+        "sentence": "The soil is fertile.",
+        "translation": "Почва плодородная."
+      },
+      {
+        "sentence": "We planted flowers in the soil.",
+        "translation": "Мы посадили цветы в почву."
+      },
+      {
+        "sentence": "Soil is important for plants.",
+        "translation": "Почва важна для растений."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "stone",
+    "translations": [ "камень", "валун", "булыжник" ],
+    "examples": [
+      {
+        "sentence": "The stone is smooth.",
+        "translation": "Камень гладкий."
+      },
+      {
+        "sentence": "We skipped stones across the water.",
+        "translation": "Мы бросали камни по воде."
+      },
+      {
+        "sentence": "Stones are used for building.",
+        "translation": "Камни используются для строительства."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "pebble",
+    "translations": [ "галька", "камешек", "мелкий камень" ],
+    "examples": [
+      {
+        "sentence": "The pebble is small and round.",
+        "translation": "Галька маленькая и круглая."
+      },
+      {
+        "sentence": "We collected pebbles on the beach.",
+        "translation": "Мы собирали гальку на пляже."
+      },
+      {
+        "sentence": "Pebbles are often found near water.",
+        "translation": "Галька часто встречается возле воды."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "clay",
+    "translations": [ "глина", "глиняный", "пластилин" ],
+    "examples": [
+      {
+        "sentence": "The clay is soft and malleable.",
+        "translation": "Глина мягкая и податливая."
+      },
+      {
+        "sentence": "We made pottery from clay.",
+        "translation": "Мы сделали гончарные изделия из глины."
+      },
+      {
+        "sentence": "Clay is used in construction.",
+        "translation": "Глина используется в строительстве."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "mud",
+    "translations": [ "грязь", "ил", "слякоть" ],
+    "examples": [
+      {
+        "sentence": "The mud is sticky.",
+        "translation": "Грязь липкая."
+      },
+      {
+        "sentence": "We got stuck in the mud.",
+        "translation": "Мы застряли в грязи."
+      },
+      {
+        "sentence": "Mud is common after rain.",
+        "translation": "Грязь часто появляется после дождя."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "dust",
+    "translations": [ "пыль", "мелкие частицы", "пепел" ],
+    "examples": [
+      {
+        "sentence": "The dust covers the furniture.",
+        "translation": "Пыль покрывает мебель."
+      },
+      {
+        "sentence": "We wiped the dust off the table.",
+        "translation": "Мы вытерли пыль со стола."
+      },
+      {
+        "sentence": "Dust can cause allergies.",
+        "translation": "Пыль может вызывать аллергию."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "fog",
+    "translations": [ "туман", "мгла", "дымка" ],
+    "examples": [
+      {
+        "sentence": "The fog is thick this morning.",
+        "translation": "Сегодня утром туман густой."
+      },
+      {
+        "sentence": "We drove slowly through the fog.",
+        "translation": "Мы ехали медленно через туман."
+      },
       {
         "sentence": "Fog reduces visibility.",
         "translation": "Туман снижает видимость."
       }
-    ]
+    ],
+    "category": "Nature"
   },
   {
-    "word": "cloud",
-    "translations": [ "облако" ],
+    "word": "mist",
+    "translations": [ "легкий туман", "дымка", "испарение" ],
     "examples": [
       {
-        "sentence": "The sky is filled with clouds.",
-        "translation": "Небо заполнено облаками."
+        "sentence": "The mist covered the valley.",
+        "translation": "Легкий туман покрыл долину."
+      },
+      {
+        "sentence": "We walked through the morning mist.",
+        "translation": "Мы шли через утреннюю дымку."
+      },
+      {
+        "sentence": "Mist often appears near water.",
+        "translation": "Легкий туман часто появляется возле воды."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "dew",
+    "translations": [ "роса", "капли влаги", "испарение" ],
+    "examples": [
+      {
+        "sentence": "The dew glistened on the grass.",
+        "translation": "Роса сверкала на траве."
+      },
+      {
+        "sentence": "We saw dew on the leaves.",
+        "translation": "Мы видели росу на листьях."
+      },
+      {
+        "sentence": "Dew forms in the early morning.",
+        "translation": "Роса образуется ранним утром."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "frost",
+    "translations": [ "иней", "мороз", "ледяной покров" ],
+    "examples": [
+      {
+        "sentence": "The frost covered the windows.",
+        "translation": "Иней покрыл окна."
+      },
+      {
+        "sentence": "We saw frost on the grass.",
+        "translation": "Мы видели иней на траве."
+      },
+      {
+        "sentence": "Frost makes the ground slippery.",
+        "translation": "Иней делает землю скользкой."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "hail",
+    "translations": [ "град", "ледяные шарики", "осадки" ],
+    "examples": [
+      {
+        "sentence": "The hail damaged the crops.",
+        "translation": "Град повредил урожай."
+      },
+      {
+        "sentence": "We took shelter from the hail.",
+        "translation": "Мы укрылись от града."
+      },
+      {
+        "sentence": "Hail can be dangerous during storms.",
+        "translation": "Град может быть опасным во время штормов."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "sleet",
+    "translations": [ "мокрый снег", "дождь со снегом", "слякоть" ],
+    "examples": [
+      {
+        "sentence": "The sleet made the roads slippery.",
+        "translation": "Мокрый снег сделал дороги скользкими."
+      },
+      {
+        "sentence": "We walked carefully in the sleet.",
+        "translation": "Мы шли осторожно в мокром снегу."
+      },
+      {
+        "sentence": "Sleet is common in winter.",
+        "translation": "Мокрый снег часто бывает зимой."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "lightning",
+    "translations": [ "молния", "вспышка", "электрический разряд" ],
+    "examples": [
+      {
+        "sentence": "The lightning lit up the sky.",
+        "translation": "Молния осветила небо."
+      },
+      {
+        "sentence": "We saw lightning during the storm.",
+        "translation": "Мы видели молнию во время шторма."
+      },
+      {
+        "sentence": "Lightning can be dangerous.",
+        "translation": "Молния может быть опасной."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "thunderstorm",
+    "translations": [ "гроза", "грозовой шторм", "гром и молния" ],
+    "examples": [
+      {
+        "sentence": "The thunderstorm was intense.",
+        "translation": "Гроза была сильной."
+      },
+      {
+        "sentence": "We stayed indoors during the thunderstorm.",
+        "translation": "Мы оставались внутри во время грозы."
+      },
+      {
+        "sentence": "Thunderstorms often bring heavy rain.",
+        "translation": "Грозы часто приносят сильный дождь."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "hurricane",
+    "translations": [ "ураган", "шторм", "циклон" ],
+    "examples": [
+      {
+        "sentence": "The hurricane caused widespread damage.",
+        "translation": "Ураган причинил масштабный ущерб."
+      },
+      {
+        "sentence": "We evacuated before the hurricane.",
+        "translation": "Мы эвакуировались перед ураганом."
+      },
+      {
+        "sentence": "Hurricanes are powerful storms.",
+        "translation": "Ураганы — это мощные штормы."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "tornado",
+    "translations": [ "торнадо", "смерч", "вихрь" ],
+    "examples": [
+      {
+        "sentence": "The tornado destroyed the town.",
+        "translation": "Торнадо разрушил город."
+      },
+      {
+        "sentence": "We took shelter from the tornado.",
+        "translation": "Мы укрылись от торнадо."
+      },
+      {
+        "sentence": "Tornadoes are unpredictable.",
+        "translation": "Торнадо непредсказуемы."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "earthquake",
+    "translations": [ "землетрясение", "толчки", "сейсмическая активность" ],
+    "examples": [
+      {
+        "sentence": "The earthquake shook the city.",
+        "translation": "Землетрясение потрясло город."
+      },
+      {
+        "sentence": "We felt the earthquake.",
+        "translation": "Мы почувствовали землетрясение."
+      },
+      {
+        "sentence": "Earthquakes can cause tsunamis.",
+        "translation": "Землетрясения могут вызывать цунами."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "tsunami",
+    "translations": [ "цунами", "волна", "приливная волна" ],
+    "examples": [
+      {
+        "sentence": "The tsunami devastated the coast.",
+        "translation": "Цунами опустошило побережье."
+      },
+      {
+        "sentence": "We fled from the tsunami.",
+        "translation": "Мы бежали от цунами."
+      },
+      {
+        "sentence": "Tsunamis are caused by underwater earthquakes.",
+        "translation": "Цунами вызываются подводными землетрясениями."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "avalanche",
+    "translations": [ "лавина", "снежный обвал", "оползень" ],
+    "examples": [
+      {
+        "sentence": "The avalanche buried the village.",
+        "translation": "Лавина завалила деревню."
+      },
+      {
+        "sentence": "We avoided the avalanche zone.",
+        "translation": "Мы избегали зоны лавины."
+      },
+      {
+        "sentence": "Avalanches are common in the mountains.",
+        "translation": "Лавины часто случаются в горах."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "eruption",
+    "translations": [ "извержение", "взрыв", "выброс" ],
+    "examples": [
+      {
+        "sentence": "The eruption of the volcano was spectacular.",
+        "translation": "Извержение вулкана было впечатляющим."
+      },
+      {
+        "sentence": "We watched the eruption from a safe distance.",
+        "translation": "Мы наблюдали извержение с безопасного расстояния."
+      },
+      {
+        "sentence": "Eruptions can release ash and lava.",
+        "translation": "Извержения могут выбрасывать пепел и лаву."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "flood",
+    "translations": [ "наводнение", "потоп", "разлив" ],
+    "examples": [
+      {
+        "sentence": "The flood destroyed the crops.",
+        "translation": "Наводнение уничтожило урожай."
+      },
+      {
+        "sentence": "We evacuated due to the flood.",
+        "translation": "Мы эвакуировались из-за наводнения."
+      },
+      {
+        "sentence": "Floods can occur after heavy rain.",
+        "translation": "Наводнения могут происходить после сильного дождя."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "drought",
+    "translations": [ "засуха", "сухой период", "недостаток воды" ],
+    "examples": [
+      {
+        "sentence": "The drought lasted for months.",
+        "translation": "Засуха длилась месяцами."
+      },
+      {
+        "sentence": "We struggled during the drought.",
+        "translation": "Мы боролись во время засухи."
+      },
+      {
+        "sentence": "Droughts can harm agriculture.",
+        "translation": "Засухи могут навредить сельскому хозяйству."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "wildfire",
+    "translations": [ "лесной пожар", "пожар", "огонь" ],
+    "examples": [
+      {
+        "sentence": "The wildfire spread quickly.",
+        "translation": "Лесной пожар быстро распространился."
+      },
+      {
+        "sentence": "We evacuated due to the wildfire.",
+        "translation": "Мы эвакуировались из-за лесного пожара."
+      },
+      {
+        "sentence": "Wildfires can be caused by lightning.",
+        "translation": "Лесные пожары могут быть вызваны молнией."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "landslide",
+    "translations": [ "оползень", "обвал", "сход грунта" ],
+    "examples": [
+      {
+        "sentence": "The landslide blocked the road.",
+        "translation": "Оползень заблокировал дорогу."
+      },
+      {
+        "sentence": "We avoided the landslide area.",
+        "translation": "Мы избегали зоны оползня."
+      },
+      {
+        "sentence": "Landslides are common after heavy rain.",
+        "translation": "Оползни часто случаются после сильного дождя."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "blizzard",
+    "translations": [ "метель", "снежная буря", "вьюга" ],
+    "examples": [
+      {
+        "sentence": "The blizzard made travel impossible.",
+        "translation": "Метель сделала путешествие невозможным."
+      },
+      {
+        "sentence": "We stayed indoors during the blizzard.",
+        "translation": "Мы оставались внутри во время метели."
+      },
+      {
+        "sentence": "Blizzards bring heavy snow and wind.",
+        "translation": "Метели приносят сильный снег и ветер."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "heatwave",
+    "translations": [ "волна тепла", "жара", "зной" ],
+    "examples": [
+      {
+        "sentence": "The heatwave lasted for weeks.",
+        "translation": "Волна тепла длилась неделями."
+      },
+      {
+        "sentence": "We drank lots of water during the heatwave.",
+        "translation": "Мы пили много воды во время жары."
+      },
+      {
+        "sentence": "Heatwaves can be dangerous for health.",
+        "translation": "Волны тепла могут быть опасны для здоровья."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "breeze",
+    "translations": [ "ветерок", "легкий ветер", "дуновение" ],
+    "examples": [
+      {
+        "sentence": "The breeze felt refreshing.",
+        "translation": "Ветерок был освежающим."
+      },
+      {
+        "sentence": "We enjoyed the cool breeze.",
+        "translation": "Мы наслаждались прохладным ветерком."
+      },
+      {
+        "sentence": "Breezes are common near the ocean.",
+        "translation": "Ветерки часто бывают возле океана."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "gale",
+    "translations": [ "штормовой ветер", "буря", "ураганный ветер" ],
+    "examples": [
+      {
+        "sentence": "The gale knocked down trees.",
+        "translation": "Штормовой ветер повалил деревья."
+      },
+      {
+        "sentence": "We stayed indoors during the gale.",
+        "translation": "Мы оставались внутри во время штормового ветра."
+      },
+      {
+        "sentence": "Gales can cause damage to buildings.",
+        "translation": "Штормовые ветры могут повредить здания."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "cyclone",
+    "translations": [ "циклон", "вихрь", "буря" ],
+    "examples": [
+      {
+        "sentence": "The cyclone caused widespread destruction.",
+        "translation": "Циклон вызвал масштабные разрушения."
+      },
+      {
+        "sentence": "We prepared for the cyclone.",
+        "translation": "Мы готовились к циклону."
+      },
+      {
+        "sentence": "Cyclones are common in tropical regions.",
+        "translation": "Циклоны часто встречаются в тропических регионах."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "whirlwind",
+    "translations": [ "вихрь", "смерч", "ураган" ],
+    "examples": [
+      {
+        "sentence": "The whirlwind lifted debris into the air.",
+        "translation": "Вихрь поднял обломки в воздух."
+      },
+      {
+        "sentence": "We saw a whirlwind in the distance.",
+        "translation": "Мы видели вихрь вдалеке."
+      },
+      {
+        "sentence": "Whirlwinds are short-lived but powerful.",
+        "translation": "Вихри кратковременны, но мощны."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "monsoon",
+    "translations": [ "муссон", "сезон дождей", "тропический ливень" ],
+    "examples": [
+      {
+        "sentence": "The monsoon brought heavy rain.",
+        "translation": "Муссон принес сильный дождь."
+      },
+      {
+        "sentence": "We prepared for the monsoon season.",
+        "translation": "Мы готовились к сезону муссонов."
+      },
+      {
+        "sentence": "Monsoons are vital for agriculture.",
+        "translation": "Муссоны важны для сельского хозяйства."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "rainbow",
+    "translations": [ "радуга", "цветная дуга", "оптическое явление" ],
+    "examples": [
+      {
+        "sentence": "The rainbow appeared after the rain.",
+        "translation": "Радуга появилась после дождя."
+      },
+      {
+        "sentence": "We saw a beautiful rainbow.",
+        "translation": "Мы увидели красивую радугу."
+      },
+      {
+        "sentence": "Rainbows are formed by sunlight and rain.",
+        "translation": "Радуги образуются солнечным светом и дождем."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "aurora",
+    "translations": [ "полярное сияние", "аврора", "северное сияние" ],
+    "examples": [
+      {
+        "sentence": "The aurora lit up the night sky.",
+        "translation": "Полярное сияние осветило ночное небо."
+      },
+      {
+        "sentence": "We traveled north to see the aurora.",
+        "translation": "Мы поехали на север, чтобы увидеть полярное сияние."
+      },
+      {
+        "sentence": "Auroras are caused by solar activity.",
+        "translation": "Полярные сияния вызваны солнечной активностью."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "eclipse",
+    "translations": [ "затмение", "затемнение", "астрономическое явление" ],
+    "examples": [
+      {
+        "sentence": "The eclipse was a rare event.",
+        "translation": "Затмение было редким событием."
+      },
+      {
+        "sentence": "We watched the solar eclipse.",
+        "translation": "Мы наблюдали солнечное затмение."
+      },
+      {
+        "sentence": "Eclipses occur when celestial bodies align.",
+        "translation": "Затмения происходят, когда небесные тела выравниваются."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "comet",
+    "translations": [ "комета", "хвостатая звезда", "небесное тело" ],
+    "examples": [
+      {
+        "sentence": "The comet was visible in the night sky.",
+        "translation": "Комета была видна в ночном небе."
+      },
+      {
+        "sentence": "We observed the comet through a telescope.",
+        "translation": "Мы наблюдали комету через телескоп."
+      },
+      {
+        "sentence": "Comets have long tails.",
+        "translation": "Кометы имеют длинные хвосты."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "meteor",
+    "translations": [ "метеор", "падающая звезда", "небесное тело" ],
+    "examples": [
+      {
+        "sentence": "The meteor streaked across the sky.",
+        "translation": "Метеор пронесся по небу."
+      },
+      {
+        "sentence": "We made a wish on the meteor.",
+        "translation": "Мы загадали желание на падающую звезду."
+      },
+      {
+        "sentence": "Meteors are often called shooting stars.",
+        "translation": "Метеоры часто называют падающими звездами."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "galaxy",
+    "translations": [ "галактика", "звездная система", "космическое скопление" ],
+    "examples": [
+      {
+        "sentence": "The Milky Way is our galaxy.",
+        "translation": "Млечный Путь — это наша галактика."
+      },
+      {
+        "sentence": "We studied distant galaxies.",
+        "translation": "Мы изучали далекие галактики."
+      },
+      {
+        "sentence": "Galaxies contain billions of stars.",
+        "translation": "Галактики содержат миллиарды звезд."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "planet",
+    "translations": [ "планета", "небесное тело", "орбитальный объект" ],
+    "examples": [
+      {
+        "sentence": "Earth is a unique planet.",
+        "translation": "Земля — уникальная планета."
+      },
+      {
+        "sentence": "We learned about the planets in school.",
+        "translation": "Мы изучали планеты в школе."
+      },
+      {
+        "sentence": "Planets orbit around stars.",
+        "translation": "Планеты вращаются вокруг звезд."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "satellite",
+    "translations": [ "спутник", "искусственный спутник", "луна" ],
+    "examples": [
+      {
+        "sentence": "The moon is Earth's natural satellite.",
+        "translation": "Луна — естественный спутник Земли."
+      },
+      {
+        "sentence": "We launched a new satellite.",
+        "translation": "Мы запустили новый спутник."
+      },
+      {
+        "sentence": "Satellites are used for communication.",
+        "translation": "Спутники используются для связи."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "asteroid",
+    "translations": [ "астероид", "малая планета", "космический объект" ],
+    "examples": [
+      {
+        "sentence": "The asteroid passed close to Earth.",
+        "translation": "Астероид прошел близко к Земле."
+      },
+      {
+        "sentence": "We tracked the asteroid's path.",
+        "translation": "Мы отслеживали путь астероида."
+      },
+      {
+        "sentence": "Asteroids are found in the asteroid belt.",
+        "translation": "Астероиды находятся в поясе астероидов."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "nebula",
+    "translations": [ "туманность", "газовое облако", "космическое явление" ],
+    "examples": [
+      {
+        "sentence": "The nebula glowed brightly.",
+        "translation": "Туманность ярко светилась."
+      },
+      {
+        "sentence": "We observed the nebula through a telescope.",
+        "translation": "Мы наблюдали туманность через телескоп."
+      },
+      {
+        "sentence": "Nebulas are where stars are born.",
+        "translation": "Туманности — это места, где рождаются звезды."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "constellation",
+    "translations": [ "созвездие", "группа звезд", "астеризм" ],
+    "examples": [
+      {
+        "sentence": "Orion is a famous constellation.",
+        "translation": "Орион — известное созвездие."
+      },
+      {
+        "sentence": "We learned about constellations in astronomy class.",
+        "translation": "Мы изучали созвездия на уроках астрономии."
+      },
+      {
+        "sentence": "Constellations have been used for navigation.",
+        "translation": "Созвездия использовались для навигации."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "black hole",
+    "translations": [ "черная дыра", "космический объект", "гравитационная ловушка" ],
+    "examples": [
+      {
+        "sentence": "The black hole is invisible.",
+        "translation": "Черная дыра невидима."
+      },
+      {
+        "sentence": "We studied black holes in physics.",
+        "translation": "Мы изучали черные дыры на физике."
+      },
+      {
+        "sentence": "Black holes have immense gravitational pull.",
+        "translation": "Черные дыры обладают огромной гравитационной силой."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "supernova",
+    "translations": [ "сверхновая", "взрыв звезды", "космическое событие" ],
+    "examples": [
+      {
+        "sentence": "The supernova was visible from Earth.",
+        "translation": "Сверхновая была видна с Земли."
+      },
+      {
+        "sentence": "We observed the supernova's aftermath.",
+        "translation": "Мы наблюдали последствия сверхновой."
+      },
+      {
+        "sentence": "Supernovas are incredibly powerful.",
+        "translation": "Сверхновые невероятно мощные."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "orbit",
+    "translations": [ "орбита", "траектория", "путь" ],
+    "examples": [
+      {
+        "sentence": "The Earth's orbit is elliptical.",
+        "translation": "Орбита Земли эллиптическая."
+      },
+      {
+        "sentence": "We studied the moon's orbit.",
+        "translation": "Мы изучали орбиту Луны."
+      },
+      {
+        "sentence": "Orbits are determined by gravity.",
+        "translation": "Орбиты определяются гравитацией."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "gravity",
+    "translations": [ "гравитация", "тяготение", "сила притяжения" ],
+    "examples": [
+      {
+        "sentence": "Gravity keeps us on the ground.",
+        "translation": "Гравитация удерживает нас на земле."
+      },
+      {
+        "sentence": "We learned about gravity in science class.",
+        "translation": "Мы изучали гравитацию на уроках науки."
+      },
+      {
+        "sentence": "Gravity affects all objects.",
+        "translation": "Гравитация влияет на все объекты."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "atmosphere",
+    "translations": [ "атмосфера", "воздушная оболочка", "окружение" ],
+    "examples": [
+      {
+        "sentence": "The Earth's atmosphere protects us.",
+        "translation": "Атмосфера Земли защищает нас."
+      },
+      {
+        "sentence": "We studied the atmosphere in geography.",
+        "translation": "Мы изучали атмосферу на географии."
+      },
+      {
+        "sentence": "The atmosphere contains oxygen.",
+        "translation": "Атмосфера содержит кислород."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "ozone",
+    "translations": [ "озон", "озоновый слой", "газ" ],
+    "examples": [
+      {
+        "sentence": "The ozone layer protects us from UV rays.",
+        "translation": "Озоновый слой защищает нас от ультрафиолетовых лучей."
+      },
+      {
+        "sentence": "We learned about ozone in chemistry.",
+        "translation": "Мы изучали озон на химии."
+      },
+      {
+        "sentence": "Ozone is a form of oxygen.",
+        "translation": "Озон — это форма кислорода."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "carbon dioxide",
+    "translations": [ "углекислый газ", "CO2", "диоксид углерода" ],
+    "examples": [
+      {
+        "sentence": "Carbon dioxide is a greenhouse gas.",
+        "translation": "Углекислый газ — это парниковый газ."
+      },
+      {
+        "sentence": "We exhale carbon dioxide.",
+        "translation": "Мы выдыхаем углекислый газ."
+      },
+      {
+        "sentence": "Plants absorb carbon dioxide.",
+        "translation": "Растения поглощают углекислый газ."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "oxygen",
+    "translations": [ "кислород", "O2", "газ" ],
+    "examples": [
+      {
+        "sentence": "Oxygen is essential for life.",
+        "translation": "Кислород необходим для жизни."
+      },
+      {
+        "sentence": "We breathe oxygen.",
+        "translation": "Мы дышим кислородом."
+      },
+      {
+        "sentence": "Oxygen is produced by plants.",
+        "translation": "Кислород вырабатывается растениями."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "nitrogen",
+    "translations": [ "азот", "N2", "газ" ],
+    "examples": [
+      {
+        "sentence": "Nitrogen makes up most of the air.",
+        "translation": "Азот составляет большую часть воздуха."
+      },
+      {
+        "sentence": "We studied nitrogen in chemistry.",
+        "translation": "Мы изучали азот на химии."
+      },
+      {
+        "sentence": "Nitrogen is used in fertilizers.",
+        "translation": "Азот используется в удобрениях."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "hydrogen",
+    "translations": [ "водород", "H2", "газ" ],
+    "examples": [
+      {
+        "sentence": "Hydrogen is the lightest element.",
+        "translation": "Водород — самый легкий элемент."
+      },
+      {
+        "sentence": "We studied hydrogen in science class.",
+        "translation": "Мы изучали водород на уроках науки."
+      },
+      {
+        "sentence": "Hydrogen is used in fuel cells.",
+        "translation": "Водород используется в топливных элементах."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "helium",
+    "translations": [ "гелий", "He", "газ" ],
+    "examples": [
+      {
+        "sentence": "Helium is used in balloons.",
+        "translation": "Гелий используется в воздушных шарах."
+      },
+      {
+        "sentence": "We learned about helium in chemistry.",
+        "translation": "Мы изучали гелий на химии."
+      },
+      {
+        "sentence": "Helium is lighter than air.",
+        "translation": "Гелий легче воздуха."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "methane",
+    "translations": [ "метан", "CH4", "газ" ],
+    "examples": [
+      {
+        "sentence": "Methane is a potent greenhouse gas.",
+        "translation": "Метан — мощный парниковый газ."
+      },
+      {
+        "sentence": "We studied methane in environmental science.",
+        "translation": "Мы изучали метан на уроках экологии."
+      },
+      {
+        "sentence": "Methane is produced by cows.",
+        "translation": "Метан вырабатывается коровами."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "ammonia",
+    "translations": [ "аммиак", "NH3", "газ" ],
+    "examples": [
+      {
+        "sentence": "Ammonia is used in cleaning products.",
+        "translation": "Аммиак используется в чистящих средствах."
+      },
+      {
+        "sentence": "We learned about ammonia in chemistry.",
+        "translation": "Мы изучали аммиак на химии."
+      },
+      {
+        "sentence": "Ammonia has a strong smell.",
+        "translation": "Аммиак имеет резкий запах."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "ozone layer",
+    "translations": [ "озоновый слой", "защитный слой", "атмосферный слой" ],
+    "examples": [
+      {
+        "sentence": "The ozone layer protects us from UV rays.",
+        "translation": "Озоновый слой защищает нас от ультрафиолетовых лучей."
+      },
+      {
+        "sentence": "We studied the ozone layer in geography.",
+        "translation": "Мы изучали озоновый слой на географии."
+      },
+      {
+        "sentence": "The ozone layer is thinning.",
+        "translation": "Озоновый слой истончается."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "greenhouse effect",
+    "translations": [ "парниковый эффект", "тепличный эффект", "климатическое явление" ],
+    "examples": [
+      {
+        "sentence": "The greenhouse effect warms the Earth.",
+        "translation": "Парниковый эффект нагревает Землю."
+      },
+      {
+        "sentence": "We learned about the greenhouse effect in science.",
+        "translation": "Мы изучали парниковый эффект на уроках науки."
+      },
+      {
+        "sentence": "The greenhouse effect is caused by gases.",
+        "translation": "Парниковый эффект вызван газами."
+      }
+    ],
+    "category": "Nature"
+  },
+  {
+    "word": "climate",
+    "translations": [ "климат", "погодные условия", "атмосферные условия" ],
+    "examples": [
+      {
+        "sentence": "The climate is changing rapidly.",
+        "translation": "Климат быстро меняется."
+      },
+      {
+        "sentence": "We studied different climates in geography.",
+        "translation": "Мы изучали разные климаты на географии."
+      },
+      {
+        "sentence": "Climate affects ecosystems.",
+        "translation": "Климат влияет на экосистемы."
       }
     ]
   },
   {
-    "word": "rainbow",
-    "translations": [ "радуга" ],
+    "word": "weather",
+    "translations": [ "погода", "метеоусловия", "атмосферные явления" ],
     "examples": [
       {
-        "sentence": "A rainbow appears after the rain.",
-        "translation": "Радуга появляется после дождя."
+        "sentence": "The weather is sunny today.",
+        "translation": "Сегодня погода солнечная."
+      },
+      {
+        "sentence": "We checked the weather forecast.",
+        "translation": "Мы проверили прогноз погоды."
+      },
+      {
+        "sentence": "Weather can change quickly.",
+        "translation": "Погода может быстро меняться."
       }
     ]
   },
   {
     "word": "temperature",
-    "translations": [ "температура" ],
+    "translations": [ "температура", "степень тепла", "показатель" ],
     "examples": [
       {
         "sentence": "The temperature is rising.",
         "translation": "Температура повышается."
+      },
+      {
+        "sentence": "We measured the temperature outside.",
+        "translation": "Мы измерили температуру на улице."
+      },
+      {
+        "sentence": "Temperature affects plant growth.",
+        "translation": "Температура влияет на рост растений."
       }
-    ]
+    ],
+    "category": "Nature"
   },
   {
     "word": "humidity",
-    "translations": [ "влажность" ],
+    "translations": [ "влажность", "сырость", "уровень влаги" ],
     "examples": [
       {
-        "sentence": "Humidity affects how we feel.",
-        "translation": "Влажность влияет на то, как мы себя чувствуем."
+        "sentence": "The humidity is high today.",
+        "translation": "Сегодня высокая влажность."
+      },
+      {
+        "sentence": "We felt the humidity in the air.",
+        "translation": "Мы почувствовали влажность в воздухе."
+      },
+      {
+        "sentence": "Humidity makes the air feel heavier.",
+        "translation": "Влажность делает воздух более тяжелым."
       }
-    ]
+    ],
+    "category": "Nature"
   },
-  {
-    "word": "thunder",
-    "translations": [ "гром" ],
-    "examples": [
-      {
-        "sentence": "I heard thunder during the storm.",
-        "translation": "Я слышал гром во время шторма."
-      }
-    ]
-  },
-  {
-    "word": "lightning",
-    "translations": [ "молния" ],
-    "examples": [
-      {
-        "sentence": "Lightning struck the tree.",
-        "translation": "Молния ударила в дерево."
-      }
-    ]
-  },
-  {
-    "word": "hail",
-    "translations": [ "град" ],
-    "examples": [
-      {
-        "sentence": "Hail can damage crops.",
-        "translation": "Град может повредить урожай."
-      }
-    ]
-  },
-  {
-    "word": "frost",
-    "translations": [ "мороз" ],
-    "examples": [
-      {
-        "sentence": "Frost can occur at night.",
-        "translation": "Мороз может возникнуть ночью."
-      }
-    ]
-  },
-  {
-    "word": "dew",
-    "translations": [ "роса" ],
-    "examples": [
-      {
-        "sentence": "Dew forms in the early morning.",
-        "translation": "Роса образуется рано утром."
-      }
-    ]
-  },
-  {
-    "word": "overcast",
-    "translations": [ "облачный" ],
-    "examples": [
-      {
-        "sentence": "The sky is overcast today.",
-        "translation": "Сегодня небо облачное."
-      }
-    ]
-  },
-  {
-    "word": "breeze",
-    "translations": [ "бриз" ],
-    "examples": [
-      {
-        "sentence": "A gentle breeze is refreshing.",
-        "translation": "Легкий бриз освежает."
-      }
-    ]
-  },
-  {
-    "word": "tornado",
-    "translations": [ "торнадо" ],
-    "examples": [
-      {
-        "sentence": "A tornado can cause significant damage.",
-        "translation": "Торнадо может причинить значительный ущерб."
-      }
-    ]
-  },
-  {
-    "word": "hurricane",
-    "translations": [ "ураган" ],
-    "examples": [
-      {
-        "sentence": "A hurricane is a powerful storm.",
-        "translation": "Ураган — это мощный шторм."
-      }
-    ]
-  },
-  {
-    "word": "climate",
-    "translations": [ "климат" ],
-    "examples": [
-      {
-        "sentence": "Climate change is a global issue.",
-        "translation": "Изменение климата — это глобальная проблема."
-      }
-    ]
-  },
-  {
-    "word": "season",
-    "translations": [ "сезон" ],
-    "examples": [
-      {
-        "sentence": "There are four seasons in a year.",
-        "translation": "В году четыре сезона."
-      }
-    ]
-  },
-  {
-    "word": "forecast",
-    "translations": [ "прогноз" ],
-    "examples": [
-      {
-        "sentence": "The weather forecast predicts rain.",
-        "translation": "Прогноз погоды предсказывает дождь."
-      }
-    ]
-  }
+
 ]
