@@ -1,0 +1,764 @@
+[
+  {
+    "word": "pizza",
+    "translations": [ "пицца", "итальянское блюдо", "лепешка с начинкой" ],
+    "examples": [
+      {
+        "sentence": "The pizza is hot and delicious.",
+        "translation": "Пицца горячая и вкусная."
+      },
+      {
+        "sentence": "We ordered a large pizza.",
+        "translation": "Мы заказали большую пиццу."
+      },
+      {
+        "sentence": "Pizza is a popular dish worldwide.",
+        "translation": "Пицца — популярное блюдо во всем мире."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "sushi",
+    "translations": [ "суши", "японское блюдо", "роллы" ],
+    "examples": [
+      {
+        "sentence": "The sushi is fresh and tasty.",
+        "translation": "Суши свежие и вкусные."
+      },
+      {
+        "sentence": "We ate sushi for dinner.",
+        "translation": "Мы ели суши на ужин."
+      },
+      {
+        "sentence": "Sushi is made with rice and seafood.",
+        "translation": "Суши готовятся из риса и морепродуктов."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "pasta",
+    "translations": [ "паста", "макароны", "итальянское блюдо" ],
+    "examples": [
+      {
+        "sentence": "The pasta is cooked al dente.",
+        "translation": "Паста приготовлена аль денте."
+      },
+      {
+        "sentence": "We made pasta with tomato sauce.",
+        "translation": "Мы приготовили пасту с томатным соусом."
+      },
+      {
+        "sentence": "Pasta is a staple in Italian cuisine.",
+        "translation": "Паста — основной продукт итальянской кухни."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "burger",
+    "translations": [ "бургер", "гамбургер", "сэндвич" ],
+    "examples": [
+      {
+        "sentence": "The burger is juicy and flavorful.",
+        "translation": "Бургер сочный и ароматный."
+      },
+      {
+        "sentence": "We ate burgers at the diner.",
+        "translation": "Мы ели бургеры в закусочной."
+      },
+      {
+        "sentence": "Burgers are a fast food favorite.",
+        "translation": "Бургеры — любимое блюдо фастфуда."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "salad",
+    "translations": [ "салат", "зелень", "овощное блюдо" ],
+    "examples": [
+      {
+        "sentence": "The salad is fresh and healthy.",
+        "translation": "Салат свежий и полезный."
+      },
+      {
+        "sentence": "We made a salad with tomatoes and cucumbers.",
+        "translation": "Мы приготовили салат с помидорами и огурцами."
+      },
+      {
+        "sentence": "Salads are great for a light meal.",
+        "translation": "Салаты отлично подходят для легкого перекуса."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "soup",
+    "translations": [ "суп", "бульон", "жидкое блюдо" ],
+    "examples": [
+      {
+        "sentence": "The soup is warm and comforting.",
+        "translation": "Суп теплый и успокаивающий."
+      },
+      {
+        "sentence": "We ate soup for lunch.",
+        "translation": "Мы ели суп на обед."
+      },
+      {
+        "sentence": "Soup is perfect for cold days.",
+        "translation": "Суп идеален для холодных дней."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "steak",
+    "translations": [ "стейк", "жареное мясо", "бифштекс" ],
+    "examples": [
+      {
+        "sentence": "The steak is cooked medium-rare.",
+        "translation": "Стейк приготовлен средней прожарки."
+      },
+      {
+        "sentence": "We grilled the steak for dinner.",
+        "translation": "Мы приготовили стейк на гриле для ужина."
+      },
+      {
+        "sentence": "Steak is a popular dish in restaurants.",
+        "translation": "Стейк — популярное блюдо в ресторанах."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "rice",
+    "translations": [ "рис", "зерно", "основной продукт" ],
+    "examples": [
+      {
+        "sentence": "The rice is fluffy and cooked perfectly.",
+        "translation": "Рис пушистый и приготовлен идеально."
+      },
+      {
+        "sentence": "We served rice with the curry.",
+        "translation": "Мы подали рис с карри."
+      },
+      {
+        "sentence": "Rice is a staple food in many cultures.",
+        "translation": "Рис — основной продукт во многих культурах."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "bread",
+    "translations": [ "хлеб", "буханка", "выпечка" ],
+    "examples": [
+      {
+        "sentence": "The bread is fresh and crusty.",
+        "translation": "Хлеб свежий и с хрустящей корочкой."
+      },
+      {
+        "sentence": "We baked bread at home.",
+        "translation": "Мы испекли хлеб дома."
+      },
+      {
+        "sentence": "Bread is a basic food in many diets.",
+        "translation": "Хлеб — это основной продукт во многих диетах."
+      }
+    ],
+    "category": "Food"
+  },
+  {
+    "word": "cheese",
+    "translations": [ "сыр", "молочный продукт", "деликатес" ],
+    "examples": [
+      {
+        "sentence": "The cheese is rich and flavorful.",
+        "translation": "Сыр насыщенный и ароматный."
+      },
+      {
+        "sentence": "We added cheese to the pasta.",
+        "translation": "Мы добавили сыр в пасту."
+      },
+      {
+        "sentence": "Cheese is used in many dishes.",
+        "translation": "Сыр используется во многих блюдах."
+      }
+    ],
+    "category": "Food"
+  },
+  [
+    {
+      "word": "apple",
+      "translations": [ "яблоко", "фрукт", "плод" ],
+      "examples": [
+        {
+          "sentence": "The apple is sweet and juicy.",
+          "translation": "Яблоко сладкое и сочное."
+        },
+        {
+          "sentence": "We ate an apple for a snack.",
+          "translation": "Мы съели яблоко на перекус."
+        },
+        {
+          "sentence": "Apples are a healthy fruit.",
+          "translation": "Яблоки — это полезный фрукт."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "banana",
+      "translations": [ "банан", "фрукт", "плод" ],
+      "examples": [
+        {
+          "sentence": "The banana is ripe and yellow.",
+          "translation": "Банан спелый и желтый."
+        },
+        {
+          "sentence": "We added bananas to the smoothie.",
+          "translation": "Мы добавили бананы в смузи."
+        },
+        {
+          "sentence": "Bananas are rich in potassium.",
+          "translation": "Бананы богаты калием."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "orange",
+      "translations": [ "апельсин", "цитрус", "фрукт" ],
+      "examples": [
+        {
+          "sentence": "The orange is fresh and tangy.",
+          "translation": "Апельсин свежий и кисловатый."
+        },
+        {
+          "sentence": "We drank orange juice for breakfast.",
+          "translation": "Мы пили апельсиновый сок на завтрак."
+        },
+        {
+          "sentence": "Oranges are a great source of vitamin C.",
+          "translation": "Апельсины — отличный источник витамина С."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "coffee",
+      "translations": [ "кофе", "напиток", "зерна" ],
+      "examples": [
+        {
+          "sentence": "The coffee is hot and strong.",
+          "translation": "Кофе горячий и крепкий."
+        },
+        {
+          "sentence": "We drink coffee every morning.",
+          "translation": "Мы пьем кофе каждое утро."
+        },
+        {
+          "sentence": "Coffee helps us stay awake.",
+          "translation": "Кофе помогает нам оставаться бодрыми."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "tea",
+      "translations": [ "чай", "напиток", "заварка" ],
+      "examples": [
+        {
+          "sentence": "The tea is soothing and warm.",
+          "translation": "Чай успокаивающий и теплый."
+        },
+        {
+          "sentence": "We drank tea in the afternoon.",
+          "translation": "Мы пили чай днем."
+        },
+        {
+          "sentence": "Tea is a popular drink worldwide.",
+          "translation": "Чай — популярный напиток во всем мире."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "milk",
+      "translations": [ "молоко", "напиток", "молочный продукт" ],
+      "examples": [
+        {
+          "sentence": "The milk is cold and fresh.",
+          "translation": "Молоко холодное и свежее."
+        },
+        {
+          "sentence": "We added milk to the coffee.",
+          "translation": "Мы добавили молоко в кофе."
+        },
+        {
+          "sentence": "Milk is rich in calcium.",
+          "translation": "Молоко богато кальцием."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "water",
+      "translations": [ "вода", "жидкость", "питьевая вода" ],
+      "examples": [
+        {
+          "sentence": "The water is clear and refreshing.",
+          "translation": "Вода прозрачная и освежающая."
+        },
+        {
+          "sentence": "We drank water after exercising.",
+          "translation": "Мы пили воду после тренировки."
+        },
+        {
+          "sentence": "Water is essential for life.",
+          "translation": "Вода необходима для жизни."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "juice",
+      "translations": [ "сок", "напиток", "фруктовый сок" ],
+      "examples": [
+        {
+          "sentence": "The juice is sweet and delicious.",
+          "translation": "Сок сладкий и вкусный."
+        },
+        {
+          "sentence": "We drank orange juice for breakfast.",
+          "translation": "Мы пили апельсиновый сок на завтрак."
+        },
+        {
+          "sentence": "Juice is a popular drink for kids.",
+          "translation": "Сок — популярный напиток для детей."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "beer",
+      "translations": [ "пиво", "алкогольный напиток", "напиток" ],
+      "examples": [
+        {
+          "sentence": "The beer is cold and refreshing.",
+          "translation": "Пиво холодное и освежающее."
+        },
+        {
+          "sentence": "We drank beer at the pub.",
+          "translation": "Мы пили пиво в пабе."
+        },
+        {
+          "sentence": "Beer is a popular alcoholic drink.",
+          "translation": "Пиво — популярный алкогольный напиток."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "wine",
+      "translations": [ "вино", "алкогольный напиток", "напиток" ],
+      "examples": [
+        {
+          "sentence": "The wine is rich and flavorful.",
+          "translation": "Вино насыщенное и ароматное."
+        },
+        {
+          "sentence": "We enjoyed a glass of wine with dinner.",
+          "translation": "Мы наслаждались бокалом вина за ужином."
+        },
+        {
+          "sentence": "Wine is often served at celebrations.",
+          "translation": "Вино часто подают на праздниках."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "chocolate",
+      "translations": [ "шоколад", "сладость", "десерт" ],
+      "examples": [
+        {
+          "sentence": "The chocolate is smooth and sweet.",
+          "translation": "Шоколад гладкий и сладкий."
+        },
+        {
+          "sentence": "We ate chocolate for dessert.",
+          "translation": "Мы ели шоколад на десерт."
+        },
+        {
+          "sentence": "Chocolate is a popular treat.",
+          "translation": "Шоколад — популярное лакомство."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "cake",
+      "translations": [ "торт", "пирожное", "десерт" ],
+      "examples": [
+        {
+          "sentence": "The cake is moist and delicious.",
+          "translation": "Торт влажный и вкусный."
+        },
+        {
+          "sentence": "We baked a cake for the birthday.",
+          "translation": "Мы испекли торт на день рождения."
+        },
+        {
+          "sentence": "Cake is a favorite dessert for celebrations.",
+          "translation": "Торт — любимый десерт для праздников."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "ice cream",
+      "translations": [ "мороженое", "десерт", "холодное лакомство" ],
+      "examples": [
+        {
+          "sentence": "The ice cream is cold and creamy.",
+          "translation": "Мороженое холодное и сливочное."
+        },
+        {
+          "sentence": "We ate ice cream on a hot day.",
+          "translation": "Мы ели мороженое в жаркий день."
+        },
+        {
+          "sentence": "Ice cream is a popular summer treat.",
+          "translation": "Мороженое — популярное летнее лакомство."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "cookie",
+      "translations": [ "печенье", "сладость", "десерт" ],
+      "examples": [
+        {
+          "sentence": "The cookie is soft and chewy.",
+          "translation": "Печенье мягкое и жевательное."
+        },
+        {
+          "sentence": "We baked cookies for the party.",
+          "translation": "Мы испекли печенье для вечеринки."
+        },
+        {
+          "sentence": "Cookies are a favorite snack.",
+          "translation": "Печенье — любимый перекус."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "bread",
+      "translations": [ "хлеб", "буханка", "выпечка" ],
+      "examples": [
+        {
+          "sentence": "The bread is fresh and crusty.",
+          "translation": "Хлеб свежий и с хрустящей корочкой."
+        },
+        {
+          "sentence": "We baked bread at home.",
+          "translation": "Мы испекли хлеб дома."
+        },
+        {
+          "sentence": "Bread is a basic food in many diets.",
+          "translation": "Хлеб — это основной продукт во многих диетах."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "butter",
+      "translations": [ "масло", "сливочное масло", "жир" ],
+      "examples": [
+        {
+          "sentence": "The butter is soft and spreadable.",
+          "translation": "Масло мягкое и легко намазывается."
+        },
+        {
+          "sentence": "We used butter to cook the pancakes.",
+          "translation": "Мы использовали масло для приготовления блинов."
+        },
+        {
+          "sentence": "Butter is a common ingredient in baking.",
+          "translation": "Масло — распространенный ингредиент в выпечке."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "sugar",
+      "translations": [ "сахар", "сладость", "песок" ],
+      "examples": [
+        {
+          "sentence": "The sugar is sweet and fine.",
+          "translation": "Сахар сладкий и мелкий."
+        },
+        {
+          "sentence": "We added sugar to the tea.",
+          "translation": "Мы добавили сахар в чай."
+        },
+        {
+          "sentence": "Sugar is used in many desserts.",
+          "translation": "Сахар используется во многих десертах."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "salt",
+      "translations": [ "соль", "приправа", "минерал" ],
+      "examples": [
+        {
+          "sentence": "The salt enhances the flavor of the dish.",
+          "translation": "Соль усиливает вкус блюда."
+        },
+        {
+          "sentence": "We sprinkled salt on the fries.",
+          "translation": "Мы посыпали картошку солью."
+        },
+        {
+          "sentence": "Salt is essential for cooking.",
+          "translation": "Соль необходима для приготовления пищи."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "pepper",
+      "translations": [ "перец", "приправа", "специя" ],
+      "examples": [
+        {
+          "sentence": "The pepper adds a spicy kick.",
+          "translation": "Перец добавляет остроту."
+        },
+        {
+          "sentence": "We added pepper to the soup.",
+          "translation": "Мы добавили перец в суп."
+        },
+        {
+          "sentence": "Pepper is a common seasoning.",
+          "translation": "Перец — распространенная приправа."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "oil",
+      "translations": [ "масло", "растительное масло", "жир" ],
+      "examples": [
+        {
+          "sentence": "The oil is used for frying.",
+          "translation": "Масло используется для жарки."
+        },
+        {
+          "sentence": "We cooked the vegetables in oil.",
+          "translation": "Мы приготовили овощи на масле."
+        },
+        {
+          "sentence": "Oil is a key ingredient in many cuisines.",
+          "translation": "Масло — ключевой ингредиент во многих кухнях."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "egg",
+      "translations": [ "яйцо", "яичко", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The egg is fresh and nutritious.",
+          "translation": "Яйцо свежее и питательное."
+        },
+        {
+          "sentence": "We boiled eggs for breakfast.",
+          "translation": "Мы сварили яйца на завтрак."
+        },
+        {
+          "sentence": "Eggs are a versatile ingredient.",
+          "translation": "Яйца — универсальный ингредиент."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "meat",
+      "translations": [ "мясо", "говядина", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The meat is tender and juicy.",
+          "translation": "Мясо нежное и сочное."
+        },
+        {
+          "sentence": "We grilled the meat for dinner.",
+          "translation": "Мы приготовили мясо на гриле для ужина."
+        },
+        {
+          "sentence": "Meat is a good source of protein.",
+          "translation": "Мясо — хороший источник белка."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "fish",
+      "translations": [ "рыба", "морепродукт", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The fish is fresh and flavorful.",
+          "translation": "Рыба свежая и вкусная."
+        },
+        {
+          "sentence": "We cooked the fish with lemon.",
+          "translation": "Мы приготовили рыбу с лимоном."
+        },
+        {
+          "sentence": "Fish is rich in omega-3 fatty acids.",
+          "translation": "Рыба богата омега-3 жирными кислотами."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "chicken",
+      "translations": [ "курица", "мясо курицы", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The chicken is roasted to perfection.",
+          "translation": "Курица зажарена до совершенства."
+        },
+        {
+          "sentence": "We made chicken soup for lunch.",
+          "translation": "Мы приготовили куриный суп на обед."
+        },
+        {
+          "sentence": "Chicken is a popular meat worldwide.",
+          "translation": "Курица — популярное мясо во всем мире."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "beef",
+      "translations": [ "говядина", "мясо", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The beef is tender and well-marinated.",
+          "translation": "Говядина нежная и хорошо замаринованная."
+        },
+        {
+          "sentence": "We grilled beef steaks for dinner.",
+          "translation": "Мы приготовили говяжьи стейки на гриле для ужина."
+        },
+        {
+          "sentence": "Beef is a staple in many cuisines.",
+          "translation": "Говядина — основной продукт во многих кухнях."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "pork",
+      "translations": [ "свинина", "мясо", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The pork is juicy and well-seasoned.",
+          "translation": "Свинина сочная и хорошо приправленная."
+        },
+        {
+          "sentence": "We roasted pork for the holiday meal.",
+          "translation": "Мы зажарили свинину для праздничного ужина."
+        },
+        {
+          "sentence": "Pork is a common meat in many dishes.",
+          "translation": "Свинина — распространенное мясо во многих блюдах."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "lamb",
+      "translations": [ "баранина", "мясо", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The lamb is tender and flavorful.",
+          "translation": "Баранина нежная и ароматная."
+        },
+        {
+          "sentence": "We grilled lamb chops for dinner.",
+          "translation": "Мы приготовили бараньи отбивные на гриле для ужина."
+        },
+        {
+          "sentence": "Lamb is a delicacy in many cultures.",
+          "translation": "Баранина — деликатес во многих культурах."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "vegetable",
+      "translations": [ "овощ", "растение", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The vegetable is fresh and crunchy.",
+          "translation": "Овощ свежий и хрустящий."
+        },
+        {
+          "sentence": "We added vegetables to the salad.",
+          "translation": "Мы добавили овощи в салат."
+        },
+        {
+          "sentence": "Vegetables are essential for a healthy diet.",
+          "translation": "Овощи необходимы для здорового питания."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "fruit",
+      "translations": [ "фрукт", "плод", "продукт" ],
+      "examples": [
+        {
+          "sentence": "The fruit is ripe and sweet.",
+          "translation": "Фрукт спелый и сладкий."
+        },
+        {
+          "sentence": "We ate fruit for dessert.",
+          "translation": "Мы ели фрукты на десерт."
+        },
+        {
+          "sentence": "Fruits are rich in vitamins.",
+          "translation": "Фрукты богаты витаминами."
+        }
+      ],
+      "category": "Food"
+    },
+    {
+      "word": "potato",
+      "translations": [ "картофель", "картошка", "овощ" ],
+      "examples": [
+        {
+          "sentence": "The potato is soft and fluffy.",
+          "translation": "Картофель мягкий и пушистый."
+        },
+        {
+          "sentence": "We mashed the potatoes for dinner.",
+          "translation": "Мы приготовили пюре из картофеля на ужин."
+        },
+        {
+          "sentence": "Potatoes are a staple food in many countries.",
+          "translation": "Картофель — основной продукт во многих странах."
+        }
+      ],
+      "category": "Food"
+    },
+
+  ]
