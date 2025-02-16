@@ -1,0 +1,868 @@
+a # артикль, используется перед существительными # A cat is on the roof. # Кот на крыше.
+about # о, об # She told me about her trip. # Она рассказала мне о своей поездке.
+above # над # The plane flew above the clouds. # Самолет летел над облаками.
+across # через # We walked across the bridge. # Мы прошли через мост.
+action # действие # The movie is full of action. # Фильм полон действий.
+activity # активность # Swimming is a good physical activity. # Плавание — это хорошая физическая активность.
+actor # актер # He is a famous actor. # Он известный актер.
+actress # актриса # She is a talented actress. # Она талантливая актриса.
+add # добавлять # Can you add some sugar to my tea? # Можешь добавить сахар в мой чай?
+address # адрес # What is your home address? # Какой у тебя домашний адрес?
+adult # взрослый # This movie is for adults only. # Этот фильм только для взрослых.
+advice # совет # She gave me good advice. # Она дала мне хороший совет.
+afraid # испуганный # I am afraid of the dark. # Я боюсь темноты.
+after # после # We will go to the park after lunch. # Мы пойдем в парк после обеда.
+afternoon # послеполуденное время # Let's meet in the afternoon. # Давай встретимся днем.
+again # снова # Please say it again. # Пожалуйста, скажи это снова.
+age # возраст # What is your age? # Сколько тебе лет?
+ago # назад # I saw him two days ago. # Я видел его два дня назад.
+agree # соглашаться # I agree with you. # Я согласен с тобой.
+air # воздух # The air is fresh in the mountains. # Воздух свежий в горах.
+airport # аэропорт # We will meet at the airport. # Мы встретимся в аэропорту.
+all # все # All students passed the exam. # Все студенты сдали экзамен.
+also # также # She is also coming to the party. # Она также придет на вечеринку.
+always # всегда # He always helps me. # Он всегда помогает мне.
+amazing # удивительный # The view was amazing. # Вид был удивительным.
+and # и # I like tea and coffee. # Я люблю чай и кофе.
+angry # сердитый # Why are you so angry? # Почему ты такой сердитый?
+animal # животное # The lion is a wild animal. # Лев — это дикое животное.
+another # другой # Can I have another cup of tea? # Могу я взять еще одну чашку чая?
+answer # ответ # What is the answer to this question? # Какой ответ на этот вопрос?
+any # любой # Do you have any questions? # У тебя есть какие-либо вопросы?
+anyone # кто-нибудь # Is anyone here? # Кто-нибудь здесь есть?
+anything # что-нибудь # You can ask me anything. # Ты можешь спросить меня о чем угодно.
+apartment # квартира # She lives in a small apartment. # Она живет в маленькой квартире.
+apple # яблоко # I eat an apple every day. # Я ем яблоко каждый день.
+April # апрель # My birthday is in April. # Мой день рождения в апреле.
+area # область # This area is very quiet. # Эта область очень тихая.
+arm # рука # He broke his arm. # Он сломал руку.
+around # вокруг # We walked around the lake. # Мы гуляли вокруг озера.
+arrive # прибывать # When will you arrive? # Когда ты прибудешь?
+art # искусство # She loves modern art. # Она любит современное искусство.
+article # статья # I read an interesting article. # Я прочитал интересную статью.
+artist # художник # He is a famous artist. # Он известный художник.
+as # как, в качестве # She works as a teacher. # Она работает учителем.
+ask # спрашивать # Can I ask you a question? # Могу я задать тебе вопрос?
+at # в, на # I will meet you at the station. # Я встречу тебя на станции.
+August # август # We are going on vacation in August. # Мы едем в отпуск в августе.
+aunt # тетя # My aunt lives in Moscow. # Моя тетя живет в Москве.
+autumn # осень # I love the colors of autumn. # Я люблю цвета осени.
+away # прочь, вдали # He is away on business. # Он уехал по делам.
+baby # ребенок # The baby is sleeping. # Ребенок спит.
+back # спина, назад # He has a pain in his back. # У него болит спина.
+bad # плохой # This is a bad idea. # Это плохая идея.
+bag # сумка # She carries a big bag. # Она носит большую сумку.
+ball # мяч # The children are playing with a ball. # Дети играют с мячом.
+banana # банан # I eat a banana every morning. # Я ем банан каждое утро.
+band # группа, банда # The band played all night. # Группа играла всю ночь.
+bank # банк # I need to go to the bank. # Мне нужно в банк.
+bath # ванна # I take a bath every evening. # Я принимаю ванну каждый вечер.
+bathroom # ванная комната # The bathroom is on the left. # Ванная комната слева.
+be # быть # I want to be a doctor. # Я хочу быть врачом.
+beach # пляж # Let's go to the beach. # Давай поедем на пляж.
+beautiful # красивый # She is very beautiful. # Она очень красивая.
+because # потому что # I am late because of the traffic. # Я опоздал из-за пробок.
+become # становиться # He wants to become a pilot. # Он хочет стать пилотом.
+bed # кровать # I go to bed at 10 p.m. # Я ложусь спать в 10 вечера.
+bedroom # спальня # My bedroom is small but cozy. # Моя спальня маленькая, но уютная.
+beer # пиво # He drinks beer with friends. # Он пьет пиво с друзьями.
+before # до, перед # I will call you before leaving. # Я позвоню тебе перед отъездом.
+begin # начинать # The movie will begin soon. # Фильм скоро начнется.
+beginning # начало # This is just the beginning. # Это только начало.
+behind # позади # The car is behind the house. # Машина находится за домом.
+believe # верить # I believe in you. # Я верю в тебя.
+below # ниже # The temperature is below zero. # Температура ниже нуля.
+best # лучший # This is the best day of my life. # Это лучший день в моей жизни.
+better # лучше # You should try to do better. # Тебе стоит стараться делать лучше.
+between # между # The book is between the cups. # Книга находится между чашками.
+bicycle # велосипед # I ride my bicycle every day. # Я катаюсь на велосипеде каждый день.
+big # большой # This is a big house. # Это большой дом.
+bike # велосипед # He bought a new bike. # Он купил новый велосипед.
+bill # счет # Can I have the bill, please? # Могу я получить счет, пожалуйста?
+bird # птица # The bird is singing. # Птица поет.
+birthday # день рождения # Today is my birthday. # Сегодня мой день рождения.
+black # черный # She wears a black dress. # Она носит черное платье.
+blog # блог # I write a blog about travel. # Я веду блог о путешествиях.
+blonde # блондинка # She is a blonde. # Она блондинка.
+blue # синий # The sky is blue. # Небо синее.
+boat # лодка # We went fishing on a boat. # Мы ходили рыбачить на лодке.
+body # тело # Exercise is good for your body. # Упражнения полезны для тела.
+book # книга # I am reading an interesting book. # Я читаю интересную книгу.
+boot # ботинок # He bought new boots. # Он купил новые ботинки.
+bored # скучающий # I am bored at home. # Мне скучно дома.
+boring # скучный # This movie is boring. # Этот фильм скучный.
+born # рожденный # I was born in 1990. # Я родился в 1990 году.
+both # оба # Both of them are my friends. # Оба они мои друзья.
+bottle # бутылка # Can I have a bottle of water? # Могу я получить бутылку воды?
+box # коробка # The box is heavy. # Коробка тяжелая.
+boy # мальчик # The boy is playing football. # Мальчик играет в футбол.
+boyfriend # парень # Her boyfriend is very kind. # Ее парень очень добрый.
+bread # хлеб # I bought some bread. # Я купил хлеб.
+break # ломать, перерыв # Don't break the glass. # Не разбивай стекло.
+breakfast # завтрак # I eat breakfast at 7 a.m. # Я завтракаю в 7 утра.
+bring # приносить # Can you bring me a cup of tea? # Можешь принести мне чашку чая?
+brother # брат # My brother is older than me. # Мой брат старше меня.
+brown # коричневый # The table is brown. # Стол коричневый.
+build # строить # They are building a new house. # Они строят новый дом.
+building # здание # This building is very tall. # Это здание очень высокое.
+bus # автобус # I go to work by bus. # Я езжу на работу на автобусе.
+business # бизнес # He runs his own business. # Он управляет своим бизнесом.
+busy # занятый # I am busy right now. # Я сейчас занят.
+but # но # I want to go, but I can't. # Я хочу пойти, но не могу.
+butter # масло # I put butter on my bread. # Я намазываю масло на хлеб.
+buy # покупать # I want to buy a new car. # Я хочу купить новую машину.
+by # к, по, с помощью # The book was written by him. # Книга была написана им.
+bye # пока # Bye, see you later! # Пока, увидимся позже!
+cafe # кафе # Let's meet at the cafe. # Давай встретимся в кафе.
+cake # торт # She baked a delicious cake. # Она испекла вкусный торт.
+call # звонить # I will call you tomorrow. # Я позвоню тебе завтра.
+camera # камера # I bought a new camera. # Я купил новую камеру.
+can # могу, уметь # I can swim. # Я умею плавать.
+cannot # не могу # I cannot come today. # Я не могу прийти сегодня.
+capital # столица # Moscow is the capital of Russia. # Москва — столица России.
+car # машина # He drives a red car. # Он водит красную машину.
+card # карта, открытка # I sent her a birthday card. # Я отправил ей поздравительную открытку.
+career # карьера # She has a successful career. # У нее успешная карьера.
+carrot # морковь # I like to eat carrots. # Я люблю есть морковь.
+carry # нести # Can you carry this bag? # Можешь нести эту сумку?
+cat # кот # The cat is sleeping. # Кот спит.
+CD # компакт-диск # I bought a new CD. # Я купил новый компакт-диск.
+cent # цент # This costs 50 cents. # Это стоит 50 центов.
+centre # центр # The shop is in the city centre. # Магазин находится в центре города.
+century # век # We live in the 21st century. # Мы живем в 21 веке.
+chair # стул # Sit on the chair. # Сядь на стул.
+change # менять, изменение # I need to change my clothes. # Мне нужно переодеться.
+chart # диаграмма # The chart shows the results. # Диаграмма показывает результаты.
+cheap # дешевый # This shirt is very cheap. # Эта рубашка очень дешевая.
+check # проверять # Please check your email. # Пожалуйста, проверь свою почту.
+cheese # сыр # I love cheese. # Я люблю сыр.
+chicken # курица # We had chicken for dinner. # У нас была курица на ужин.
+child # ребенок # The child is playing. # Ребенок играет.
+chocolate # шоколад # I love chocolate. # Я люблю шоколад.
+choose # выбирать # You can choose any color. # Ты можешь выбрать любой цвет.
+cinema # кинотеатр # Let's go to the cinema. # Давай пойдем в кинотеатр.
+city # город # I live in a big city. # Я живу в большом городе.
+class # класс, урок # We have a math class today. # У нас сегодня урок математики.
+classroom # классная комната # The classroom is empty. # Классная комната пуста.
+clean # чистый, убирать # The room is very clean. # Комната очень чистая.
+climb # взбираться # He likes to climb mountains. # Он любит взбираться на горы.
+clock # часы # The clock is on the wall. # Часы на стене.
+close # закрывать, близкий # Please close the door. # Пожалуйста, закрой дверь.
+clothes # одежда # She bought new clothes. # Она купила новую одежду.
+club # клуб # We went to a music club. # Мы ходили в музыкальный клуб.
+coat # пальто # He wears a warm coat. # Он носит теплое пальто.
+coffee # кофе # I drink coffee every morning. # Я пью кофе каждое утро.
+cold # холодный, простуда # It's cold outside. # На улице холодно.
+college # колледж # She studies at a college. # Она учится в колледже.
+colour # цвет # What is your favourite colour? # Какой твой любимый цвет?
+come # приходить # Please come here. # Пожалуйста, подойди сюда.
+common # общий, обычный # This is a common problem. # Это обычная проблема.
+company # компания # He works for a big company. # Он работает в большой компании.
+compare # сравнивать # Let's compare these two books. # Давай сравним эти две книги.
+complete # завершать, полный # The task is complete. # Задание завершено.
+computer # компьютер # I use a computer every day. # Я использую компьютер каждый день.
+concert # концерт # We went to a concert last night. # Мы ходили на концерт прошлой ночью.
+conversation # разговор # We had a long conversation. # У нас был долгий разговор.
+cook # готовить, повар # She loves to cook. # Она любит готовить.
+cooking # готовка # Cooking is her hobby. # Готовка — ее хобби.
+cool # крутой, прохладный # The weather is cool today. # Сегодня прохладная погода.
+correct # правильный, исправлять # Your answer is correct. # Твой ответ правильный.
+cost # стоимость # How much does it cost? # Сколько это стоит?
+could # мог бы # I could help you. # Я мог бы помочь тебе.
+country # страна # I love my country. # Я люблю свою страну.
+course # курс, блюдо # She took a cooking course. # Она прошла курс по кулинарии.
+cousin # двоюродный брат/сестра # My cousin lives in London. # Мой двоюродный брат живет в Лондоне.
+cow # корова # The cow gives milk. # Корова дает молоко.
+cream # крем # I put cream in my coffee. # Я добавляю крем в кофе.
+create # создавать # He created a beautiful painting. # Он создал красивую картину.
+culture # культура # We study different cultures. # Мы изучаем разные культуры.
+cup # чашка # Can I have a cup of tea? # Могу я получить чашку чая?
+customer # клиент # The customer is always right. # Клиент всегда прав.
+cut # резать # She cut the paper. # Она разрезала бумагу.
+dad # папа # My dad is a teacher. # Мой папа — учитель.
+dance # танцевать, танец # They danced all night. # Они танцевали всю ночь.
+dancer # танцор # She is a professional dancer. # Она профессиональная танцовщица.
+dancing # танцы # Dancing is fun. # Танцы — это весело.
+dangerous # опасный # This is a dangerous road. # Это опасная дорога.
+dark # темный # The room is dark. # Комната темная.
+date # дата, свидание # What is the date today? # Какое сегодня число?
+daughter # дочь # Her daughter is very smart. # Ее дочь очень умная.
+day # день # Today is a beautiful day. # Сегодня прекрасный день.
+dear # дорогой # Dear friend, how are you? # Дорогой друг, как ты?
+December # декабрь # My birthday is in December. # Мой день рождения в декабре.
+decide # решать # I need to decide quickly. # Мне нужно быстро решить.
+delicious # вкусный # This cake is delicious. # Этот торт вкусный.
+describe # описывать # Can you describe the picture? # Можешь описать картину?
+description # описание # The description was detailed. # Описание было подробным.
+design # дизайн # She studies graphic design. # Она изучает графический дизайн.
+desk # стол # The book is on the desk. # Книга на столе.
+detail # деталь # Pay attention to the details. # Обрати внимание на детали.
+dialogue # диалог # The dialogue was interesting. # Диалог был интересным.
+dictionary # словарь # I use a dictionary to learn new words. # Я использую словарь для изучения новых слов.
+die # умирать # Flowers die without water. # Цветы умирают без воды.
+diet # диета # She is on a diet. # Она на диете.
+difference # разница # What is the difference? # В чем разница?
+different # другой # They are very different. # Они очень разные.
+difficult # трудный # This task is difficult. # Это задание трудное.
+dinner # ужин # We had dinner at 7 p.m. # Мы ужинали в 7 вечера.
+dirty # грязный # The shoes are dirty. # Обувь грязная.
+discuss # обсуждать # Let's discuss the plan. # Давай обсудим план.
+dish # блюдо # This dish is delicious. # Это блюдо вкусное.
+do # делать # What are you doing? # Что ты делаешь?
+doctor # врач # She is a good doctor. # Она хороший врач.
+dog # собака # The dog is barking. # Собака лает.
+dollar # доллар # This costs 10 dollars. # Это стоит 10 долларов.
+door # дверь # Please close the door. # Пожалуйста, закрой дверь.
+down # вниз # Sit down, please. # Сядь, пожалуйста.
+downstairs # внизу # He is waiting downstairs. # Он ждет внизу.
+draw # рисовать # She likes to draw. # Она любит рисовать.
+dress # платье # She bought a new dress. # Она купила новое платье.
+drink # пить, напиток # I drink water every day. # Я пью воду каждый день.
+drive # водить машину # He drives to work. # Он ездит на работу на машине.
+driver # водитель # The driver is very experienced. # Водитель очень опытный.
+during # во время # I read a book during the flight. # Я читал книгу во время полета.
+DVD # DVD-диск # I bought a new DVD. # Я купил новый DVD.
+each # каждый # Each student has a book. # У каждого студента есть книга.
+ear # ухо # She has earrings in her ears. # У нее серьги в ушах.
+early # рано # I wake up early. # Я просыпаюсь рано.
+east # восток # The sun rises in the east. # Солнце встает на востоке.
+easy # легкий # This task is easy. # Это задание легкое.
+eat # есть # I eat breakfast every morning. # Я завтракаю каждое утро.
+egg # яйцо # I like boiled eggs. # Я люблю вареные яйца.
+eight # восемь # There are eight apples. # Здесь восемь яблок.
+eighteen # восемнадцать # She is eighteen years old. # Ей восемнадцать лет.
+eighty # восемьдесят # He is eighty years old. # Ему восемьдесят лет.
+elephant # слон # The elephant is big. # Слон большой.
+eleven # одиннадцать # There are eleven students. # Здесь одиннадцать студентов.
+else # еще, другой # Do you want anything else? # Ты хочешь что-то еще?
+email # электронная почта # Send me an email. # Отправь мне письмо.
+end # конец # This is the end of the story. # Это конец истории.
+enjoy # наслаждаться # I enjoy reading books. # Я наслаждаюсь чтением книг.
+enough # достаточно # That's enough. # Этого достаточно.
+euro # евро # This costs 10 euros. # Это стоит 10 евро.
+even # даже # Even he knows the answer. # Даже он знает ответ.
+evening # вечер # Good evening! # Добрый вечер!
+event # событие # This is a big event. # Это большое событие.
+ever # когда-либо # Have you ever been to Paris? # Ты когда-либо был в Париже?
+every # каждый # Every day is a new chance. # Каждый день — это новый шанс.
+everybody # все # Everybody is here. # Все здесь.
+everyone # каждый # Everyone loves this song. # Каждый любит эту песню.
+everything # все # Everything is ready. # Все готово.
+exam # экзамен # I have an exam tomorrow. # У меня завтра экзамен.
+example # пример # Can you give me an example? # Можешь привести пример?
+excited # взволнованный # She is excited about the trip. # Она взволнована поездкой.
+exciting # захватывающий # The movie was exciting. # Фильм был захватывающим.
+exercise # упражнение # I do exercises every morning. # Я делаю упражнения каждое утро.
+expensive # дорогой # This car is very expensive. # Эта машина очень дорогая.
+explain # объяснять # Can you explain this to me? # Можешь объяснить это мне?
+extra # дополнительный # I need extra time. # Мне нужно дополнительное время.
+eye # глаз # She has blue eyes. # У нее голубые глаза.
+face # лицо # He has a kind face. # У него доброе лицо.
+fact # факт # This is an interesting fact. # Это интересный факт.
+fall # падать, осень # Leaves fall in autumn. # Листья падают осенью.
+false # ложный # The statement is false. # Утверждение ложное.
+family # семья # My family is very big. # Моя семья очень большая.
+famous # известный # He is a famous actor. # Он известный актер.
+fantastic # фантастический # The concert was fantastic. # Концерт был фантастическим.
+far # далекий # The station is far from here. # Станция далеко отсюда.
+farm # ферма # They live on a farm. # Они живут на ферме.
+farmer # фермер # The farmer grows vegetables. # Фермер выращивает овощи.
+fast # быстрый # He runs very fast. # Он бегает очень быстро.
+fat # жирный, толстый # This meat is too fat. # Это мясо слишком жирное.
+father # отец # My father is a doctor. # Мой отец — врач.
+favourite # любимый # What is your favourite colour? # Какой твой любимый цвет?
+February # февраль # My birthday is in February. # Мой день рождения в феврале.
+feel # чувствовать # I feel happy today. # Я чувствую себя счастливым сегодня.
+feeling # чувство # I have a strange feeling. # У меня странное чувство.
+festival # фестиваль # We went to a music festival. # Мы ходили на музыкальный фестиваль.
+few # несколько # There are few people here. # Здесь несколько человек.
+fifteen # пятнадцать # She is fifteen years old. # Ей пятнадцать лет.
+fifth # пятый # This is the fifth time. # Это пятый раз.
+fifty # пятьдесят # He is fifty years old. # Ему пятьдесят лет.
+fill # заполнять # Please fill the form. # Пожалуйста, заполните форму.
+film # фильм # We watched a great film. # Мы смотрели отличный фильм.
+final # финальный # This is the final decision. # Это окончательное решение.
+find # находить # I need to find my keys. # Мне нужно найти свои ключи.
+fine # хороший, штраф # Everything is fine. # Все хорошо.
+finish # заканчивать # I will finish the work soon. # Я скоро закончу работу.
+fire # огонь # The fire is warm. # Огонь теплый.
+first # первый # This is my first time. # Это мой первый раз.
+fish # рыба # I like to eat fish. # Я люблю есть рыбу.
+five # пять # There are five apples. # Здесь пять яблок.
+flat # квартира # I live in a small flat. # Я живу в маленькой квартире.
+flight # полет # The flight was long. # Полет был долгим.
+floor # пол, этаж # The book is on the floor. # Книга на полу.
+flower # цветок # She loves flowers. # Она любит цветы.
+fly # летать # Birds can fly. # Птицы умеют летать.
+follow # следовать # Please follow me. # Пожалуйста, следуй за мной.
+food # еда # I love Italian food. # Я люблю итальянскую еду.
+foot # ступня # My foot hurts. # У меня болит ступня.
+football # футбол # He plays football. # Он играет в футбол.
+for # для # This gift is for you. # Этот подарок для тебя.
+forget # забывать # Don't forget to call me. # Не забудь позвонить мне.
+form # форма # Please fill out the form. # Пожалуйста, заполните форму.
+forty # сорок # He is forty years old. # Ему сорок лет.
+four # четыре # There are four chairs. # Здесь четыре стула.
+fourteen # четырнадцать # She is fourteen years old. # Ей четырнадцать лет.
+fourth # четвертый # This is the fourth time. # Это четвертый раз.
+free # свободный, бесплатный # The seat is free. # Место свободное.
+Friday # пятница # We meet on Friday. # Мы встречаемся в пятницу.
+friend # друг # He is my best friend. # Он мой лучший друг.
+friendly # дружелюбный # She is very friendly. # Она очень дружелюбная.
+from # от, из # I am from Russia. # Я из России.
+front # передняя часть # The car is in front of the house. # Машина перед домом.
+fruit # фрукт # I eat fruit every day. # Я ем фрукты каждый день.
+full # полный # The glass is full. # Стакан полный.
+fun # веселье # We had a lot of fun. # Нам было очень весело.
+funny # смешной # The movie was funny. # Фильм был смешным.
+future # будущее # The future is bright. # Будущее светлое.
+game # игра # Let's play a game. # Давай сыграем в игру.
+garden # сад # The garden is beautiful. # Сад красивый.
+geography # география # I study geography. # Я изучаю географию.
+get # получать # I need to get some rest. # Мне нужно отдохнуть.
+girl # девочка # The girl is singing. # Девочка поет.
+girlfriend # девушка (подруга) # His girlfriend is very kind. # Его девушка очень добрая.
+give # давать # Can you give me a pen? # Можешь дать мне ручку?
+glass # стекло, стакан # The glass is empty. # Стакан пустой.
+go # идти # I go to school every day. # Я хожу в школу каждый день.
+good # хороший # This is a good idea. # Это хорошая идея.
+goodbye # до свидания # Goodbye, see you later! # До свидания, увидимся позже!
+grandfather # дедушка # My grandfather is kind. # Мой дедушка добрый.
+grandmother # бабушка # My grandmother bakes cakes. # Моя бабушка печет торты.
+grandparent # дедушка или бабушка # My grandparents live in the village. # Мои бабушка и дедушка живут в деревне.
+great # великий, отличный # This is a great book. # Это отличная книга.
+green # зеленый # The grass is green. # Трава зеленая.
+grey # серый # The sky is grey today. # Небо сегодня серое.
+group # группа # We work in a group. # Мы работаем в группе.
+grow # расти # Plants grow in the garden. # Растения растут в саду.
+guess # угадывать # Can you guess the answer? # Можешь угадать ответ?
+guitar # гитара # He plays the guitar. # Он играет на гитаре.
+gym # спортзал # I go to the gym every day. # Я хожу в спортзал каждый день.
+hair # волосы # She has long hair. # У нее длинные волосы.
+half # половина # Half of the work is done. # Половина работы сделана.
+hand # рука # Raise your hand. # Подними руку.
+happen # происходить # What happened? # Что случилось?
+happy # счастливый # I am happy today. # Я счастлив сегодня.
+hard # трудный, твердый # This task is hard. # Это задание трудное.
+hat # шляпа # He wears a hat. # Он носит шляпу.
+hate # ненавидеть # I hate cold weather. # Я ненавижу холодную погоду.
+have # иметь # I have a cat. # У меня есть кот.
+he # он # He is my friend. # Он мой друг.
+head # голова # My head hurts. # У меня болит голова.
+health # здоровье # Health is very important. # Здоровье очень важно.
+healthy # здоровый # She eats healthy food. # Она ест здоровую пищу.
+hear # слышать # I can hear the music. # Я слышу музыку.
+hello # привет # Hello, how are you? # Привет, как дела?
+help # помогать # Can you help me? # Можешь помочь мне?
+her # ее, ей # This is her book. # Это ее книга.
+here # здесь # I am here. # Я здесь.
+hey # эй # Hey, look at this! # Эй, посмотри на это!
+hi # привет # Hi, nice to meet you! # Привет, рад познакомиться!
+high # высокий # The mountain is high. # Гора высокая.
+him # его, ему # I gave him a book. # Я дал ему книгу.
+his # его # This is his car. # Это его машина.
+history # история # I love studying history. # Я люблю изучать историю.
+hobby # хобби # What is your hobby? # Какое у тебя хобби?
+holiday # праздник, отпуск # We are on holiday. # Мы в отпуске.
+home # дом # I am going home. # Я иду домой.
+homework # домашнее задание # I have a lot of homework. # У меня много домашнего задания.
+hope # надеяться # I hope you are well. # Надеюсь, у тебя все хорошо.
+horse # лошадь # The horse is running. # Лошадь бежит.
+hospital # больница # He is in the hospital. # Он в больнице.
+hot # горячий # The tea is hot. # Чай горячий.
+hotel # отель # We stayed at a hotel. # Мы остановились в отеле.
+hour # час # The meeting lasted an hour. # Встреча длилась час.
+house # дом # This is my house. # Это мой дом.
+how # как # How are you? # Как ты?
+however # однако # However, I disagree. # Однако, я не согласен.
+hundred # сто # There are a hundred people. # Здесь сто человек.
+hungry # голодный # I am hungry. # Я голоден.
+husband # муж # Her husband is kind. # Ее муж добрый.
+I # я # I am happy. # Я счастлив.
+ice # лед # The ice is melting. # Лед тает.
+idea # идея # This is a great idea. # Это отличная идея.
+if # если # If you need help, call me. # Если тебе нужна помощь, позвони мне.
+imagine # представлять # Imagine a beautiful place. # Представь красивое место.
+important # важный # This is very important. # Это очень важно.
+improve # улучшать # I want to improve my skills. # Я хочу улучшить свои навыки.
+in # в # The book is in the bag. # Книга в сумке.
+include # включать # The price includes breakfast. # Цена включает завтрак.
+information # информация # I need more information. # Мне нужно больше информации.
+interest # интерес # This topic is of great interest. # Эта тема очень интересна.
+interested # заинтересованный # I am interested in history. # Я интересуюсь историей.
+interesting # интересный # The book is interesting. # Книга интересная.
+internet # интернет # I use the internet every day. # Я пользуюсь интернетом каждый день.
+interview # интервью # He gave an interview. # Он дал интервью.
+into # в # She walked into the room. # Она вошла в комнату.
+introduce # представлять # Let me introduce myself. # Позвольте представиться.
+island # остров # We visited a small island. # Мы посетили маленький остров.
+it # это # It is a beautiful day. # Это прекрасный день.
+its # его, ее (неодушевленное) # The cat licked its paw. # Кот лизал свою лапу.
+jacket # куртка # He wears a leather jacket. # Он носит кожаную куртку.
+January # январь # My birthday is in January. # Мой день рождения в январе.
+jeans # джинсы # She wears blue jeans. # Она носит синие джинсы.
+job # работа # I love my job. # Я люблю свою работу.
+join # присоединяться # Can I join you? # Могу я присоединиться к тебе?
+journey # путешествие # The journey was long. # Путешествие было долгим.
+juice # сок # I drink orange juice. # Я пью апельсиновый сок.
+July # июль # We go on vacation in July. # Мы едем в отпуск в июле.
+June # июнь # Summer begins in June. # Лето начинается в июне.
+just # только что, просто # I just arrived. # Я только что приехал.
+keep # держать, сохранять # Keep the change. # Оставьте сдачу.
+key # ключ # I lost my key. # Я потерял ключ.
+kilometre # километр # The park is two kilometres away. # Парк находится в двух километрах.
+kind # добрый, вид # She is a kind person. # Она добрая.
+kitchen # кухня # The kitchen is clean. # Кухня чистая.
+know # знать # I know the answer. # Я знаю ответ.
+land # земля, приземляться # The plane will land soon. # Самолет скоро приземлится.
+language # язык # I study foreign languages. # Я изучаю иностранные языки.
+large # большой # This is a large room. # Это большая комната.
+last # последний # This is the last chance. # Это последний шанс.
+late # поздно # I am late for work. # Я опаздываю на работу.
+later # позже # See you later! # Увидимся позже!
+laugh # смеяться # He made me laugh. # Он заставил меня смеяться.
+learn # учить # I want to learn English. # Я хочу учить английский.
+leave # уходить, оставлять # I will leave tomorrow. # Я уеду завтра.
+left # левый, оставшийся # Turn left. # Поверните налево.
+leg # нога # My leg hurts. # У меня болит нога.
+lesson # урок # The lesson starts at 9. # Урок начинается в 9.
+let # позволять # Let me help you. # Позволь мне помочь тебе.
+letter # письмо # I received a letter. # Я получил письмо.
+library # библиотека # I go to the library. # Я хожу в библиотеку.
+lie # лежать, ложь # Don't lie to me. # Не лги мне.
+life # жизнь # Life is beautiful. # Жизнь прекрасна.
+like # нравиться, как # I like ice cream. # Мне нравится мороженое.
+line # линия, очередь # Stand in line. # Встань в очередь.
+lion # лев # The lion is the king of animals. # Лев — царь зверей.
+list # список # Make a list of tasks. # Составь список задач.
+listen # слушать # Listen to the music. # Послушай музыку.
+little # маленький # She has a little dog. # У нее маленькая собака.
+live # жить # I live in Moscow. # Я живу в Москве.
+local # местный # This is a local tradition. # Это местная традиция.
+long # длинный # The road is long. # Дорога длинная.
+look # смотреть, выглядеть # Look at the picture. # Посмотри на картину.
+lose # терять # I don't want to lose you. # Я не хочу терять тебя.
+lot # много # I have a lot of work. # У меня много работы.
+love # любить, любовь # I love my family. # Я люблю свою семью.
+lunch # обед # Let's have lunch together. # Давай пообедаем вместе.
+machine # машина, устройство # The washing machine is broken. # Стиральная машина сломана.
+magazine # журнал # I bought a fashion magazine. # Я купил модный журнал.
+main # главный # This is the main road. # Это главная дорога.
+make # делать # She can make a cake. # Она умеет делать торт.
+man # мужчина # The man is reading a book. # Мужчина читает книгу.
+many # много # There are many people here. # Здесь много людей.
+map # карта # Can you show me the map? # Можешь показать мне карту?
+March # март # Spring begins in March. # Весна начинается в марте.
+market # рынок # We bought vegetables at the market. # Мы купили овощи на рынке.
+married # женатый/замужняя # She is married. # Она замужем.
+May # май # May is a beautiful month. # Май — прекрасный месяц.
+maybe # возможно # Maybe I will come. # Возможно, я приду.
+me # меня, мне # Can you help me? # Можешь помочь мне?
+meal # прием пищи # Breakfast is my favorite meal. # Завтрак — мой любимый прием пищи.
+mean # означать # What does this word mean? # Что означает это слово?
+meaning # значение # The meaning of life is a mystery. # Значение жизни — это загадка.
+meat # мясо # I don't eat meat. # Я не ем мясо.
+meet # встречать # Nice to meet you! # Приятно познакомиться!
+meeting # встреча # We have a meeting at 3 p.m. # У нас встреча в 3 часа дня.
+member # член # He is a member of the club. # Он член клуба.
+menu # меню # Can I see the menu? # Могу я посмотреть меню?
+message # сообщение # I sent you a message. # Я отправил тебе сообщение.
+metre # метр # The room is 5 metres long. # Комната длиной 5 метров.
+midnight # полночь # The party ended at midnight. # Вечеринка закончилась в полночь.
+mile # миля # The airport is 10 miles away. # Аэропорт находится в 10 милях.
+milk # молоко # I drink milk every day. # Я пью молоко каждый день.
+million # миллион # He earned a million dollars. # Он заработал миллион долларов.
+minute # минута # Wait a minute, please. # Подожди минуту, пожалуйста.
+miss # скучать, пропускать # I miss you. # Я скучаю по тебе.
+mistake # ошибка # This is a common mistake. # Это распространенная ошибка.
+model # модель # She is a fashion model. # Она модель.
+modern # современный # This is a modern building. # Это современное здание.
+moment # момент # Wait a moment, please. # Подожди момент, пожалуйста.
+Monday # понедельник # We have a meeting on Monday. # У нас встреча в понедельник.
+money # деньги # I need more money. # Мне нужно больше денег.
+month # месяц # February is the shortest month. # Февраль — самый короткий месяц.
+more # больше # I want more coffee. # Я хочу еще кофе.
+morning # утро # Good morning! # Доброе утро!
+most # большинство # Most people like ice cream. # Большинство людей любят мороженое.
+mother # мать # My mother is kind. # Моя мама добрая.
+mountain # гора # The mountain is very high. # Гора очень высокая.
+mouse # мышь # The mouse is small. # Мышь маленькая.
+mouth # рот # Close your mouth. # Закрой рот.
+move # двигаться # Don't move! # Не двигайся!
+movie # фильм # Let's watch a movie. # Давай посмотрим фильм.
+much # много # Thank you very much. # Большое спасибо.
+mum # мама # My mum is the best. # Моя мама самая лучшая.
+museum # музей # We visited the museum. # Мы посетили музей.
+music # музыка # I love listening to music. # Я люблю слушать музыку.
+must # должен # You must study hard. # Ты должен усердно учиться.
+my # мой # This is my book. # Это моя книга.
+name # имя # What is your name? # Как тебя зовут?
+natural # естественный # This is a natural product. # Это натуральный продукт.
+near # рядом # The shop is near the house. # Магазин рядом с домом.
+need # нуждаться # I need your help. # Мне нужна твоя помощь.
+negative # отрицательный # The test result was negative. # Результат теста был отрицательным.
+neighbour # сосед # My neighbour is friendly. # Мой сосед дружелюбный.
+never # никогда # I never lie. # Я никогда не вру.
+new # новый # This is a new car. # Это новая машина.
+news # новости # I watch the news every day. # Я смотрю новости каждый день.
+newspaper # газета # I read the newspaper in the morning. # Я читаю газету утром.
+next # следующий # See you next week. # Увидимся на следующей неделе.
+nice # приятный # She is a nice person. # Она приятный человек.
+night # ночь # Good night! # Спокойной ночи!
+nine # девять # There are nine apples. # Здесь девять яблок.
+nineteen # девятнадцать # She is nineteen years old. # Ей девятнадцать лет.
+ninety # девяносто # He is ninety years old. # Ему девяносто лет.
+no # нет # No, thank you. # Нет, спасибо.
+nobody # никто # Nobody knows the answer. # Никто не знает ответа.
+north # север # The wind is from the north. # Ветер с севера.
+nose # нос # My nose is cold. # Мой нос холодный.
+not # не # I do not know. # Я не знаю.
+note # заметка # I left a note on the table. # Я оставил записку на столе.
+nothing # ничего # There is nothing here. # Здесь ничего нет.
+November # ноябрь # November is a cold month. # Ноябрь — холодный месяц.
+now # сейчас # I am busy now. # Я сейчас занят.
+number # число # What is your phone number? # Какой у тебя номер телефона?
+nurse # медсестра # The nurse is very kind. # Медсестра очень добрая.
+object # объект # This is a strange object. # Это странный объект.
+o’clock # час # It is 3 o’clock. # Сейчас 3 часа.
+October # октябрь # October is my favorite month. # Октябрь — мой любимый месяц.
+of # из, от # This is a piece of cake. # Это кусок торта.
+off # выключенный # The light is off. # Свет выключен.
+office # офис # I work in an office. # Я работаю в офисе.
+often # часто # I often go to the park. # Я часто хожу в парк.
+oh # о # Oh, I see! # О, я понял!
+OK # хорошо # Everything is OK. # Все хорошо.
+old # старый # This is an old book. # Это старая книга.
+on # на # The book is on the table. # Книга на столе.
+once # однажды # I once visited Paris. # Я однажды посетил Париж.
+one # один # I have one cat. # У меня один кот.
+onion # лук # I don't like onions. # Я не люблю лук.
+online # онлайн # I shop online. # Я покупаю онлайн.
+only # только # Only you can help me. # Только ты можешь помочь мне.
+open # открытый # The door is open. # Дверь открыта.
+opinion # мнение # What is your opinion? # Какое твое мнение?
+opposite # противоположный # The shop is opposite the bank. # Магазин напротив банка.
+or # или # Tea or coffee? # Чай или кофе?
+orange # апельсин, оранжевый # I like orange juice. # Мне нравится апельсиновый сок.
+order # заказ, порядок # Can I take your order? # Могу я принять ваш заказ?
+other # другой # Do you have other options? # У вас есть другие варианты?
+our # наш # This is our house. # Это наш дом.
+out # вне # The cat is out. # Кот на улице.
+outside # снаружи # It is cold outside. # На улице холодно.
+over # над # The plane flew over the city. # Самолет пролетел над городом.
+own # собственный # This is my own car. # Это моя собственная машина.
+page # страница # Turn to page 10. # Перейдите на страницу 10.
+paint # краска, рисовать # I like to paint. # Я люблю рисовать.
+painting # картина # This painting is beautiful. # Эта картина красивая.
+pair # пара # I need a pair of shoes. # Мне нужна пара обуви.
+paper # бумага # Write it on paper. # Напиши это на бумаге.
+paragraph # абзац # Read the first paragraph. # Прочитай первый абзац.
+parent # родитель # My parents are kind. # Мои родители добрые.
+park # парк # Let's go to the park. # Давай пойдем в парк.
+part # часть # This is the best part. # Это лучшая часть.
+partner # партнер # He is my business partner. # Он мой деловой партнер.
+party # вечеринка # We are having a party tonight. # У нас сегодня вечеринка.
+passport # паспорт # Don't forget your passport. # Не забудь свой паспорт.
+past # прошлое # In the past, life was different. # В прошлом жизнь была другой.
+pay # платить # I will pay for dinner. # Я заплачу за ужин.
+pen # ручка # Can I borrow your pen? # Могу я взять твою ручку?
+pencil # карандаш # I need a pencil. # Мне нужен карандаш.
+people # люди # Many people are here. # Здесь много людей.
+pepper # перец # Add some pepper to the soup. # Добавь немного перца в суп.
+perfect # идеальный # This is a perfect day. # Это идеальный день.
+period # период # This is a difficult period. # Это трудный период.
+person # человек # She is a kind person. # Она добрый человек.
+personal # личный # This is my personal opinion. # Это мое личное мнение.
+phone # телефон # My phone is ringing. # Мой телефон звонит.
+photo # фотография # I took a photo. # Я сделал фотографию.
+photograph # фотография # This is an old photograph. # Это старая фотография.
+phrase # фраза # Learn this phrase. # Выучи эту фразу.
+piano # пианино # She plays the piano. # Она играет на пианино.
+picture # картина, фотография # This picture is beautiful. # Эта картина красивая.
+piece # кусок # Can I have a piece of cake? # Могу я получить кусок торта?
+pig # свинья # The pig is dirty. # Свинья грязная.
+pink # розовый # She wears a pink dress. # Она носит розовое платье.
+place # место # This is a nice place. # Это хорошее место.
+plan # план # What is your plan? # Какой у тебя план?
+plane # самолет # The plane is landing. # Самолет приземляется.
+plant # растение # Water the plant. # Полей растение.
+play # играть # Children like to play. # Дети любят играть.
+player # игрок # He is a good player. # Он хороший игрок.
+please # пожалуйста # Please help me. # Пожалуйста, помоги мне.
+point # точка, указывать # Point to the map. # Укажи на карту.
+police # полиция # Call the police! # Вызови полицию!
+policeman # полицейский # The policeman is kind. # Полицейский добрый.
+pool # бассейн # Let's go to the pool. # Давай пойдем в бассейн.
+poor # бедный # He is poor. # Он бедный.
+popular # популярный # This song is popular. # Эта песня популярна.
+positive # положительный # The result is positive. # Результат положительный.
+possible # возможный # Is it possible? # Это возможно?
+post # почта, отправлять # I will post the letter. # Я отправлю письмо.
+potato # картофель # I like mashed potatoes. # Я люблю картофельное пюре.
+pound # фунт # This costs 10 pounds. # Это стоит 10 фунтов.
+practice # практика # Practice makes perfect. # Практика делает совершенным.
+practise # практиковать # I need to practise more. # Мне нужно больше практиковаться.
+prefer # предпочитать # I prefer tea. # Я предпочитаю чай.
+prepare # готовить # I need to prepare for the exam. # Мне нужно готовиться к экзамену.
+present # подарок, настоящее время # This is a present for you. # Это подарок для тебя.
+pretty # красивый # She is pretty. # Она красивая.
+price # цена # What is the price? # Какая цена?
+probably # вероятно # He will probably come. # Он, вероятно, придет.
+problem # проблема # What is the problem? # В чем проблема?
+product # продукт # This is a new product. # Это новый продукт.
+programme # программа # I watch this programme every week. # Я смотрю эту программу каждую неделю.
+project # проект # This is a big project. # Это большой проект.
+purple # фиолетовый # She wears a purple dress. # Она носит фиолетовое платье.
+put # класть # Put the book on the table. # Положи книгу на стол.
+quarter # четверть # A quarter of the cake is gone. # Четверть торта съедена.
+question # вопрос # Do you have any questions? # У тебя есть вопросы?
+quick # быстрый # He is a quick learner. # Он быстро учится.
+quickly # быстро # She runs quickly. # Она быстро бегает.
+quiet # тихий # The room is quiet. # Комната тихая.
+quite # довольно # It is quite cold. # Довольно холодно.
+radio # радио # I listen to the radio. # Я слушаю радио.
+rain # дождь # It is raining. # Идет дождь.
+read # читать # I like to read books. # Я люблю читать книги.
+reader # читатель # She is a fast reader. # Она быстро читает.
+reading # чтение # Reading is my hobby. # Чтение — мое хобби.
+ready # готовый # Are you ready? # Ты готов?
+real # настоящий # This is a real diamond. # Это настоящий алмаз.
+really # действительно # Really? # Правда?
+reason # причина # What is the reason? # В чем причина?
+red # красный # The car is red. # Машина красная.
+relax # расслабляться # I need to relax. # Мне нужно расслабиться.
+remember # помнить # Do you remember me? # Ты помнишь меня?
+repeat # повторять # Can you repeat that? # Можешь повторить?
+report # отчет # I need to write a report. # Мне нужно написать отчет.
+restaurant # ресторан # Let's go to the restaurant. # Давай пойдем в ресторан.
+result # результат # The result is good. # Результат хороший.
+return # возвращаться # I will return soon. # Я скоро вернусь.
+rice # рис # I like rice. # Я люблю рис.
+rich # богатый # He is rich. # Он богатый.
+ride # ездить # I like to ride a bike. # Я люблю кататься на велосипеде.
+right # правый, правильный # Turn right. # Поверни направо.
+river # река # The river is wide. # Река широкая.
+road # дорога # The road is long. # Дорога длинная.
+room # комната # The room is clean. # Комната чистая.
+routine # рутина # My daily routine is simple. # Мой распорядок дня простой.
+rule # правило # Follow the rules. # Следуй правилам.
+run # бежать # I run every morning. # Я бегаю каждое утро.
+sad # грустный # She looks sad. # Она выглядит грустной.
+salad # салат # I like vegetable salad. # Я люблю овощной салат.
+salt # соль # Add some salt to the soup. # Добавь немного соли в суп.
+same # одинаковый # We have the same bag. # У нас одинаковая сумка.
+sandwich # бутерброд # I ate a sandwich. # Я съел бутерброд.
+Saturday # суббота # We meet on Saturday. # Мы встречаемся в субботу.
+say # говорить # What did you say? # Что ты сказал?
+school # школа # I go to school every day. # Я хожу в школу каждый день.
+science # наука # I love science. # Я люблю науку.
+scientist # ученый # He is a famous scientist. # Он известный ученый.
+sea # море # The sea is calm. # Море спокойное.
+number # число # What is your phone number? # Какой у тебя номер телефона?
+second1 # второй # This is my second attempt. # Это моя вторая попытка.
+section # раздел # Read the first section. # Прочитай первый раздел.
+see # видеть # I see a bird. # Я вижу птицу.
+sell # продавать # I want to sell my car. # Я хочу продать свою машину.
+send # отправлять # I will send you an email. # Я отправлю тебе письмо.
+sentence # предложение # This is a long sentence. # Это длинное предложение.
+September # сентябрь # School starts in September. # Школа начинается в сентябре.
+seven # семь # There are seven days in a week. # В неделе семь дней.
+seventeen # семнадцать # She is seventeen years old. # Ей семнадцать лет.
+seventy # семьдесят # He is seventy years old. # Ему семьдесят лет.
+share # делиться # Can you share your food? # Можешь поделиться едой?
+she # она # She is my friend. # Она моя подруга.
+sheep # овца # The sheep is white. # Овца белая.
+shirt # рубашка # He wears a blue shirt. # Он носит синюю рубашку.
+shoe # обувь # I need new shoes. # Мне нужна новая обувь.
+shop # магазин # Let's go to the shop. # Давай пойдем в магазин.
+shopping # покупки # I love shopping. # Я люблю делать покупки.
+short # короткий # This is a short story. # Это короткий рассказ.
+should # должен # You should study. # Ты должен учиться.
+show # показывать # Can you show me the way? # Можешь показать мне дорогу?
+shower # душ # I take a shower every morning. # Я принимаю душ каждое утро.
+sick # больной # He is sick. # Он болен.
+similar # похожий # These books are similar. # Эти книги похожи.
+sing # петь # She loves to sing. # Она любит петь.
+singer # певец # He is a famous singer. # Он известный певец.
+sister # сестра # My sister is kind. # Моя сестра добрая.
+sit # сидеть # Sit down, please. # Сядь, пожалуйста.
+situation # ситуация # This is a difficult situation. # Это трудная ситуация.
+six # шесть # There are six apples. # Здесь шесть яблок.
+sixteen # шестнадцать # She is sixteen years old. # Ей шестнадцать лет.
+sixty # шестьдесят # He is sixty years old. # Ему шестьдесят лет.
+skill # навык # This is a useful skill. # Это полезный навык.
+skirt # юбка # She wears a red skirt. # Она носит красную юбку.
+sleep # спать # I need to sleep. # Мне нужно спать.
+slow # медленный # He is a slow runner. # Он медленно бегает.
+small # маленький # This is a small house. # Это маленький дом.
+snake # змея # The snake is dangerous. # Змея опасна.
+snow # снег # It is snowing. # Идет снег.
+so # так, поэтому # I am tired, so I will rest. # Я устал, поэтому отдохну.
+some # некоторый # Can I have some water? # Могу я получить немного воды?
+somebody # кто-то # Somebody is calling you. # Кто-то зовет тебя.
+someone # кто-то # Someone is at the door. # Кто-то у двери.
+something # что-то # I want to eat something. # Я хочу что-нибудь съесть.
+sometimes # иногда # Sometimes I go to the park. # Иногда я хожу в парк.
+son # сын # My son is smart. # Мой сын умный.
+song # песня # This is my favorite song. # Это моя любимая песня.
+soon # скоро # I will come soon. # Я скоро приду.
+sorry # извините # I am sorry. # Извините.
+sound # звук # The sound is loud. # Звук громкий.
+soup # суп # I like tomato soup. # Я люблю томатный суп.
+south # юг # The wind is from the south. # Ветер с юга.
+space # пространство, космос # There is no space left. # Нет места.
+speak # говорить # Can you speak English? # Ты говоришь по-английски?
+special # особенный # This is a special day. # Это особенный день.
+spell # писать по буквам # How do you spell your name? # Как пишется твое имя?
+spelling # правописание # Check your spelling. # Проверь правописание.
+spend # тратить # I spend a lot of time reading. # Я трачу много времени на чтение.
+sport # спорт # I love sports. # Я люблю спорт.
+spring # весна # Spring is my favorite season. # Весна — мое любимое время года.
+stand # стоять # Stand up, please. # Встань, пожалуйста.
+star # звезда # The star is bright. # Звезда яркая.
+start # начинать # Let's start the game. # Давай начнем игру.
+statement # утверждение # This is a false statement. # Это ложное утверждение.
+station # станция # The train is at the station. # Поезд на станции.
+stay # оставаться # I will stay here. # Я останусь здесь.
+still # все еще # I am still waiting. # Я все еще жду.
+stop # останавливаться # Stop here, please. # Остановитесь здесь, пожалуйста.
+story # история # This is an interesting story. # Это интересная история.
+street # улица # The street is busy. # Улица оживленная.
+strong # сильный # He is strong. # Он сильный.
+student # студент # She is a good student. # Она хорошая студентка.
+study # учиться # I study every day. # Я учусь каждый день.
+style # стиль # I like your style. # Мне нравится твой стиль.
+subject # предмет # What is your favorite subject? # Какой твой любимый предмет?
+success # успех # Success is important. # Успех важен.
+sugar # сахар # I don't like sugar. # Я не люблю сахар.
+summer # лето # Summer is hot. # Лето жаркое.
+sun # солнце # The sun is shining. # Солнце светит.
+Sunday # воскресенье # We relax on Sunday. # Мы отдыхаем в воскресенье.
+supermarket # супермаркет # I go to the supermarket every week. # Я хожу в супермаркет каждую неделю.
+sure # уверенный # Are you sure? # Ты уверен?
+sweater # свитер # She wears a warm sweater. # Она носит теплый свитер.
+swim # плавать # I like to swim. # Я люблю плавать.
+swimming # плавание # Swimming is good for health. # Плавание полезно для здоровья.
+table # стол # The book is on the table. # Книга на столе.
+take # брать # Can I take this? # Могу я взять это?
+talk # разговаривать # Let's talk. # Давай поговорим.
+tall # высокий # He is tall. # Он высокий.
+taxi # такси # I will take a taxi. # Я возьму такси.
+tea # чай # I drink tea every morning. # Я пью чай каждое утро.
+teach # учить # She teaches English. # Она учит английский.
+teacher # учитель # He is a good teacher. # Он хороший учитель.
+team # команда # Our team won. # Наша команда победила.
+teenager # подросток # She is a teenager. # Она подросток.
+telephone # телефон # The telephone is ringing. # Телефон звонит.
+television # телевизор # I watch television every evening. # Я смотрю телевизор каждый вечер.
+tell # рассказывать # Can you tell me a story? # Можешь рассказать мне историю?
+ten # десять # There are ten apples. # Здесь десять яблок.
+tennis # теннис # I play tennis. # Я играю в теннис.
+terrible # ужасный # This is a terrible idea. # Это ужасная идея.
+test # тест # I have a test tomorrow. # У меня завтра тест.
+text # текст # Read the text. # Прочитай текст.
+than # чем # She is taller than me. # Она выше меня.
+thank # благодарить # Thank you! # Спасибо!
+thanks # спасибо # Thanks for your help. # Спасибо за помощь.
+that # тот # That is my book. # Это моя книга.
+the # определенный артикль # The sun is bright. # Солнце яркое.
+theatre # театр # We went to the theatre. # Мы ходили в театр.
+their # их # This is their house. # Это их дом.
+them # их # I gave them the book. # Я дал им книгу.
+then # затем # First, read the book, then write. # Сначала прочитай книгу, затем пиши.
+there # там # There is a cat. # Там кот.
+they # они # They are my friends. # Они мои друзья.
+thing # вещь # This is a strange thing. # Это странная вещь.
+think # думать # I think you are right. # Я думаю, ты прав.
+third # третий # This is the third time. # Это третий раз.
+thirsty # хотеть пить # I am thirsty. # Я хочу пить.
+thirteen # тринадцать # She is thirteen years old. # Ей тринадцать лет.
+thirty # тридцать # He is thirty years old. # Ему тридцать лет.
+this # этот # This is my book. # Это моя книга.
+thousand # тысяча # There are a thousand stars. # Здесь тысяча звезд.
+three # три # There are three apples. # Здесь три яблока.
+through # через # We walked through the forest. # Мы прошли через лес.
+Thursday # четверг # We have a meeting on Thursday. # У нас встреча в четверг.
+ticket # билет # I bought a ticket. # Я купил билет.
+time # время # What time is it? # Который час?
+tired # уставший # I am tired. # Я устал.
+title # название # What is the title of the book? # Какое название книги?
+to # к # I go to school. # Я хожу в школу.
+today # сегодня # Today is a good day. # Сегодня хороший день.
+together # вместе # Let's go together. # Давай пойдем вместе.
+toilet # туалет # Where is the toilet? # Где туалет?
+tomato # помидор # I like tomatoes. # Я люблю помидоры.
+tomorrow # завтра # See you tomorrow! # Увидимся завтра!
+tonight # сегодня вечером # We will meet tonight. # Мы встретимся сегодня вечером.
+too # тоже, слишком # I am too tired. # Я слишком устал.
+tooth # зуб # My tooth hurts. # У меня болит зуб.
+topic # тема # What is the topic? # Какая тема?
+tourist # турист # The tourist is lost. # Турист потерялся.
+town # город # I live in a small town. # Я живу в маленьком городе.
+traffic # движение # The traffic is heavy. # Движение интенсивное.
+train # поезд # I take the train to work. # Я езжу на поезде на работу.
+travel # путешествовать # I love to travel. # Я люблю путешествовать.
+tree # дерево # The tree is tall. # Дерево высокое.
+trip # поездка # We are planning a trip. # Мы планируем поездку.
+trousers # брюки # He wears black trousers. # Он носит черные брюки.
+true # правда # This is true. # Это правда.
+try # пытаться # Try again. # Попробуй еще раз.
+T-shirt # футболка # He wears a T-shirt. # Он носит футболку.
+Tuesday # вторник # We have a meeting on Tuesday. # У нас встреча во вторник.
+turn # поворачивать # Turn left. # Поверни налево.
+TV # телевизор # I watch TV every evening. # Я смотрю телевизор каждый вечер.
+twelve # двенадцать # There are twelve months in a year. # В году двенадцать месяцев.
+twenty # двадцать # She is twenty years old. # Ей двадцать лет.
+twice # дважды # I called him twice. # Я звонил ему дважды.
+two # два # There are two apples. # Здесь два яблока.
+type # тип # What type of music do you like? # Какой тип музыки тебе нравится?
+umbrella # зонт # Take an umbrella. # Возьми зонт.
+uncle # дядя # My uncle is kind. # Мой дядя добрый.
+under # под # The cat is under the table. # Кот под столом.
+understand # понимать # Do you understand? # Ты понимаешь?
+university # университет # I study at the university. # Я учусь в университете.
+until # до # Wait until tomorrow. # Жди до завтра.
+up # вверх # Stand up. # Встань.
+upstairs # наверху # He is upstairs. # Он наверху.
+us # нас # They invited us. # Они пригласили нас.
+use # использовать # Can I use your pen? # Могу я использовать твою ручку?
+useful # полезный # This is a useful tool. # Это полезный инструмент.
+usually # обычно # I usually wake up early. # Я обычно просыпаюсь рано.
+vacation # отпуск # I am on vacation. # Я в отпуске.
+vegetable # овощ # I eat vegetables every day. # Я ем овощи каждый день.
+very # очень # This is very important. # Это очень важно.
+video # видео # I watch videos online. # Я смотрю видео онлайн.
+village # деревня # I live in a village. # Я живу в деревне.
+visit # посещать # I will visit you tomorrow. # Я навещу тебя завтра.
+visitor # посетитель # The visitor is here. # Посетитель здесь.
+wait # ждать # Wait here, please. # Подожди здесь, пожалуйста.
+waiter # официант # The waiter is friendly. # Официант дружелюбный.
+wake # просыпаться # I wake up at 7 a.m. # Я просыпаюсь в 7 утра.
+walk # гулять # I walk every morning. # Я гуляю каждое утро.
+wall # стена # The wall is white. # Стена белая.
+want # хотеть # I want to eat. # Я хочу есть.
+warm # теплый # The weather is warm. # Погода теплая.
+wash # мыть # Wash your hands. # Вымой руки.
+watch # смотреть, часы # I watch TV every evening. # Я смотрю телевизор каждый вечер.
+water # вода # I drink water every day. # Я пью воду каждый день.
+way # путь # This is the way to the park. # Это дорога к парку.
+we # мы # We are friends. # Мы друзья.
+wear # носить # I wear a jacket. # Я ношу куртку.
+weather # погода # The weather is nice. # Погода хорошая.
+website # веб-сайт # Visit our website. # Посетите наш веб-сайт.
+Wednesday # среда # We have a meeting on Wednesday. # У нас встреча в среду.
+week # неделя # There are seven days in a week. # В неделе семь дней.
+weekend # выходные # I relax on the weekend. # Я отдыхаю на выходных.
+welcome # добро пожаловать # Welcome to our home! # Добро пожаловать в наш дом!
+well # хорошо # I feel well. # Я чувствую себя хорошо.
+west # запад # The sun sets in the west. # Солнце садится на западе.
+what # что # What is your name? # Как тебя зовут?
+when # когда # When will you come? # Когда ты придешь?
+where # где # Where is the book? # Где книга?
+which # который # Which book do you want? # Какую книгу ты хочешь?
+white # белый # The snow is white. # Снег белый.
+who # кто # Who is this? # Кто это?
+why # почему # Why are you late? # Почему ты опоздал?
+wife # жена # His wife is kind. # Его жена добрая.
+will # будет # I will come tomorrow. # Я приду завтра.
+win # побеждать # I want to win. # Я хочу победить.

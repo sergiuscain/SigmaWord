@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<!--<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>-->
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
@@ -19,6 +19,7 @@
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+    <WindowsAppSdkDeploymentManagerInitialize>false</WindowsAppSdkDeploymentManagerInitialize>
 
 		<!-- Display name -->
 		<ApplicationTitle>SigmaWord</ApplicationTitle>
@@ -58,31 +59,30 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Words\dailylife.json" />
-	  <None Remove="Resources\Words\food.json" />
-	  <None Remove="Resources\Words\nature.json" />
-	  <None Remove="Resources\Words\technology.json" />
+	  <None Remove="Resources\Words\Oxfard3000_b1Ready.txt" />
+	  <None Remove="Resources\Words\Oxfard3000_b2Ready.txt" />
+	  <None Remove="Resources\Words\Oxford3000_a1Ready.txt" />
+	  <None Remove="Resources\Words\Oxford3000_a2Ready.txt" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\Words\dailylife.json" />
-	  <EmbeddedResource Include="Resources\Words\education.json" />
-	  <EmbeddedResource Include="Resources\Words\food.json" />
-	  <EmbeddedResource Include="Resources\Words\health.json" />
-	  <EmbeddedResource Include="Resources\Words\nature.json" />
-	  <EmbeddedResource Include="Resources\Words\sports.json" />
-	  <EmbeddedResource Include="Resources\Words\technology.json" />
-	  <EmbeddedResource Include="Resources\Words\travel.json" />
+	  <EmbeddedResource Include="Resources\Words\Oxfard3000_b1Ready.txt" />
+	  <EmbeddedResource Include="Resources\Words\Oxfard3000_b2Ready.txt" />
+	  <EmbeddedResource Include="Resources\Words\Oxford3000_a1Ready.txt" />
+	  <EmbeddedResource Include="Resources\Words\Oxford3000_a2Ready.txt" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.13" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.13">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
-		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.11-pre20241216174303" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -95,6 +95,10 @@
 	  <MauiXaml Update="Views\TeachPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

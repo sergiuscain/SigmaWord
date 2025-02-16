@@ -22,7 +22,7 @@ namespace SigmaWord
             builder.Services.AddSingleton<VocabularyService>();
 
             //Добавляем сервис для работы с базой данных SQLite
-            builder.Services.AddSingleton<LocalDBService>();
+            builder.Services.AddDbContext<SigmaWordDbContext>();
 
             //Сервисы для каждой вьбшки и её модели представления.
             builder.Services.AddTransient<DictionaryViewModel>();

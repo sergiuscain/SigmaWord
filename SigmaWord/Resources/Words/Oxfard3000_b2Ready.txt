@@ -1,0 +1,400 @@
+abandon # оставлять # He decided to abandon the project. # Он решил оставить проект.
+absolute # абсолютный # She has absolute trust in him. # Она абсолютно доверяет ему.
+academic # академический # He is an academic researcher. # Он академический исследователь.
+acceptable # приемлемый # This solution is acceptable. # Это решение приемлемо.
+accompany # сопровождать # She will accompany him to the party. # Она будет сопровождать его на вечеринку.
+account # счет # Please check your bank account. # Пожалуйста, проверьте ваш банковский счет.
+accurate # точный # The report is accurate. # Отчет точен.
+accuse # обвинять # He was accused of theft. # Его обвинили в краже.
+acknowledge # признавать # She acknowledged her mistake. # Она признала свою ошибку.
+acquire # приобретать # He acquired a new skill. # Он приобрел новый навык.
+actual # фактический # The actual cost was higher. # Фактическая стоимость была выше.
+adapt # адаптироваться # She adapted quickly to the new environment. # Она быстро адаптировалась к новой среде.
+additional # дополнительный # We need additional information. # Нам нужна дополнительная информация.
+address # адрес # Please write your address here. # Пожалуйста, напишите ваш адрес здесь.
+administration # администрация # The administration approved the plan. # Администрация одобрила план.
+adopt # принимать # They decided to adopt a new strategy. # Они решили принять новую стратегию.
+advance # продвижение # The advance in technology is impressive. # Продвижение в технологии впечатляет.
+affair # дело # The affair was kept secret. # Дело держалось в секрете.
+afterwards # впоследствии # We went to the cinema afterwards. # Мы пошли в кино впоследствии.
+agency # агентство # She works at a travel agency. # Она работает в туристическом агентстве.
+agenda # повестка дня # The agenda for the meeting is ready. # Повестка дня для встречи готова.
+aggressive # агрессивный # His aggressive behavior scared everyone. # Его агрессивное поведение напугало всех.
+aid # помощь # They offered aid to the victims. # Они предложили помощь пострадавшим.
+aircraft # самолет # The aircraft landed safely. # Самолет приземлился безопасно.
+alarm # тревога # The alarm woke everyone up. # Тревога разбудила всех.
+alter # изменять # He decided to alter his plans. # Он решил изменить свои планы.
+amount # количество # The amount of work is overwhelming. # Количество работы ошеломляет.
+anger # гнев # His anger was visible. # Его гнев был виден.
+angle # угол # The angle of the roof is steep. # Угол крыши крутой.
+anniversary # годовщина # They celebrated their wedding anniversary. # Они отпраздновали годовщину свадьбы.
+annual # ежегодный # The annual report is due next week. # Ежегодный отчет должен быть готов на следующей неделе.
+anxious # тревожный # She felt anxious before the exam. # Она чувствовала тревогу перед экзаменом.
+apparent # очевидный # His disappointment was apparent. # Его разочарование было очевидным.
+apparently # по-видимому # Apparently, he forgot about the meeting. # По-видимому, он забыл о встрече.
+appeal # обращаться # The charity made an appeal for donations. # Благотворительная организация обратилась за пожертвованиями.
+approach # подход # His approach to the problem was unique. # Его подход к проблеме был уникальным.
+appropriate # соответствующий # Please wear appropriate clothing. # Пожалуйста, наденьте соответствующую одежду.
+approval # одобрение # The project received approval. # Проект получил одобрение.
+approve # одобрять # The committee approved the proposal. # Комитет одобрил предложение.
+arise # возникать # A new problem has arisen. # Возникла новая проблема.
+armed # вооруженный # The armed guards protected the building. # Вооруженные охранники защищали здание.
+arms # оружие # The arms were stored in a secure location. # Оружие хранилось в безопасном месте.
+artificial # искусственный # The flowers were artificial. # Цветы были искусственными.
+artistic # художественный # She has an artistic talent. # У нее есть художественный талант.
+ashamed # пристыженный # He felt ashamed of his actions. # Он чувствовал стыд за свои действия.
+aspect # аспект # We need to consider every aspect of the problem. # Нам нужно рассмотреть каждый аспект проблемы.
+assess # оценивать # The teacher will assess the students' work. # Учитель оценит работу студентов.
+assessment # оценка # The assessment of the situation was accurate. # Оценка ситуации была точной.
+associate # связывать # People often associate red with danger. # Люди часто связывают красный цвет с опасностью.
+associated # связанный # The risks associated with the project are high. # Риски, связанные с проектом, высоки.
+association # ассоциация # He is a member of the local business association. # Он член местной бизнес-ассоциации.
+assume # предполагать # Let's assume that everything goes as planned. # Давайте предположим, что все идет по плану.
+attempt # попытка # His attempt to climb the mountain failed. # Его попытка взобраться на гору провалилась.
+back # спина # He has a pain in his back. # У него болит спина.
+bacteria # бактерии # Bacteria can cause infections. # Бактерии могут вызывать инфекции.
+bar # бар # They met at the bar. # Они встретились в баре.
+barrier # барьер # The language barrier was a problem. # Языковой барьер был проблемой.
+basically # в основном # Basically, the idea is simple. # В основном, идея проста.
+battle # битва # The battle lasted for hours. # Битва длилась часами.
+bear # медведь # The bear was seen in the forest. # Медведя видели в лесу.
+beat # бить # He beat the drum loudly. # Он громко бил в барабан.
+beg # умолять # She begged him to stay. # Она умоляла его остаться.
+being # существо # The alien being was fascinating. # Инопланетное существо было захватывающим.
+bent # согнутый # The bent wire was hard to straighten. # Согнутый провод было трудно выпрямить.
+bet # ставка # He placed a bet on the horse. # Он сделал ставку на лошадь.
+beyond # за пределами # The village is beyond the mountains. # Деревня находится за горами.
+bill # счет # The bill for dinner was high. # Счет за ужин был высоким.
+bitter # горький # The medicine tasted bitter. # Лекарство было горьким на вкус.
+blame # винить # She blamed him for the mistake. # Она винила его за ошибку.
+blind # слепой # The blind man crossed the street with his dog. # Слепой человек перешел улицу с собакой.
+bond # связь # The bond between them was strong. # Связь между ними была сильной.
+border # граница # They crossed the border at night. # Они пересекли границу ночью.
+breast # грудь # She had a pain in her breast. # У нее была боль в груди.
+brief # краткий # He gave a brief explanation. # Он дал краткое объяснение.
+broad # широкий # The river is very broad. # Река очень широкая.
+broadcast # трансляция # The broadcast was interrupted. # Трансляция была прервана.
+budget # бюджет # The budget for the project was limited. # Бюджет для проекта был ограничен.
+bullet # пуля # The bullet missed the target. # Пуля пролетела мимо цели.
+bunch # связка # He gave her a bunch of flowers. # Он подарил ей связку цветов.
+burn # гореть # The fire continued to burn. # Огонь продолжал гореть.
+bush # куст # The cat hid in the bush. # Кот спрятался в кусте.
+but # но # She wanted to go, but it was too late. # Она хотела пойти, но было слишком поздно.
+cable # кабель # The cable was damaged. # Кабель был поврежден.
+calculate # вычислять # He calculated the total cost. # Он вычислил общую стоимость.
+cancel # отменять # They decided to cancel the meeting. # Они решили отменить встречу.
+cancer # рак # Cancer is a serious disease. # Рак — это серьезное заболевание.
+capable # способный # She is capable of solving the problem. # Она способна решить проблему.
+capacity # вместимость # The capacity of the hall is 500 people. # Вместимость зала — 500 человек.
+capture # захватывать # The soldiers captured the enemy. # Солдаты захватили врага.
+cast # бросать # He cast a stone into the water. # Он бросил камень в воду.
+catch # ловить # She caught the ball. # Она поймала мяч.
+cell # клетка # The cell was under the microscope. # Клетка была под микроскопом.
+chain # цепь # The chain was very strong. # Цепь была очень прочной.
+chair # стул # He sat on the chair. # Он сел на стул.
+chairman # председатель # The chairman opened the meeting. # Председатель открыл собрание.
+challenge # вызов # The challenge was difficult. # Вызов был трудным.
+characteristic # характеристика # Honesty is his main characteristic. # Честность — его основная характеристика.
+chart # диаграмма # The chart shows the growth of the company. # Диаграмма показывает рост компании.
+chief # главный # The chief of the tribe made the decision. # Вождь племени принял решение.
+circumstance # обстоятельство # Under the circumstances, we had to leave. # В данных обстоятельствах нам пришлось уйти.
+cite # цитировать # He cited several sources in his paper. # Он процитировал несколько источников в своей работе.
+citizen # гражданин # She is a citizen of the United States. # Она гражданка Соединенных Штатов.
+civil # гражданский # The civil war lasted for years. # Гражданская война длилась годами.
+classic # классический # The book is a classic. # Книга является классикой.
+close1 # близкий # She is a close friend of mine. # Она моя близкая подруга.
+closely # внимательно # He watched the game closely. # Он внимательно наблюдал за игрой.
+collapse # обрушение # The building collapsed after the earthquake. # Здание обрушилось после землетрясения.
+combination # комбинация # The combination of colors was perfect. # Комбинация цветов была идеальной.
+comfort # комфорт # The hotel offers great comfort. # Отель предлагает отличный комфорт.
+command # команда # He gave the command to start. # Он отдал команду начать.
+commission # комиссия # The commission investigated the case. # Комиссия расследовала дело.
+commitment # обязательство # She has a strong commitment to her work. # У нее сильное обязательство перед своей работой.
+committee # комитет # The committee made a decision. # Комитет принял решение.
+commonly # обычно # This plant is commonly found in forests. # Это растение обычно встречается в лесах.
+complex # сложный # The problem is very complex. # Проблема очень сложная.
+complicated # сложный # The instructions were complicated. # Инструкции были сложными.
+component # компонент # Each component is important. # Каждый компонент важен.
+concentration # концентрация # The concentration of the solution was high. # Концентрация раствора была высокой.
+concept # концепция # The concept of the project is innovative. # Концепция проекта инновационная.
+concern # беспокойство # His health is a concern. # Его здоровье вызывает беспокойство.
+concerned # обеспокоенный # She was concerned about the results. # Она была обеспокоена результатами.
+conduct # поведение # His conduct was inappropriate. # Его поведение было неуместным.
+confidence # уверенность # She spoke with confidence. # Она говорила с уверенностью.
+conflict # конфликт # The conflict was resolved peacefully. # Конфликт был разрешен мирно.
+confusing # запутанный # The instructions were confusing. # Инструкции были запутанными.
+conscious # сознательный # He was conscious of his mistakes. # Он осознавал свои ошибки.
+conservative # консервативный # His views are very conservative. # Его взгляды очень консервативны.
+consideration # рассмотрение # The proposal is under consideration. # Предложение находится на рассмотрении.
+consistent # последовательный # His work is consistent. # Его работа последовательна.
+constant # постоянный # The constant noise was annoying. # Постоянный шум был раздражающим.
+constantly # постоянно # She is constantly improving. # Она постоянно улучшается.
+construct # строить # They plan to construct a new bridge. # Они планируют построить новый мост.
+construction # строительство # The construction of the building took two years. # Строительство здания заняло два года.
+contemporary # современный # The museum features contemporary art. # В музее представлено современное искусство.
+contest # соревнование # He won the contest. # Он выиграл соревнование.
+contract # контракт # The contract was signed yesterday. # Контракт был подписан вчера.
+contribute # вносить вклад # She contributed to the project. # Она внесла вклад в проект.
+contribution # вклад # His contribution was significant. # Его вклад был значительным.
+convert # преобразовывать # They converted the old factory into a museum. # Они преобразовали старую фабрику в музей.
+convinced # убежденный # He was convinced of her innocence. # Он был убежден в ее невиновности.
+core # ядро # The core of the problem is unclear. # Ядро проблемы неясно.
+corporate # корпоративный # The corporate culture is very strict. # Корпоративная культура очень строгая.
+council # совет # The council made a decision. # Совет принял решение.
+county # округ # The county is known for its beautiful landscapes. # Округ известен своими красивыми пейзажами.
+courage # мужество # It takes courage to face your fears. # Нужно мужество, чтобы столкнуться со своими страхами.
+crash # авария # The car crash was severe. # Автомобильная авария была серьезной.
+creation # создание # The creation of the universe is a mystery. # Создание вселенной — это загадка.
+creature # существо # The creature was strange and unknown. # Существо было странным и неизвестным.
+credit # кредит # He took out a credit to buy a car. # Он взял кредит, чтобы купить машину.
+crew # команда # The crew worked hard to finish the project. # Команда усердно работала, чтобы завершить проект.
+crisis # кризис # The country is facing an economic crisis. # Страна сталкивается с экономическим кризисом.
+criterion # критерий # The main criterion is quality. # Основной критерий — это качество.
+critic # критик # The critic praised the film. # Критик похвалил фильм.
+critical # критический # The situation is critical. # Ситуация критическая.
+criticism # критика # His work received a lot of criticism. # Его работа получила много критики.
+criticize # критиковать # She criticized his decision. # Она раскритиковала его решение.
+crop # урожай # The crop was abundant this year. # Урожай в этом году был обильным.
+crucial # решающий # This decision is crucial. # Это решение решающее.
+cry # плакать # The baby started to cry. # Ребенок начал плакать.
+cure # лечение # There is no cure for this disease. # Нет лечения от этой болезни.
+current # текущий # The current situation is unstable. # Текущая ситуация нестабильна.
+curve # кривая # The road has a sharp curve. # Дорога имеет резкий изгиб.
+curved # изогнутый # The curved line was difficult to draw. # Изогнутую линию было трудно нарисовать.
+date # дата # The date of the meeting is set. # Дата встречи установлена.
+debate # дебаты # The debate lasted for hours. # Дебаты длились часами.
+debt # долг # He has a lot of debt. # У него много долгов.
+decent # приличный # She wore a decent dress. # На ней было приличное платье.
+declare # объявлять # The president declared a state of emergency. # Президент объявил чрезвычайное положение.
+decline # снижение # There was a decline in sales. # Произошло снижение продаж.
+decoration # украшение # The decoration of the room was beautiful. # Украшение комнаты было красивым.
+decrease # уменьшение # There was a decrease in temperature. # Произошло уменьшение температуры.
+deeply # глубоко # She was deeply moved by the story. # Она была глубоко тронута историей.
+defeat # поражение # The team suffered a defeat. # Команда потерпела поражение.
+defence # защита # The defence was strong. # Защита была сильной.
+defend # защищать # He defended his position. # Он защищал свою позицию.
+delay # задержка # The flight was delayed. # Рейс был задержан.
+deliberate # преднамеренный # His actions were deliberate. # Его действия были преднамеренными.
+deliberately # намеренно # She deliberately ignored him. # Она намеренно игнорировала его.
+delight # восторг # The children were filled with delight. # Дети были полны восторга.
+delighted # в восторге # She was delighted with the gift. # Она была в восторге от подарка.
+delivery # доставка # The delivery was on time. # Доставка была вовремя.
+demand # требование # The demand for the product is high. # Спрос на продукт высокий.
+demonstrate # демонстрировать # He demonstrated his skills. # Он продемонстрировал свои навыки.
+deny # отрицать # She denied the accusations. # Она отрицала обвинения.
+depressed # подавленный # He felt depressed after the loss. # Он чувствовал себя подавленным после потери.
+depressing # удручающий # The news was depressing. # Новости были удручающими.
+depth # глубина # The depth of the ocean is amazing. # Глубина океана поразительна.
+desert # пустыня # The desert is very hot. # В пустыне очень жарко.
+deserve # заслуживать # He deserves a reward. # Он заслуживает награды.
+desire # желание # Her desire to succeed is strong. # Ее желание добиться успеха сильно.
+desperate # отчаянный # He made a desperate attempt. # Он сделал отчаянную попытку.
+detail # деталь # The detail was important. # Деталь была важной.
+detailed # подробный # The report was very detailed. # Отчет был очень подробным.
+detect # обнаруживать # The device can detect smoke. # Устройство может обнаруживать дым.
+dig # копать # He dug a hole in the ground. # Он выкопал яму в земле.
+disc # диск # The disc was scratched. # Диск был поцарапан.
+discipline # дисциплина # Discipline is important in the army. # Дисциплина важна в армии.
+discount # скидка # The store offered a discount. # Магазин предложил скидку.
+dishonest # нечестный # His actions were dishonest. # Его действия были нечестными.
+dismiss # увольнять # The manager dismissed the employee. # Менеджер уволил сотрудника.
+display # отображать # The museum displayed ancient artifacts. # Музей отображал древние артефакты.
+distribute # распределять # They distributed the food to the poor. # Они распределили еду среди бедных.
+distribution # распределение # The distribution of resources was fair. # Распределение ресурсов было справедливым.
+district # район # The district is known for its parks. # Район известен своими парками.
+divide # делить # They decided to divide the money. # Они решили разделить деньги.
+division # разделение # The division of labor was efficient. # Разделение труда было эффективным.
+document # документ # The document was signed. # Документ был подписан.
+domestic # домашний # Domestic animals are usually friendly. # Домашние животные обычно дружелюбны.
+dominate # доминировать # The team dominated the game. # Команда доминировала в игре.
+downwards # вниз # The ball rolled downwards. # Мяч покатился вниз.
+dozen # дюжина # He bought a dozen eggs. # Он купил дюжину яиц.
+draft # черновик # The draft of the report is ready. # Черновик отчета готов.
+drag # тащить # He dragged the heavy box. # Он тащил тяжелый ящик.
+dramatic # драматический # The play was very dramatic. # Пьеса была очень драматичной.
+edit # редактировать # She edited the article. # Она отредактировала статью.
+edition # издание # The new edition of the book is out. # Новое издание книги вышло.
+efficient # эффективный # The system is very efficient. # Система очень эффективна.
+elderly # пожилой # The elderly man needed help. # Пожилому человеку нужна была помощь.
+elect # избирать # They elected a new president. # Они избрали нового президента.
+elsewhere # в другом месте # He decided to look elsewhere. # Он решил поискать в другом месте.
+emerge # появляться # The sun emerged from behind the clouds. # Солнце появилось из-за облаков.
+emotional # эмоциональный # The speech was very emotional. # Речь была очень эмоциональной.
+emphasis # акцент # The emphasis was on quality. # Акцент был на качестве.
+emphasize # подчеркивать # He emphasized the importance of education. # Он подчеркнул важность образования.
+enable # позволять # The new software enables faster processing. # Новое программное обеспечение позволяет быстрее обрабатывать данные.
+encounter # столкновение # They had an encounter with a bear. # У них было столкновение с медведем.
+engage # вовлекать # She engaged in the conversation. # Она вовлеклась в разговор.
+enhance # улучшать # The new features enhance the product. # Новые функции улучшают продукт.
+enquiry # запрос # The enquiry was sent to the department. # Запрос был отправлен в отдел.
+ensure # обеспечивать # We need to ensure safety. # Нам нужно обеспечить безопасность.
+enthusiasm # энтузиазм # His enthusiasm was contagious. # Его энтузиазм был заразительным.
+enthusiastic # восторженный # She was enthusiastic about the project. # Она была восторженна по поводу проекта.
+entire # весь # The entire team worked hard. # Вся команда усердно работала.
+entirely # полностью # The plan was entirely different. # План был полностью другим.
+equal # равный # All people are equal. # Все люди равны.
+establish # устанавливать # They established a new rule. # Они установили новое правило.
+estate # поместье # The estate was large and beautiful. # Поместье было большим и красивым.
+estimate # оценка # The estimate was accurate. # Оценка была точной.
+ethical # этический # The decision was ethical. # Решение было этичным.
+evaluate # оценивать # The teacher will evaluate the students' work. # Учитель оценит работу студентов.
+even # даже # Even he was surprised. # Даже он был удивлен.
+evil # зло # The evil in the world is a problem. # Зло в мире — это проблема.
+examination # экзамен # The examination was difficult. # Экзамен был трудным.
+excuse # оправдание # He had no excuse for his behavior. # У него не было оправдания своему поведению.
+executive # исполнительный # The executive board made a decision. # Исполнительный совет принял решение.
+existence # существование # The existence of life on other planets is possible. # Существование жизни на других планетах возможно.
+expectation # ожидание # The expectation was high. # Ожидание было высоким.
+expense # расходы # The expense was too high. # Расходы были слишком высокими.
+exploration # исследование # The exploration of space continues. # Исследование космоса продолжается.
+expose # выставлять # The photo was exposed to light. # Фотография была выставлена на свет.
+extend # расширять # They decided to extend the project. # Они решили расширить проект.
+extent # степень # The extent of the damage was unknown. # Степень ущерба была неизвестна.
+external # внешний # The external walls were painted. # Внешние стены были покрашены.
+extraordinary # необыкновенный # The performance was extraordinary. # Выступление было необыкновенным.
+extreme # крайний # The extreme weather caused problems. # Крайняя погода вызвала проблемы.
+facility # объект # The facility was modern. # Объект был современным.
+failure # неудача # The failure was unexpected. # Неудача была неожиданной.
+faith # вера # She has faith in her abilities. # У нее есть вера в свои способности.
+fault # вина # It was his fault. # Это была его вина.
+favour # услуга # He asked for a favour. # Он попросил об услуге.
+feather # перо # The feather was light. # Перо было легким.
+fee # плата # The fee for the service was high. # Плата за услугу была высокой.
+feed # кормить # She fed the cat. # Она покормила кота.
+feedback # обратная связь # The feedback was positive. # Обратная связь была положительной.
+feel # чувствовать # He felt happy. # Он чувствовал себя счастливым.
+fellow # товарищ # He is a fellow student. # Он товарищ по учебе.
+figure # фигура # The figure in the painting was mysterious. # Фигура на картине была загадочной.
+file # файл # The file was saved on the computer. # Файл был сохранен на компьютере.
+finance # финансы # The finance department is responsible for the budget. # Финансовый отдел отвечает за бюджет.
+finding # находка # The finding was significant. # Находка была значительной.
+firm # фирма # The firm is known for its quality. # Фирма известна своим качеством.
+fix # исправлять # He fixed the broken chair. # Он исправил сломанный стул.
+flame # пламя # The flame was bright. # Пламя было ярким.
+flash # вспышка # The flash of light was sudden. # Вспышка света была внезапной.
+flexible # гибкий # The schedule is flexible. # График гибкий.
+float # плавать # The boat floated on the water. # Лодка плавала на воде.
+fold # складывать # She folded the paper. # Она сложила бумагу.
+folding # складной # The folding chair was easy to carry. # Складной стул было легко носить.
+following # следующий # The following day was sunny. # Следующий день был солнечным.
+forgive # прощать # She forgave him. # Она простила его.
+former # бывший # The former president gave a speech. # Бывший президент выступил с речью.
+fortune # состояние # He inherited a fortune. # Он унаследовал состояние.
+forward # вперед # She moved forward. # Она двинулась вперед.
+found # основать # They founded the company in 1990. # Они основали компанию в 1990 году.
+free # свободный # He felt free. # Он чувствовал себя свободным.
+freedom # свобода # Freedom is important. # Свобода важна.
+frequency # частота # The frequency of the signal was high. # Частота сигнала была высокой.
+fuel # топливо # The car ran out of fuel. # В машине закончилось топливо.
+fully # полностью # The project was fully completed. # Проект был полностью завершен.
+function # функция # The function of the device is simple. # Функция устройства проста.
+fund # фонд # The fund was established to help the poor. # Фонд был создан для помощи бедным.
+fundamental # фундаментальный # The fundamental principles are important. # Фундаментальные принципы важны.
+funding # финансирование # The funding for the project was approved. # Финансирование проекта было одобрено.
+furthermore # более того # Furthermore, the results were impressive. # Более того, результаты были впечатляющими.
+gain # получать # He gained experience. # Он получил опыт.
+gang # банда # The gang was arrested. # Банда была арестована.
+generate # генерировать # The machine generates electricity. # Машина генерирует электричество.
+genre # жанр # The genre of the book is science fiction. # Жанр книги — научная фантастика.
+govern # управлять # The president governs the country. # Президент управляет страной.
+grab # хватать # He grabbed the book. # Он схватил книгу.
+grade # оценка # She received a good grade. # Она получила хорошую оценку.
+gradually # постепенно # The situation improved gradually. # Ситуация постепенно улучшалась.
+grand # величественный # The grand palace was impressive. # Величественный дворец был впечатляющим.
+grant # грант # The grant was awarded to the scientist. # Грант был присужден ученому.
+guarantee # гарантия # The product comes with a guarantee. # На продукт дается гарантия.
+handle # ручка # The handle of the door was broken. # Ручка двери была сломана.
+harm # вред # The harm was minimal. # Вред был минимальным.
+harmful # вредный # Smoking is harmful to health. # Курение вредно для здоровья.
+hearing # слух # His hearing was sharp. # Его слух был острым.
+heaven # небо # The sky looked like heaven. # Небо выглядело как рай.
+heel # пятка # She hurt her heel. # Она повредила пятку.
+hell # ад # The place was like hell. # Место было похоже на ад.
+hesitate # колебаться # He hesitated before answering. # Он колебался перед ответом.
+high # высокий # The mountain was very high. # Гора была очень высокой.
+hire # нанимать # They decided to hire a new employee. # Они решили нанять нового сотрудника.
+hold # держать # She held the baby. # Она держала ребенка.
+hollow # полый # The tree was hollow inside. # Дерево было полым внутри.
+holy # святой # The place was considered holy. # Место считалось святым.
+honour # честь # It was an honour to meet him. # Было честью встретить его.
+host # хозяин # The host welcomed the guests. # Хозяин приветствовал гостей.
+house # дом # The house was big. # Дом был большим.
+household # домашнее хозяйство # The household chores were tiring. # Домашние дела были утомительными.
+housing # жилье # The housing problem is serious. # Проблема жилья серьезная.
+humorous # юмористический # The story was humorous. # История была юмористической.
+humour # юмор # His humour was appreciated. # Его юмор был оценен.
+hunt # охота # The hunt was successful. # Охота была успешной.
+hunting # охота # Hunting is a popular activity. # Охота — популярное занятие.
+hurt # причинять боль # He hurt his leg. # Он повредил ногу.
+ideal # идеальный # The conditions were ideal. # Условия были идеальными.
+illustrate # иллюстрировать # The book was illustrated with pictures. # Книга была иллюстрирована картинками.
+illustration # иллюстрация # The illustration was beautiful. # Иллюстрация была красивой.
+imagination # воображение # His imagination was vivid. # Его воображение было ярким.
+impatient # нетерпеливый # She was impatient to start. # Она была нетерпелива начать.
+imply # подразумевать # His words implied a threat. # Его слова подразумевали угрозу.
+impose # навязывать # The government imposed new taxes. # Правительство навязало новые налоги.
+impress # впечатлять # The performance impressed everyone. # Выступление впечатлило всех.
+impressed # впечатленный # She was impressed by his skills. # Она была впечатлена его навыками.
+inch # дюйм # The screen is 10 inches. # Экран 10 дюймов.
+incident # инцидент # The incident was reported. # Инцидент был зарегистрирован.
+income # доход # His income is high. # Его доход высокий.
+increasingly # все больше # The problem is increasingly serious. # Проблема становится все более серьезной.
+industrial # промышленный # The industrial area is large. # Промышленная зона большая.
+infection # инфекция # The infection spread quickly. # Инфекция распространилась быстро.
+inform # сообщать # He informed her about the changes. # Он сообщил ей об изменениях.
+initial # начальный # The initial plan was changed. # Начальный план был изменен.
+initially # первоначально # Initially, the project seemed simple. # Первоначально проект казался простым.
+initiative # инициатива # The initiative was successful. # Инициатива была успешной.
+inner # внутренний # The inner circle was small. # Внутренний круг был маленьким.
+insight # понимание # His insight was valuable. # Его понимание было ценным.
+insist # настаивать # She insisted on going. # Она настаивала на том, чтобы пойти.
+inspire # вдохновлять # The speech inspired everyone. # Речь вдохновила всех.
+install # устанавливать # They installed a new system. # Они установили новую систему.
+instance # пример # This is a good instance. # Это хороший пример.
+institute # институт # The institute is famous. # Институт знаменит.
+institution # учреждение # The institution was established in 1900. # Учреждение было основано в 1900 году.
+insurance # страхование # The insurance covered the damage. # Страхование покрыло ущерб.
+intended # предназначенный # The message was intended for her. # Сообщение было предназначено для нее.
+intense # интенсивный # The heat was intense. # Жара была интенсивной.
+internal # внутренний # The internal structure is complex. # Внутренняя структура сложна.
+interpret # интерпретировать # He interpreted the text. # Он интерпретировал текст.
+interrupt # прерывать # She interrupted the conversation. # Она прервала разговор.
+investigation # расследование # The investigation is ongoing. # Расследование продолжается.
+investment # инвестиция # The investment was profitable. # Инвестиция была прибыльной.
+issue # проблема # The issue was resolved. # Проблема была решена.
+joy # радость # The news brought joy. # Новость принесла радость.
+judgement # суждение # His judgement was fair. # Его суждение было справедливым.
+junior # младший # He is a junior employee. # Он младший сотрудник.
+justice # справедливость # Justice must be served. # Справедливость должна быть соблюдена.
+justify # оправдывать # He tried to justify his actions. # Он пытался оправдать свои действия.
+labour # труд # The labour was hard. # Труд был тяжелым.
+landscape # пейзаж # The landscape was beautiful. # Пейзаж был красивым.
+largely # в значительной степени # The success was largely due to teamwork. # Успех в значительной степени был обусловлен командной работой.
+latest # последний # The latest news is shocking. # Последние новости шокируют.
+launch # запуск # The launch of the product was successful. # Запуск продукта был успешным.
+leadership # лидерство # His leadership was effective. # Его лидерство было эффективным.
+league # лига # The team joined the league. # Команда вступила в лигу.
+lean # наклоняться # He leaned against the wall. # Он наклонился к стене.
+leave # оставлять # She left the room. # Она оставила комнату.
+level # уровень # The level of difficulty is high. # Уровень сложности высокий.
+licence # лицензия # The licence was granted. # Лицензия была выдана.
+limited # ограниченный # The resources are limited. # Ресурсы ограничены.
+line # линия # The line was straight. # Линия была прямой.
+lively # оживленный # The party was lively. # Вечеринка была оживленной.
+load # груз # The load was heavy. # Груз был тяжелым.
+loan # заем # He took out a loan. # Он взял заем.
+logical # логический # His argument was logical. # Его аргумент был логическим.
+long-term # долгосрочный # The long-term effects are unknown. # Долгосрочные эффекты неизвестны.
+loose # свободный # The rope was loose. # Веревка была свободной.
+lord # лорд # The lord ruled the land. # Лорд правил землей.
+low # низкий # The temperature was low. # Температура была низкой.
+lower # нижний # The lower part was damaged. # Нижняя часть была повреждена.
+lung # легкое # The lung infection was serious. # Инфекция легких была серьезной.
+maintain # поддерживать # He maintained his position. # Он поддерживал свою позицию.
+majority # большинство # The majority agreed. # Большинство согласилось.
+make # делать # She made a cake. # Она сделала торт.
+map # карта # The map was detailed. # Карта была подробной.
+mass # масса # The mass of the object was large. # Масса объекта была большой.
+massive # массивный # The building was massive. # Здание было массивным.
+master # мастер # He is a master of his craft. # Он мастер своего дела.
+matching # соответствующий # The matching colors were perfect. # Соответствующие цвета были идеальными.

@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using SigmaWord.Models;
+using SigmaWord.Data.Entities;
 using SigmaWord.Services;
 
 namespace SigmaWord.ViewModels
@@ -16,23 +16,15 @@ namespace SigmaWord.ViewModels
         }
 
         [RelayCommand]
-        private void ClearAll()
-        {
-            // Логика для очистки всех данных
-            FlashCards = null;
-            // Дополнительная логика, если необходимо
-        }
-        [RelayCommand]
-        private async void ReadFromJson()
-        {
-            var words = await _vocabularyService.LoadWordsAsync();
-            FlashCards = words;
-        }
-        [RelayCommand]
         private void ShowMenu(FlashCard flashCard)
         {
             // Логика для показа меню с действиями для карточки
             // Возможно, вам понадобится использовать Popup или другой метод для отображения меню
+        }
+
+        [RelayCommand]
+        private void Test()
+        {
         }
     }
 }
