@@ -8,23 +8,15 @@ namespace SigmaWord.ViewModels
     public partial class DictionaryViewModel : ObservableObject
     {
         private readonly VocabularyService _vocabularyService;
+        private readonly DbService _dbService;
         [ObservableProperty]
-        List<FlashCard> flashCards;
-        public DictionaryViewModel(VocabularyService vocabularyService)
+        string flashCards;
+        public DictionaryViewModel(VocabularyService vocabularyService, DbService dbService)
         {
             _vocabularyService = vocabularyService;
+            _dbService = dbService;
         }
 
-        [RelayCommand]
-        private void ShowMenu(FlashCard flashCard)
-        {
-            // Логика для показа меню с действиями для карточки
-            // Возможно, вам понадобится использовать Popup или другой метод для отображения меню
-        }
 
-        [RelayCommand]
-        private void Test()
-        {
-        }
     }
 }

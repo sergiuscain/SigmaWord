@@ -2,11 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SigmaWord.Views.DictionaryPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
-             xmlns:models="clr-namespace:SigmaWord.Models"
+             xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:DictionaryViewModel">
-    <Grid>
-        <ScrollView Style="{StaticResource DarkBackgroundStyle}" Grid.Row="2">
-            <Button Command="{Binding TestCommand}" Text="Test"/>
-        </ScrollView>
+    <Grid ColumnDefinitions="*,*,*">
     </Grid>
 </ContentPage>

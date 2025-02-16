@@ -15,7 +15,8 @@ namespace SigmaWord.Services
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=SigmaWordDb.db");
+            var dbPath = Path.Combine(FileSystem.AppDataDirectory, "SigmaWordDb.db");
+            optionsBuilder.UseSqlite($"Filename = {dbPath}");
         }
     }
 }
