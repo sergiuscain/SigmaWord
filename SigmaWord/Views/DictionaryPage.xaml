@@ -4,6 +4,7 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:DictionaryViewModel">
-    <Grid ColumnDefinitions="*,*,*">
+    <Grid RowDefinitions="*,*,*">
+
     </Grid>
 </ContentPage>
