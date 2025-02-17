@@ -16,7 +16,7 @@ namespace SigmaWord
         }
         protected override void OnStart()
         {
-            _context.Database.Migrate();
+            _context.Database.EnsureCreated();
         }
     }
 }

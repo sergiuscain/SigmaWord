@@ -18,14 +18,5 @@ namespace SigmaWord.ViewModels
         {
             _dbService = dbService;
         }
-
-        private async void LoadWords(int categoryId)
-        {
-            var words = await _dbService.GetWordsByCategoryIdAsync(categoryId); // Метод для получения слов по категории
-            foreach (var word in words)
-            {
-                Words.Add(word);
-            }
-        }
     }
 }

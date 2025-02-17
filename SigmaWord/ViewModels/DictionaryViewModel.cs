@@ -16,6 +16,12 @@ namespace SigmaWord.ViewModels
             _vocabularyService = vocabularyService;
             _dbService = dbService;
         }
+        [RelayCommand]
+        public async Task GoToWordsPage(string categoryName)
+        {
+            var allCard = await _dbService.GetAllCardsAsync();
+            var card = await _dbService.GetWordsByCategoryNameAsync(categoryName);
+        }
 
     }
 }

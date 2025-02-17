@@ -10,6 +10,7 @@ namespace SigmaWord.Services
         public DbService(SigmaWordDbContext context)
         {
             _context = context;
+            InitializeDatabaseAsync().Wait();
         }
         public async Task AddCardAsync(FlashCard card)
         {
@@ -42,28 +43,37 @@ namespace SigmaWord.Services
         public async Task InitializeDatabaseAsync()
         {
             // Проверяем, существует ли база данных
-            if (!await _context.Database.CanConnectAsync())
+            bool canConnect = await _context.Database.CanConnectAsync();
+
+            if (!canConnect)
             {
                 // Если нет, создаем базу данных
-                await _context.Database.EnsureCreatedAsync();
-                //await AddFromFile("Oxfard3000_b1Ready");
-                //await AddFromFile("Oxfard3000_b2Ready");
-                //await AddFromFile("Oxford3000_a1Ready");
-                //await AddFromFile("Oxford3000_a2Ready");
+                await _context.Database.MigrateAsync();
+
+                // Добавляем данные из файлов ресурсов
+                await AddFromFile("Oxfard3000_b1Ready");
+                // Раскомментируйте следующие строки, если нужно добавить остальные файлы
+                // await AddFromFile("Oxfard3000_b2Ready");
+                // await AddFromFile("Oxford3000_a1Ready");
+                // await AddFromFile("Oxford3000_a2Ready");
             }
             else
             {
                 // Проверяем, есть ли карточки в базе данных
-                if (!await _context.FlashCards.AnyAsync())
+                bool hasFlashCards = await _context.FlashCards.AnyAsync();
+
+                if (!hasFlashCards)
                 {
                     // Если карточек нет, добавляем данные из файлов ресурсов
                     await AddFromFile("Oxfard3000_b1Ready");
-                    //await AddFromFile("Oxfard3000_b2Ready");
-                    //await AddFromFile("Oxford3000_a1Ready");
-                    //await AddFromFile("Oxford3000_a2Ready");
+                    // Раскомментируйте следующие строки, если нужно добавить остальные файлы
+                    // await AddFromFile("Oxfard3000_b2Ready");
+                    // await AddFromFile("Oxford3000_a1Ready");
+                    // await AddFromFile("Oxford3000_a2Ready");
                 }
             }
         }
+
 
         // Добавление примера слова к карточке
         public async Task AddExampleToCardAsync(FlashCard card, ExampleSentence example)
@@ -127,6 +137,7 @@ namespace SigmaWord.Services
             {
                 //absolutely # абсолютно # I absolutely agree. # Я абсолютно согласен.
                 var data = (await reader.ReadLineAsync()).Split("#");
+                var category = await _context.Category.FirstAsync(c => c.Name == fileName);
                 FlashCard card = new FlashCard()
                 {
                     Word = data[0],
@@ -142,17 +153,19 @@ namespace SigmaWord.Services
                     Status = WordStatus.Unknown,
                     RequiredRepetitions = 10,
                     CurrentRepetitions = 0,
+                    Categories = new List<Category>()
+                    {
+                        category
+                    }
                 };
                 await AddCardAsync(card);
-                var category = await _context.Category.FirstAsync(card => card.Name == fileName);
-                await AddCategoryToCardAsync(card, category);
             }
         }
 
-        public async Task<List<FlashCard>> GetWordsByCategoryIdAsync(int categoryId)
+        public async Task<List<FlashCard>> GetWordsByCategoryNameAsync(string categoryName)
         {
             return await _context.FlashCards
-             .Where(fc => fc.Categories.Any(c => c.Id == categoryId))
+             .Where(fc => fc.Categories.Any(c => c.Name == categoryName))
              .ToListAsync();
         }
     }

@@ -4,7 +4,10 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:DictionaryViewModel">
-    <Grid RowDefinitions="*,*,*">
-
-    </Grid>
+    <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
+        <Button Style="{StaticResource PrimaryButtonStyle}" 
+        Text="Oxford3000 A1"
+        Command="{Binding GoToWordsPageCommand}"
+                CommandParameter="Oxfard3000_b1Ready"/>
+    </VerticalStackLayout>
 </ContentPage>
