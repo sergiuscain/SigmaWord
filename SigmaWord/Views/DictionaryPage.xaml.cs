@@ -1,3 +1,4 @@
+using SigmaWord.Data.Entities;
 using SigmaWord.ViewModels;
 
 namespace SigmaWord.Views;

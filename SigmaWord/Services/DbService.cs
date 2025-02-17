@@ -46,10 +46,10 @@ namespace SigmaWord.Services
             {
                 // Если нет, создаем базу данных
                 await _context.Database.EnsureCreatedAsync();
-                await AddFromFile("Oxfard3000_b1Ready");
-                await AddFromFile("Oxfard3000_b2Ready");
-                await AddFromFile("Oxford3000_a1Ready");
-                await AddFromFile("Oxford3000_a2Ready");
+                //await AddFromFile("Oxfard3000_b1Ready");
+                //await AddFromFile("Oxfard3000_b2Ready");
+                //await AddFromFile("Oxford3000_a1Ready");
+                //await AddFromFile("Oxford3000_a2Ready");
             }
             else
             {
@@ -58,9 +58,9 @@ namespace SigmaWord.Services
                 {
                     // Если карточек нет, добавляем данные из файлов ресурсов
                     await AddFromFile("Oxfard3000_b1Ready");
-                    await AddFromFile("Oxfard3000_b2Ready");
-                    await AddFromFile("Oxford3000_a1Ready");
-                    await AddFromFile("Oxford3000_a2Ready");
+                    //await AddFromFile("Oxfard3000_b2Ready");
+                    //await AddFromFile("Oxford3000_a1Ready");
+                    //await AddFromFile("Oxford3000_a2Ready");
                 }
             }
         }
@@ -119,7 +119,7 @@ namespace SigmaWord.Services
             using var stream = assembly.GetManifestResourceStream(resourceName);
             using var reader = new StreamReader(stream);
             //Если категории с именем файла нету, создаем её
-            if (_context.Category.FirstOrDefaultAsync(fc => fc.Name == fileName) == null)
+            if (_context.Category.Any(c => c.Name == resourceName));
             {
                 await AddCategoryAsync(fileName);
             }
@@ -149,6 +149,12 @@ namespace SigmaWord.Services
             }
         }
 
+        public async Task<List<FlashCard>> GetWordsByCategoryIdAsync(int categoryId)
+        {
+            return await _context.FlashCards
+             .Where(fc => fc.Categories.Any(c => c.Id == categoryId))
+             .ToListAsync();
+        }
     }
 }
 

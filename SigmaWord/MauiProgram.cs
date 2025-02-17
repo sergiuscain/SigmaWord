@@ -32,6 +32,8 @@ namespace SigmaWord
             builder.Services.AddTransient<TeachPage>();
             builder.Services.AddTransient<SettingsViewModel>();
             builder.Services.AddTransient<SettingsPage>();
+            builder.Services.AddTransient<WordsViewModel>();
+            builder.Services.AddTransient<WordsPage>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
