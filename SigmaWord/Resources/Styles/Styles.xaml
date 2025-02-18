@@ -3,6 +3,7 @@
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
     <!-- Стили для кнопок -->
     <Style x:Key="PrimaryButtonStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
@@ -48,8 +49,13 @@
         <Setter Property="Padding" Value="10" />
     </Style>
 
-    <!--Фон-->
+    <!-- Фон -->
     <Style x:Key="DarkBackgroundStyle" TargetType="VerticalStackLayout">
+        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+    </Style>
+
+    <!-- Grid -->
+    <Style x:Key="DarkGridStyle" TargetType="Grid">
         <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
     </Style>
 
@@ -58,5 +64,29 @@
         <Setter Property="BackgroundColor" Value="{StaticResource DarkTabBarBackgroundColor}" />
         <Setter Property="ForegroundColor" Value="{StaticResource DarkTabBarTextColor}" />
         <Setter Property="Shell.BackButtonBehavior" Value="{StaticResource DarkTabBarTextColor}" />
+    </Style>
+
+    <!-- Стиль для ListView -->
+    <Style x:Key="DarkListViewStyle" TargetType="ListView">
+        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+        <Setter Property="SeparatorColor" Value="{StaticResource ButtonAccentColor}" />
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Name}" TextColor="{StaticResource PrimaryTextColor}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Стиль для Picker -->
+    <Style TargetType="Picker">
+        <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="Margin" Value="5" />
     </Style>
 </ResourceDictionary>

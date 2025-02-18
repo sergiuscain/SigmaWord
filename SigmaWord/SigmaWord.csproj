@@ -58,15 +58,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Words\Oxfard3000_b1Ready.txt" />
-	  <None Remove="Resources\Words\Oxfard3000_b2Ready.txt" />
 	  <None Remove="Resources\Words\Oxford3000_a1Ready.txt" />
 	  <None Remove="Resources\Words\Oxford3000_a2Ready.txt" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\Words\Oxfard3000_b1Ready.txt" />
-	  <EmbeddedResource Include="Resources\Words\Oxfard3000_b2Ready.txt" />
+	  <EmbeddedResource Include="Resources\Words\Oxford3000_b1Ready.txt" />
+	  <EmbeddedResource Include="Resources\Words\Oxford3000_b2Ready.txt" />
 	  <EmbeddedResource Include="Resources\Words\Oxford3000_a1Ready.txt" />
 	  <EmbeddedResource Include="Resources\Words\Oxford3000_a2Ready.txt" />
 	</ItemGroup>

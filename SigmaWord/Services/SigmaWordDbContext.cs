@@ -16,7 +16,9 @@ namespace SigmaWord.Services
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var dbPath = Path.Combine(FileSystem.AppDataDirectory, "SigmaWordDb.db");
-            optionsBuilder.UseSqlite($"Filename = {dbPath}");
+            var downloadPath = $"Filename={Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "SigmaWordDb.db")}";
+            var pathOnAndroid = $"Filename = {dbPath}";
+            optionsBuilder.UseSqlite(pathOnAndroid);
         }
     }
 }

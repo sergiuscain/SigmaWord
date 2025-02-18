@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Maui.Storage;
 using SigmaWord.Data.Entities;
 using System.Reflection;
 
@@ -10,6 +11,7 @@ namespace SigmaWord.Services
         public DbService(SigmaWordDbContext context)
         {
             _context = context;
+            //CLEARDatabaseAsync().Wait(); //Очистить всё!! Для тестирования*
             InitializeDatabaseAsync().Wait();
         }
         public async Task AddCardAsync(FlashCard card)
@@ -51,11 +53,11 @@ namespace SigmaWord.Services
                 await _context.Database.MigrateAsync();
 
                 // Добавляем данные из файлов ресурсов
-                await AddFromFile("Oxfard3000_b1Ready");
-                // Раскомментируйте следующие строки, если нужно добавить остальные файлы
-                // await AddFromFile("Oxfard3000_b2Ready");
-                // await AddFromFile("Oxford3000_a1Ready");
-                // await AddFromFile("Oxford3000_a2Ready");
+                //Раскомментируйте следующие строки, если нужно добавить остальные файлы
+                await AddFromFile("Oxford3000_a1Ready");
+                await AddFromFile("Oxford3000_a2Ready");
+                await AddFromFile("Oxford3000_b1Ready");
+                await AddFromFile("Oxford3000_b2Ready");
             }
             else
             {
@@ -65,11 +67,11 @@ namespace SigmaWord.Services
                 if (!hasFlashCards)
                 {
                     // Если карточек нет, добавляем данные из файлов ресурсов
-                    await AddFromFile("Oxfard3000_b1Ready");
                     // Раскомментируйте следующие строки, если нужно добавить остальные файлы
-                    // await AddFromFile("Oxfard3000_b2Ready");
-                    // await AddFromFile("Oxford3000_a1Ready");
-                    // await AddFromFile("Oxford3000_a2Ready");
+                    await AddFromFile("Oxford3000_a1Ready");
+                    await AddFromFile("Oxford3000_a2Ready");
+                    await AddFromFile("Oxford3000_b1Ready");
+                    await AddFromFile("Oxford3000_b2Ready");
                 }
             }
         }
@@ -129,36 +131,41 @@ namespace SigmaWord.Services
             using var stream = assembly.GetManifestResourceStream(resourceName);
             using var reader = new StreamReader(stream);
             //Если категории с именем файла нету, создаем её
-            if (_context.Category.Any(c => c.Name == resourceName));
+            if (!_context.Category.Any(c => c.Name == resourceName))
             {
                 await AddCategoryAsync(fileName);
             }
+            var category = await _context.Category.FirstAsync(c => c.Name == fileName);
             while (!reader.EndOfStream)
             {
                 //absolutely # абсолютно # I absolutely agree. # Я абсолютно согласен.
-                var data = (await reader.ReadLineAsync()).Split("#");
-                var category = await _context.Category.FirstAsync(c => c.Name == fileName);
-                FlashCard card = new FlashCard()
-                {
-                    Word = data[0],
-                    Translation = data[1],
-                    ExampleSentences = new List<ExampleSentence>()
+                string line = await reader.ReadLineAsync();
+                var data = line.Split("#");
+                if (data.Length >= 4)
+                { 
+                    FlashCard card = new FlashCard()
                     {
-                        new ExampleSentence
-                        {
-                            Sentence = data[2],
-                            Translation = data[3],
-                        }
-                    },
-                    Status = WordStatus.Unknown,
-                    RequiredRepetitions = 10,
-                    CurrentRepetitions = 0,
-                    Categories = new List<Category>()
-                    {
-                        category
-                    }
-                };
-                await AddCardAsync(card);
+                        Word = data[0],
+                        Translation = data[1],
+                        ExampleSentences = new List<ExampleSentence>()
+                            {
+                                new ExampleSentence
+                                {
+                                    Sentence = data[2],
+                                    Translation = data[3],
+                                }
+                            },
+                        Status = WordStatus.Unknown,
+                        RequiredRepetitions = 100,
+                        CurrentRepetitions = 0,
+                        Categories = new List<Category>()
+                            {
+                                category
+                            }
+                    };
+                    await AddCardAsync(card);
+                }
+
             }
         }
 

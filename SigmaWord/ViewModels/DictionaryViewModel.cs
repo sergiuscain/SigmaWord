@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Newtonsoft.Json;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
+using SigmaWord.Views;
 using System.Reflection;
 
 namespace SigmaWord.ViewModels
@@ -21,6 +22,18 @@ namespace SigmaWord.ViewModels
         {
             var allCard = await _dbService.GetAllCardsAsync();
             var card = await _dbService.GetWordsByCategoryNameAsync(categoryName);
+
+            if (card != null)
+            {
+                // Создаем новую страницу и устанавливаем свойство
+                var wordsPage = new WordsPage(new WordsViewModel(_dbService), categoryName);
+                await Shell.Current.Navigation.PushAsync(wordsPage);
+            }
+            else
+            {
+                // Обработка случая, когда карточек нет
+                Console.WriteLine($"Нет карточек для категории: {categoryName}");
+            }
         }
 
     }
