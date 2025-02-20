@@ -9,6 +9,8 @@
         public ICollection<Category> Categories { get; set; } // Список категорий
         public int RequiredRepetitions { get; set; } // Необходимое количество повторений
         public int CurrentRepetitions { get; set; } // Текущее количество повторений
+        public DateTime NextRepeatDate { get; set; } //Дата следующего повторения.
+        public DateTime LastRepeatDate { get; set; } //Дата последнего повторения.
         public WordStatus Status { get; set; } // Статус слова
 
         public string GetLearningStatus()

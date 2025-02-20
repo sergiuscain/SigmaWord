@@ -11,7 +11,7 @@ namespace SigmaWord.Services
         public DbService(SigmaWordDbContext context)
         {
             _context = context;
-            //CLEARDatabaseAsync().Wait(); //Очистить всё!! Для тестирования*
+            CLEARDatabaseAsync().Wait(); //Очистить всё!! Для тестирования*
             InitializeDatabaseAsync().Wait();
         }
         public async Task AddCardAsync(FlashCard card)
@@ -54,9 +54,9 @@ namespace SigmaWord.Services
 
                 // Добавляем данные из файлов ресурсов
                 //Раскомментируйте следующие строки, если нужно добавить остальные файлы
-                await AddFromFile("Oxford3000_a1Ready");
-                await AddFromFile("Oxford3000_a2Ready");
-                await AddFromFile("Oxford3000_b1Ready");
+                //await AddFromFile("Oxford3000_a1Ready");
+                //await AddFromFile("Oxford3000_a2Ready");
+                //await AddFromFile("Oxford3000_b1Ready");
                 await AddFromFile("Oxford3000_b2Ready");
             }
             else
@@ -68,9 +68,9 @@ namespace SigmaWord.Services
                 {
                     // Если карточек нет, добавляем данные из файлов ресурсов
                     // Раскомментируйте следующие строки, если нужно добавить остальные файлы
-                    await AddFromFile("Oxford3000_a1Ready");
-                    await AddFromFile("Oxford3000_a2Ready");
-                    await AddFromFile("Oxford3000_b1Ready");
+                    //await AddFromFile("Oxford3000_a1Ready");
+                    //await AddFromFile("Oxford3000_a2Ready");
+                    //await AddFromFile("Oxford3000_b1Ready");
                     await AddFromFile("Oxford3000_b2Ready");
                 }
             }
