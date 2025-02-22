@@ -21,21 +21,10 @@ namespace SigmaWord.ViewModels
         public async Task GoToWordsPage(string categoryName)
         {
             await _dbService.InitializeDatabaseAsync();
-            var allCard = await _dbService.GetAllCardsAsync();
-            var card = await _dbService.GetWordsByCategoryNameAsync(categoryName);
-
-            if (card != null)
-            {
-                // Создаем новую страницу и устанавливаем свойство
-                var viewModel = new WordsViewModel(_dbService);
-                var wordsPage = new WordsPage(viewModel, categoryName);
-                await Shell.Current.Navigation.PushAsync(wordsPage);
-            }
-            else
-            {
-                // Обработка случая, когда карточек нет
-                Console.WriteLine($"Нет карточек для категории: {categoryName}");
-            }
+            // Создаем новую страницу и устанавливаем свойство
+            var viewModel = new WordsViewModel(_dbService);
+            var wordsPage = new WordsPage(viewModel, categoryName);
+            await Shell.Current.Navigation.PushAsync(wordsPage);
         }
 
     }

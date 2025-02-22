@@ -13,7 +13,6 @@
                         <Grid ColumnDefinitions="*,*,*">
                             <Label Grid.Column="0" Text="{Binding Word}" />
                             <Label Grid.Column="1" Text="{Binding Translation}" />
-                            <Button Grid.Column="2" Text="Перевести" Command="{Binding Source={x:Reference WordsPage}, Path=BindingContext.DoSomeCommand}" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

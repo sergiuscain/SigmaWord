@@ -7,8 +7,7 @@
     xmlns:views="clr-namespace:SigmaWord.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="SigmaWord"
-    Style="{StaticResource DarkTabBarStyle}"
-    >
+    Style="{StaticResource DarkTabBarStyle}">
 
     <TabBar>
         <Tab Title="УЧИТЬ">

@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
+using System.Collections.ObjectModel;
 
 namespace SigmaWord.ViewModels
 {
@@ -11,7 +12,7 @@ namespace SigmaWord.ViewModels
         [ObservableProperty]
         public string categoryName;
         [ObservableProperty]
-        public List<FlashCard> words;
+        public ObservableCollection<FlashCard> words;
         public WordsViewModel(DbService dbService)
         {
             _dbService = dbService;
@@ -19,7 +20,7 @@ namespace SigmaWord.ViewModels
         public async Task LoadWords()
         {
             var words = await _dbService.GetWordsByCategoryNameAsync(categoryName);
-            Words = words;
+            Words = new ObservableCollection<FlashCard>(words);
         }
         [RelayCommand]
         public async Task DoSome()
