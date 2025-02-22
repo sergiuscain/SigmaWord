@@ -59,15 +59,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Words\Oxford3000_a1Ready.txt" />
-	  <None Remove="Resources\Words\Oxford3000_a2Ready.txt" />
+	  <None Remove="Resources\Words\SigmaWordDb.db" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\Words\Oxford3000_b1Ready.txt" />
-	  <EmbeddedResource Include="Resources\Words\Oxford3000_b2Ready.txt" />
-	  <EmbeddedResource Include="Resources\Words\Oxford3000_a1Ready.txt" />
-	  <EmbeddedResource Include="Resources\Words\Oxford3000_a2Ready.txt" />
+	  <EmbeddedResource Include="Resources\Words\SigmaWordDb.db" />
 	</ItemGroup>
 
 	<ItemGroup>

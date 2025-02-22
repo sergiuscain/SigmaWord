@@ -20,13 +20,15 @@ namespace SigmaWord.ViewModels
         [RelayCommand]
         public async Task GoToWordsPage(string categoryName)
         {
+            await _dbService.InitializeDatabaseAsync();
             var allCard = await _dbService.GetAllCardsAsync();
             var card = await _dbService.GetWordsByCategoryNameAsync(categoryName);
 
             if (card != null)
             {
                 // Создаем новую страницу и устанавливаем свойство
-                var wordsPage = new WordsPage(new WordsViewModel(_dbService), categoryName);
+                var viewModel = new WordsViewModel(_dbService);
+                var wordsPage = new WordsPage(viewModel, categoryName);
                 await Shell.Current.Navigation.PushAsync(wordsPage);
             }
             else

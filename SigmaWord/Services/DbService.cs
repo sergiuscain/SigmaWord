@@ -11,8 +11,6 @@ namespace SigmaWord.Services
         public DbService(SigmaWordDbContext context)
         {
             _context = context;
-            CLEARDatabaseAsync().Wait(); //Очистить всё!! Для тестирования*
-            InitializeDatabaseAsync().Wait();
         }
         public async Task AddCardAsync(FlashCard card)
         {
@@ -38,26 +36,34 @@ namespace SigmaWord.Services
         // Полное удаление базы данных
         public async Task CLEARDatabaseAsync()
         {
-            await _context.Database.EnsureDeletedAsync();
-            await _context.Database.EnsureCreatedAsync();
+            var dbPath = PathDb.GetPath();
+            if (File.Exists(dbPath))
+            {
+                try
+                {
+                    // Удаляем файл
+                    File.Delete(dbPath);
+                    await Task.CompletedTask; // Для соблюдения асинхронности
+                }
+                catch (IOException ex)
+                {
+                    // Обработка исключений
+                    Console.WriteLine($"Error deleting file: {ex.Message}");
+                }
+            }
         }
         //Инициализация базы данных. Если базы данных нету или она пустая, заполняем её словами из файлов. 
         public async Task InitializeDatabaseAsync()
         {
+            await CLEARDatabaseAsync(); //Очистить всё!! Для тестирования*
+
             // Проверяем, существует ли база данных
             bool canConnect = await _context.Database.CanConnectAsync();
 
             if (!canConnect)
             {
-                // Если нет, создаем базу данных
-                await _context.Database.MigrateAsync();
-
-                // Добавляем данные из файлов ресурсов
-                //Раскомментируйте следующие строки, если нужно добавить остальные файлы
-                //await AddFromFile("Oxford3000_a1Ready");
-                //await AddFromFile("Oxford3000_a2Ready");
-                //await AddFromFile("Oxford3000_b1Ready");
-                await AddFromFile("Oxford3000_b2Ready");
+                // Если нет, копируем базу данных из ресурсов
+                await CopyDataBase();
             }
             else
             {
@@ -66,12 +72,8 @@ namespace SigmaWord.Services
 
                 if (!hasFlashCards)
                 {
-                    // Если карточек нет, добавляем данные из файлов ресурсов
-                    // Раскомментируйте следующие строки, если нужно добавить остальные файлы
-                    //await AddFromFile("Oxford3000_a1Ready");
-                    //await AddFromFile("Oxford3000_a2Ready");
-                    //await AddFromFile("Oxford3000_b1Ready");
-                    await AddFromFile("Oxford3000_b2Ready");
+                    // Если нет, копируем базу данных из ресурсов
+                    await CopyDataBase();
                 }
             }
         }
@@ -124,48 +126,31 @@ namespace SigmaWord.Services
                 .FirstOrDefaultAsync(fc => fc.Id == id);
         }
         //Метод для добавления в базу данных слов из файла.
-        public async Task AddFromFile(string fileName)
+        public async Task CopyDataBase()
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = $"SigmaWord.Resources.Words.{fileName}.txt";
-            using var stream = assembly.GetManifestResourceStream(resourceName);
-            using var reader = new StreamReader(stream);
-            //Если категории с именем файла нету, создаем её
-            if (!_context.Category.Any(c => c.Name == resourceName))
+            try
             {
-                await AddCategoryAsync(fileName);
-            }
-            var category = await _context.Category.FirstAsync(c => c.Name == fileName);
-            while (!reader.EndOfStream)
-            {
-                //absolutely # абсолютно # I absolutely agree. # Я абсолютно согласен.
-                string line = await reader.ReadLineAsync();
-                var data = line.Split("#");
-                if (data.Length >= 4)
-                { 
-                    FlashCard card = new FlashCard()
-                    {
-                        Word = data[0],
-                        Translation = data[1],
-                        ExampleSentences = new List<ExampleSentence>()
-                            {
-                                new ExampleSentence
-                                {
-                                    Sentence = data[2],
-                                    Translation = data[3],
-                                }
-                            },
-                        Status = WordStatus.Unknown,
-                        RequiredRepetitions = 100,
-                        CurrentRepetitions = 0,
-                        Categories = new List<Category>()
-                            {
-                                category
-                            }
-                    };
-                    await AddCardAsync(card);
-                }
+                // Получаем путь к базе данных на устройстве
+                var dbPath = PathDb.GetPath();
 
+                // Получаем поток к файлу из ресурсов
+                var assembly = typeof(DbService).Assembly;
+                using (Stream stream = assembly.GetManifestResourceStream("SigmaWord.Resources.Words.SigmaWordDb.db"))
+                {
+                    if (stream == null)
+                    {
+                        throw new FileNotFoundException("Database file not found in resources.");
+                    }
+
+                    using (FileStream fileStream = new FileStream(dbPath, FileMode.Create, FileAccess.Write))
+                    {
+                        await stream.CopyToAsync(fileStream);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"ОШИБКА ПРИ КОПИРОВАНИИ БАЗЫ ДАННЫХ ИЗ РЕСУРСОВ: {ex.Message}");
             }
         }
 

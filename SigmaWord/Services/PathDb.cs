@@ -24,5 +24,19 @@ namespace SigmaWord.Services
             }
             return pathDbSqlite;
         }
+        public static string GetPath()
+        {
+            string pathDbSqlite = "";
+            if (DeviceInfo.Platform == DevicePlatform.Android)
+            {
+                return pathDbSqlite = Path.Combine(FileSystem.AppDataDirectory, "SigmaWordDb.db");
+            }
+            else if (DeviceInfo.Platform == DevicePlatform.iOS)
+            {
+                pathDbSqlite = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                pathDbSqlite = Path.Combine(pathDbSqlite, "...", "Library", "SigmaWordDb.db");
+            }
+            return pathDbSqlite;
+        }
     }
 }
