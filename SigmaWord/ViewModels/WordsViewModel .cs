@@ -22,10 +22,5 @@ namespace SigmaWord.ViewModels
             var words = await _dbService.GetWordsByCategoryNameAsync(categoryName);
             Words = new ObservableCollection<FlashCard>(words);
         }
-        [RelayCommand]
-        public async Task DoSome()
-        {
-            Console.WriteLine("DO SOME!! DO SOME DO SOME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        }
     }
 }

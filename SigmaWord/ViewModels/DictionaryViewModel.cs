@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
 using SigmaWord.Views;
+using System.Collections.ObjectModel;
 using System.Reflection;
 
 namespace SigmaWord.ViewModels
@@ -12,10 +13,13 @@ namespace SigmaWord.ViewModels
     {
         private readonly VocabularyService _vocabularyService;
         private readonly DbService _dbService;
+        [ObservableProperty]
+        public ObservableCollection<Category> categories;
         public DictionaryViewModel(VocabularyService vocabularyService, DbService dbService)
         {
             _vocabularyService = vocabularyService;
             _dbService = dbService;
+            categories = new ObservableCollection<Category>(_dbService.GetAllCategoriesAsync().Result);
         }
         [RelayCommand]
         public async Task GoToWordsPage(string categoryName)

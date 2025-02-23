@@ -55,7 +55,7 @@ namespace SigmaWord.Services
         //Инициализация базы данных. Если базы данных нету или она пустая, заполняем её словами из файлов. 
         public async Task InitializeDatabaseAsync()
         {
-            await CLEARDatabaseAsync(); //Очистить всё!! Для тестирования*
+            //await CLEARDatabaseAsync(); //Очистить всё!! Для тестирования*
 
             // Проверяем, существует ли база данных
             bool canConnect = await _context.Database.CanConnectAsync();

@@ -6,17 +6,15 @@
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:WordsViewModel">
     <Grid Style="{StaticResource DarkGridStyle}">
-        <ListView ItemsSource="{Binding Words}">
-            <ListView.ItemTemplate>
+        <CollectionView ItemsSource="{Binding Words}">
+            <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:FlashCard">
-                    <ViewCell>
-                        <Grid ColumnDefinitions="*,*,*">
-                            <Label Grid.Column="0" Text="{Binding Word}" />
-                            <Label Grid.Column="1" Text="{Binding Translation}" />
-                        </Grid>
-                    </ViewCell>
+                    <Grid ColumnDefinitions="*,*,*">
+                        <Label Grid.Column="0" Text="{Binding Word}" />
+                        <Label Grid.Column="1" Text="{Binding Translation}" />
+                    </Grid>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </Grid>
 </ContentPage>
