@@ -83,6 +83,7 @@
         </Setter>
     </Style>
 
+
     <!-- Стиль для Picker -->
     <Style TargetType="Picker">
         <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
