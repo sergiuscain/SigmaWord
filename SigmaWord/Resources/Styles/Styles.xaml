@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!-- Стили для кнопок -->
-    <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+    <Style TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
         <Setter Property="TextColor" Value="{StaticResource ButtonTextColor}" />
         <Setter Property="FontSize" Value="16" />
@@ -54,8 +54,9 @@
     </Style>
 
     <!-- Grid -->
-    <Style x:Key="DarkGridStyle" TargetType="Grid">
+    <Style TargetType="Grid">
         <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+        <Setter Property="Padding" Value="10" />
     </Style>
 
     <!-- Стиль для TabBar -->

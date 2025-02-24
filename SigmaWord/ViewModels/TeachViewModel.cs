@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,29 @@ namespace SigmaWord.ViewModels
 {
     public partial class TeachViewModel : ObservableObject
     {
-        [ObservableProperty]
-        string text = "Текст для учебы";
+        public TeachViewModel()
+        {
+
+        }
+        [RelayCommand]
+        public async Task OpenCategoryMenu()
+        {
+
+        }
+        [RelayCommand]
+        public async Task ChangeDailyGoal()
+        {
+
+        }
+        [RelayCommand]
+        public async Task OpenStudyTab()
+        {
+
+        }
+        [RelayCommand]
+        public async Task OpenReviewTab()
+        {
+
+        }
     }
 }
