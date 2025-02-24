@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
 using SigmaWord.Data.Entities;
+using SigmaWord.Models;
 using SigmaWord.Services;
 using System.Collections.ObjectModel;
 
@@ -12,15 +12,15 @@ namespace SigmaWord.ViewModels
         [ObservableProperty]
         public string categoryName;
         [ObservableProperty]
-        public ObservableCollection<FlashCard> words;
+        public ObservableCollection<FlashCardDto> words;
         public WordsViewModel(DbService dbService)
         {
             _dbService = dbService;
         }
         public async Task LoadWords()
         {
-            var words = await _dbService.GetWordsByCategoryNameAsync(categoryName);
-            Words = new ObservableCollection<FlashCard>(words);
+            var words = await _dbService.GetWordsDtoByCategoryNameAsync(categoryName);
+            Words = new ObservableCollection<FlashCardDto>(words);
         }
     }
 }

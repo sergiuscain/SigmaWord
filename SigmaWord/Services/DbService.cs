@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Maui.Storage;
 using SigmaWord.Data.Entities;
+using SigmaWord.Models;
 using System.Reflection;
 
 namespace SigmaWord.Services
@@ -159,6 +160,18 @@ namespace SigmaWord.Services
             return await _context.FlashCards
              .Where(fc => fc.Categories.Any(c => c.Name == categoryName))
              .ToListAsync();
+        }
+        public async Task<List<FlashCardDto>> GetWordsDtoByCategoryNameAsync(string categoryName)
+        {
+            // Пример запроса к базе данных, который возвращает только необходимые поля
+            return await _context.FlashCards
+                .Where(fc => fc.Categories.Any(c => c.Name == categoryName))
+                .Select(fc => new FlashCardDto
+                {
+                    Word = fc.Word,
+                    Translation = fc.Translation
+                })
+                .ToListAsync();
         }
     }
 }

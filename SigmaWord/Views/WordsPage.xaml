@@ -4,11 +4,12 @@
              x:Class="SigmaWord.Views.WordsPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
+             xmlns:modelsDto="clr-namespace:SigmaWord.Models"
              x:DataType="viewmodel:WordsViewModel">
     <Grid Style="{StaticResource DarkGridStyle}">
         <CollectionView ItemsSource="{Binding Words}">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:FlashCard">
+                <DataTemplate x:DataType="modelsDto:FlashCardDto">
                     <Grid ColumnDefinitions="*,*,*">
                         <Label Grid.Column="0" Text="{Binding Word}" />
                         <Label Grid.Column="1" Text="{Binding Translation}" />
