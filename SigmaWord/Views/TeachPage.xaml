@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SigmaWord.Views.TeachPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
-             x:DataType="viewmodel:TeachViewModel">
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             x:Class="SigmaWord.Views.TeachPage">
+    <ContentPage.BindingContext>
+        <viewmodel:TeachViewModel/>
+    </ContentPage.BindingContext>
     <ScrollView>
         <Grid RowDefinitions="*,*,*,*,7*">
             <Button Grid.Row="0"
@@ -13,11 +16,16 @@
                 Text="Меню категорий"
                 Command="{Binding OpenCategoryMenuCommand}"/>
             <Button Grid.Row="2"
-                Text="Изучение слов (Флэш карточки)"
+                Text="Изучение слов"
                 Command="{Binding OpenStudyTabCommand}"/>
             <Button Grid.Row="3"
                 Text="Повторение слов"
                 Command="{Binding OpenReviewTabCommand}"/>
+            <Grid Grid.Row="4">
+                <lvc:CartesianChart
+                    Series="{Binding Series}">
+                </lvc:CartesianChart>
+            </Grid>
         </Grid>
     </ScrollView>
 </ContentPage>

@@ -1,7 +1,9 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using LiveChartsCore.SkiaSharpView.Maui;
+using Microsoft.Extensions.Logging;
 using SigmaWord.Services;
 using SigmaWord.ViewModels;
 using SigmaWord.Views;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace SigmaWord
 {
@@ -11,6 +13,8 @@ namespace SigmaWord
         {
             var builder = MauiApp.CreateBuilder();
             builder
+                .UseSkiaSharp()
+                .UseLiveCharts()
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
