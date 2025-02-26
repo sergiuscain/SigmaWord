@@ -5,17 +5,17 @@ namespace SigmaWord
 {
     public partial class App : Application
     {
-        private readonly SigmaWordDbContext _context;
-        public App(SigmaWordDbContext context)
+        private readonly DbService _dbService;
+        public App(DbService dbService)
         {
             InitializeComponent();
 
             MainPage = new AppShell();
-            _context = context;
-
+            _dbService = dbService;
         }
         protected override void OnStart()
         {
+            _dbService.InitializeDatabaseAsync();
         }
     }
 }

@@ -23,7 +23,6 @@
                 Command="{Binding OpenReviewTabCommand}"/>
             <Grid Grid.Row="4">
                 <lvc:CartesianChart Series="{Binding Series}" XAxes="{Binding XAxes}">
-                    <lvc:CartesianChart.LegendPosition>Bottom</lvc:CartesianChart.LegendPosition>
                 </lvc:CartesianChart>
             </Grid>
         </Grid>

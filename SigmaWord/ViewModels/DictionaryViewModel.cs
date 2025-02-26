@@ -19,12 +19,12 @@ namespace SigmaWord.ViewModels
         {
             _vocabularyService = vocabularyService;
             _dbService = dbService;
-            categories = new ObservableCollection<Category>(_dbService.GetAllCategoriesAsync().Result);
+            var categoruessDb = _dbService.GetAllCategoriesAsync().Result;
+            categories =  new ObservableCollection<Category>(categoruessDb);
         }
         [RelayCommand]
         public async Task GoToWordsPage(string categoryName)
         {
-            await _dbService.InitializeDatabaseAsync();
             // Создаем новую страницу и устанавливаем свойство
             var viewModel = new WordsViewModel(_dbService);
             var wordsPage = new WordsPage(viewModel, categoryName);

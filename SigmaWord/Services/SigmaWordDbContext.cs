@@ -7,7 +7,7 @@ namespace SigmaWord.Services
     {
         public SigmaWordDbContext()
         {
-
+            
         }
         public DbSet<FlashCard> FlashCards { get; set; }
         public DbSet<Category> Category { get; set; }
@@ -25,7 +25,6 @@ namespace SigmaWord.Services
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
             var pathDb = PathDb.GetPath("SigmaWordDb.db");
             optionsBuilder.UseSqlite(pathDb);
         }

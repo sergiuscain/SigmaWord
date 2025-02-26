@@ -56,7 +56,7 @@ namespace SigmaWord.Services
         //Инициализация базы данных. Если базы данных нету или она пустая, заполняем её словами из файлов. 
         public async Task InitializeDatabaseAsync()
         {
-            //await CLEARDatabaseAsync(); //Очистить всё!! Для тестирования*
+            await CLEARDatabaseAsync(); //Очистить всё!! Для тестирования*
 
             // Проверяем, существует ли база данных
             bool canConnect = await _context.Database.CanConnectAsync();
@@ -172,6 +172,29 @@ namespace SigmaWord.Services
                     Translation = fc.Translation
                 })
                 .ToListAsync();
+        }
+        public async Task<List<DailyStatistics>> GetDailyStatisticsAsync()
+        {
+            return await _context.DailyStatistics.ToListAsync();
+        }
+        public async Task AddStatisticsAsync(DailyStatistics statistics) 
+        {
+            await _context.DailyStatistics.AddAsync(statistics);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<List<DailyStatistics>> GetDailyStatisticsAsync(int days)
+        {
+            // Получаем дату, начиная с которой будем делать выборку
+            var cutoffDate = DateTime.UtcNow.AddDays(-days);
+
+            // Возвращаем последние 'days' записей, начиная с сегодняшнего дня
+            var result = await _context.DailyStatistics
+                .Where(s => s.Date >= cutoffDate)
+                .OrderByDescending(s => s.Date) // Сортируем по убыванию даты
+                .Take(days) // Берем только последние 'days' записей
+                .ToListAsync();
+
+            return result;
         }
     }
 }

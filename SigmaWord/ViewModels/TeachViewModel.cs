@@ -3,6 +3,8 @@ using CommunityToolkit.Mvvm.Input;
 using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
+using SigmaWord.Data.Entities;
+using SigmaWord.Services;
 using SkiaSharp;
 using System.Collections.Generic;
 
@@ -10,50 +12,47 @@ namespace SigmaWord.ViewModels
 {
     public partial class TeachViewModel : ObservableObject
     {
-        public List<string> DaysOfWeek { get; set; }
-        public List<Axis> XAxes { get; set; }
-
-        public LineSeries<double> StudiedWordsSeries { get; set; }
-
-        public LineSeries<double> ReviewedWordsSeries { get; set; }
-
-        public List<ISeries> Series { get; set; }
+        private DbService _dbService;
         public TeachViewModel()
         {
-            // Пример данных для графиков
-            DaysOfWeek = new List<string> { "Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс" };
-
-            StudiedWordsSeries = new LineSeries<double>
-            {
-                Values = new double[] { 5, 5, 7, 5, 10, 5, 7 },
-                Name = "Изученные слова",
-                Stroke = new SolidColorPaint(SKColors.Red), // Задаем красный цвет для линии
-            };
-
-            ReviewedWordsSeries = new LineSeries<double>
-            {
-                Values = new double[] { 10, 15, 15, 10, 30, 15, 20 },
-                Name = "Повторенные слова",
-                Stroke = new SolidColorPaint(SKColors.Blue) // Задаем Синий цвет для линии
-            };
-
-            Series = new List<ISeries>
-            {
-                StudiedWordsSeries,
-                ReviewedWordsSeries
-            };
-            XAxes = new List<Axis>
-            {
-                new Axis
-                {
-                    Labels = DaysOfWeek,
-                }
-            };
+            LoadStatistics();
         }
+        public ISeries[] Series { get; set; }
+        public List<string> Dates { get; set; }
+        public Axis[] XAxes { get; set; }
+
+        private async void LoadStatistics()
+        {
+            _dbService = new DbService(new SigmaWordDbContext());
+            var statistics = await _dbService.GetDailyStatisticsAsync(14);
+            Dates = statistics.Select(s => s.Date.ToString("dd/MM/yyyy")).ToList();
+            // Создание серий для TotalRepeats и TotalWordsStudied
+            var repeatsSeries = new LineSeries<int>
+            {
+                Values = statistics.Select(s => s.TotalRepeats).ToArray(),
+                Name = "Общее количество повторений"
+            };
+
+            var wordsStudiedSeries = new LineSeries<int>
+            {
+                Values = statistics.Select(s => s.TotalWordsStudied).ToArray(),
+                Name = "Количество выученных слов"
+            };
+
+            // Объединение серий
+            Series = new ISeries[] { repeatsSeries, wordsStudiedSeries };
+        }
+
         [RelayCommand]
         public async Task OpenCategoryMenu()
         {
+            Random random = new();
+            for(int i = -10; i < 10; i++)
+            {
+                var statistcics = new DailyStatistics { Date = DateTime.Now.AddDays(i), TotalRepeats = random.Next(0,25), TotalWordsStudied = random.Next(0,20) };
 
+                await _dbService.AddStatisticsAsync(statistcics);
+            }
         }
         [RelayCommand]
         public async Task ChangeDailyGoal()
