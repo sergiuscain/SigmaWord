@@ -196,6 +196,47 @@ namespace SigmaWord.Services
 
             return result;
         }
+        public async Task InitializeStatisticsAsync()
+        {
+            // Получаем сегодняшнюю дату и дату две недели назад
+            var today = DateTime.Today;
+            var twoWeeksAgo = today.AddDays(-14);
+
+            // Получаем список дат от двух недель назад до сегодня
+            var dates = Enumerable.Range(0, 15)
+                .Select(i => today.AddDays(-i))
+                .ToList();
+
+            // Получаем существующие статистики из базы данных
+            var existingStatistics = await _context.DailyStatistics
+                .Where(stat => dates.Contains(stat.Date))
+                .ToListAsync();
+
+            // Создаем список новых статистик для добавления
+            var newStatistics = new List<DailyStatistics>();
+
+            foreach (var date in dates)
+            {
+                // Проверяем, существует ли уже статистика для данной даты
+                if (!existingStatistics.Any(stat => stat.Date.Date == date))
+                {
+                    // Если нет, создаем новую запись с нулевыми значениями
+                    newStatistics.Add(new DailyStatistics
+                    {
+                        Date = date,
+                        TotalRepeats = 0,
+                        TotalWordsStudied = 0
+                    });
+                }
+            }
+
+            // Добавляем новые записи в контекст
+            if (newStatistics.Any())
+            {
+                await _context.DailyStatistics.AddRangeAsync(newStatistics);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }
 

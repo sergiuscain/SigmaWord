@@ -46,13 +46,7 @@ namespace SigmaWord.ViewModels
         [RelayCommand]
         public async Task OpenCategoryMenu()
         {
-            Random random = new();
-            for(int i = -10; i < 10; i++)
-            {
-                var statistcics = new DailyStatistics { Date = DateTime.Now.AddDays(i), TotalRepeats = random.Next(0,25), TotalWordsStudied = random.Next(0,20) };
-
-                await _dbService.AddStatisticsAsync(statistcics);
-            }
+            
         }
         [RelayCommand]
         public async Task ChangeDailyGoal()

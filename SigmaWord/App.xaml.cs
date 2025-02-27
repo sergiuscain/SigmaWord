@@ -13,9 +13,10 @@ namespace SigmaWord
             MainPage = new AppShell();
             _dbService = dbService;
         }
-        protected override void OnStart()
+        protected override async void OnStart()
         {
-            _dbService.InitializeDatabaseAsync();
+            await _dbService.InitializeDatabaseAsync();
+            await _dbService.InitializeStatisticsAsync();
         }
     }
 }
