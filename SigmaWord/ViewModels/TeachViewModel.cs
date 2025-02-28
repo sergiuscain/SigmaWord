@@ -2,12 +2,9 @@
 using CommunityToolkit.Mvvm.Input;
 using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
-using LiveChartsCore.SkiaSharpView.Painting;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
 using SigmaWord.Views;
-using SkiaSharp;
-using System.Collections.Generic;
 
 namespace SigmaWord.ViewModels
 {
@@ -51,8 +48,9 @@ namespace SigmaWord.ViewModels
         [RelayCommand]
         public async Task OpenCategoryMenu()
         {
+            List<Category> categories = await _dbService.GetAllCategoriesAsync();
             // Создаем новую страницу и устанавливаем свойство
-            var viewModel = new SelectCategoryToStudyViewModel();
+            var viewModel = new SelectCategoryToStudyViewModel(_dbService, categories);
             var page = new SelectCategoryToStudyPage(viewModel);
             await Shell.Current.Navigation.PushAsync(page);
         }
