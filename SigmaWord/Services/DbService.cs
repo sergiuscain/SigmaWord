@@ -126,6 +126,12 @@ namespace SigmaWord.Services
                 .Include(fc => fc.ExampleSentences)
                 .FirstOrDefaultAsync(fc => fc.Id == id);
         }
+        public async Task<List<FlashCard>> GetFlashCardsByStatusAsync(WordStatus status)
+        {
+            return await _context.FlashCards
+                .Where(fc => fc.Status == status)
+                .ToListAsync();
+        }
         //Метод для добавления в базу данных слов из файла.
         public async Task CopyDataBase()
         {

@@ -3,14 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SigmaWord.Views.WordStudyPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
-             xmlns:models="clr-namespace:SigmaWord.Data.Entities"
-             xmlns:modelsDto="clr-namespace:SigmaWord.Models"
-             Title="WordStudyPage"
+             Title="Изучение слов"
              x:DataType="viewmodel:WordStudyViewModek">
     <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
-        <Label 
-            Text="{Binding Test}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="{Binding CurrentFlashCard.Word}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        <Entry x:Name="AnswerEntry"
+               Placeholder="Введите перевод"
+               VerticalOptions="End" 
+               HorizontalOptions="Center" />
+        <Button Text="Проверить"
+                Command="{Binding CheckAnswerCommand}"
+                CommandParameter="{Binding Source={x:Reference AnswerEntry}, Path=Text}" />
+        <!-- Label для отображения результата -->
+        <Label Text="{Binding ResultMessage}"
+               VerticalOptions="End" 
+               HorizontalOptions="Center"
+               TextColor="{Binding ResultTextColor}"
+               IsVisible="{Binding IsResultVisible}" />
     </VerticalStackLayout>
 </ContentPage>

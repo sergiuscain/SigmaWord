@@ -63,7 +63,7 @@ namespace SigmaWord.ViewModels
         public async Task OpenStudyTab()
         {
             // Создаем новую страницу и устанавливаем свойство
-            var viewModel = new WordStudyViewModek("Изучение новых слов:");
+            var viewModel = new WordStudyViewModek(_dbService, WordStatus.ToLearn);
             var page = new WordStudyPage(viewModel);
             await Shell.Current.Navigation.PushAsync(page);
         }
@@ -71,7 +71,7 @@ namespace SigmaWord.ViewModels
         public async Task OpenReviewTab()
         {
             // Создаем новую страницу и устанавливаем свойство
-            var viewModel = new WordStudyViewModek("Повторение слов:");
+            var viewModel = new WordStudyViewModek(_dbService, WordStatus.Learning);
             var page = new WordStudyPage(viewModel);
             await Shell.Current.Navigation.PushAsync(page);
         }
