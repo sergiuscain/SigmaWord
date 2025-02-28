@@ -5,6 +5,7 @@ using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
+using SigmaWord.Views;
 using SkiaSharp;
 using System.Collections.Generic;
 
@@ -19,7 +20,7 @@ namespace SigmaWord.ViewModels
         }
         public ISeries[] Series { get; set; }
         public List<string> Dates { get; set; }
-        public Axis[] XAxes { get; set; }
+        public Axis XAxes { get; set; }
 
         private async void LoadStatistics()
         {
@@ -33,11 +34,15 @@ namespace SigmaWord.ViewModels
                 Name = "Общее количество повторений"
             };
 
-            var wordsStudiedSeries = new LineSeries<int>
+            var wordsStudiedSeries = new StackedStepAreaSeries<int>
             {
                 Values = statistics.Select(s => s.TotalWordsStudied).ToArray(),
                 Name = "Количество выученных слов"
             };
+            //XAxes = new Axis
+            //{
+
+            //};
 
             // Объединение серий
             Series = new ISeries[] { repeatsSeries, wordsStudiedSeries };
@@ -46,7 +51,10 @@ namespace SigmaWord.ViewModels
         [RelayCommand]
         public async Task OpenCategoryMenu()
         {
-            
+            // Создаем новую страницу и устанавливаем свойство
+            var viewModel = new SelectCategoryToStudyViewModel();
+            var page = new SelectCategoryToStudyPage(viewModel);
+            await Shell.Current.Navigation.PushAsync(page);
         }
         [RelayCommand]
         public async Task ChangeDailyGoal()
@@ -56,12 +64,18 @@ namespace SigmaWord.ViewModels
         [RelayCommand]
         public async Task OpenStudyTab()
         {
-
+            // Создаем новую страницу и устанавливаем свойство
+            var viewModel = new WordStudyViewModek("Изучение новых слов:");
+            var page = new WordStudyPage(viewModel);
+            await Shell.Current.Navigation.PushAsync(page);
         }
         [RelayCommand]
         public async Task OpenReviewTab()
         {
-
+            // Создаем новую страницу и устанавливаем свойство
+            var viewModel = new WordStudyViewModek("Повторение слов:");
+            var page = new WordStudyPage(viewModel);
+            await Shell.Current.Navigation.PushAsync(page);
         }
     }
 }
