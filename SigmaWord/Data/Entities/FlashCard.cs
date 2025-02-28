@@ -22,5 +22,9 @@
             }
             return string.Empty;
         }
+        public double GetLearningPercentage()
+        {
+            return  (double)CurrentRepetitions / RequiredRepetitions * 100;
+        }
     }
 }

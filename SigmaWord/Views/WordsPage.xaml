@@ -9,10 +9,14 @@
     <Grid Style="{StaticResource DarkGridStyle}">
         <CollectionView ItemsSource="{Binding Words}">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="modelsDto:FlashCardDto">
-                    <Grid ColumnDefinitions="*,*,*">
+                <DataTemplate x:DataType="models:FlashCard">
+                    <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*">
                         <Label Grid.Column="0" Text="{Binding Word}" />
                         <Label Grid.Column="1" Text="{Binding Translation}" />
+                        <Label Grid.Column="2" Text="{Binding Status}" />
+                        <Label Grid.Column="0" Grid.Row="1" Text="{Binding CurrentRepetitions}" />
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding RequiredRepetitions}" />
+                        <Label Grid.Column="2" Grid.Row="1" Text="{Binding NextRepeatDate}" />
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

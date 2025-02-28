@@ -8,19 +8,22 @@
     <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
         <Label Text="{Binding CurrentFlashCard.Word}"
                VerticalOptions="Center" 
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center" 
+               IsVisible="{Binding IsWordtVisible}"/>
         <Entry x:Name="AnswerEntry"
                Placeholder="Введите перевод"
                VerticalOptions="End" 
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center" 
+               IsVisible="{Binding IAnswerEntrytVisible}"/>
         <Button Text="Проверить"
                 Command="{Binding CheckAnswerCommand}"
-                CommandParameter="{Binding Source={x:Reference AnswerEntry}, Path=Text}" />
+                CommandParameter="{Binding Source={x:Reference AnswerEntry}, Path=Text}"  IsVisible="{Binding IsButtonCheckAnswerVisible}"/>
         <!-- Label для отображения результата -->
         <Label Text="{Binding ResultMessage}"
                VerticalOptions="End" 
                HorizontalOptions="Center"
                TextColor="{Binding ResultTextColor}"
                IsVisible="{Binding IsResultVisible}" />
+        <Button Text="Назад" Command="{Binding GoBackCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

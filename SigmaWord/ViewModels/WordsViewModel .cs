@@ -12,15 +12,15 @@ namespace SigmaWord.ViewModels
         [ObservableProperty]
         public string categoryName;
         [ObservableProperty]
-        public ObservableCollection<FlashCardDto> words;
+        public ObservableCollection<FlashCard> words;
         public WordsViewModel(DbService dbService)
         {
             _dbService = dbService;
         }
         public async Task LoadWords()
         {
-            var words = await _dbService.GetWordsDtoByCategoryNameAsync(categoryName);
-            Words = new ObservableCollection<FlashCardDto>(words);
+            var words = await _dbService.GetWordsByCategoryNameAsync(categoryName);
+            Words = new ObservableCollection<FlashCard>(words);
         }
     }
 }

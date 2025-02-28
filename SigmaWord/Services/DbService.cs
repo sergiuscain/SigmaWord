@@ -128,6 +128,11 @@ namespace SigmaWord.Services
         }
         public async Task<List<FlashCard>> GetFlashCardsByStatusAsync(WordStatus status)
         {
+            if(status == WordStatus.Learning){
+                return await _context.FlashCards
+                    .Where(fc => fc.Status == status && fc.NextRepeatDate <= DateTime.Now)
+                    .ToListAsync();
+            }
             return await _context.FlashCards
                 .Where(fc => fc.Status == status)
                 .ToListAsync();
@@ -160,7 +165,11 @@ namespace SigmaWord.Services
                 Console.WriteLine($"ОШИБКА ПРИ КОПИРОВАНИИ БАЗЫ ДАННЫХ ИЗ РЕСУРСОВ: {ex.Message}");
             }
         }
-
+        public async Task UpdateFlashCard(FlashCard flashCard)
+        {
+            _context.FlashCards.Update(flashCard);
+            await _context.SaveChangesAsync();
+        }
         public async Task<List<FlashCard>> GetWordsByCategoryNameAsync(string categoryName)
         {
             return await _context.FlashCards
@@ -260,6 +269,69 @@ namespace SigmaWord.Services
                 .Where(fc => fc.Categories.Any(c => c.Id == category.Id) && fc.Status == WordStatus.ToLearn)
                 .ForEachAsync(fc => fc.Status = WordStatus.Unknown);
 
+            await _context.SaveChangesAsync();
+        }
+        public async Task AddStudiedToStatistics()
+        {
+            // Получаем сегодняшнюю дату без времени
+            var today = DateTime.Today;
+
+            // Ищем статистику за сегодняшний день
+            var dailyStats = await _context.DailyStatistics
+                .FirstOrDefaultAsync(stats => stats.Date == today);
+
+            // Если запись найдена, увеличиваем TotalRepeats
+            if (dailyStats != null)
+            {
+                dailyStats.TotalWordsStudied += 1; // Увеличиваем на 1
+            }
+            else
+            {
+                // Если записи нет, создаем новую
+                dailyStats = new DailyStatistics
+                {
+                    Date = today,
+                    TotalRepeats = 0, // Устанавливаем TotalRepeats в 1
+                    TotalWordsStudied = 1 // Или любое другое начальное значение
+                };
+
+                // Добавляем новую запись в контекст
+                await _context.DailyStatistics.AddAsync(dailyStats);
+            }
+
+            // Сохраняем изменения в базе данных
+            await _context.SaveChangesAsync();
+        }
+
+    public async Task AddRepeatToStatistics()
+        {
+            // Получаем сегодняшнюю дату без времени
+            var today = DateTime.Today;
+
+            // Ищем статистику за сегодняшний день
+            var dailyStats = await _context.DailyStatistics
+                .FirstOrDefaultAsync(stats => stats.Date == today);
+
+            // Если запись найдена, увеличиваем TotalRepeats
+            if (dailyStats != null)
+            {
+                dailyStats.TotalRepeats += 1; // Увеличиваем на 1
+            }
+            else
+            {
+                // Если записи нет, создаем новую
+                dailyStats = new DailyStatistics
+                {
+                    Date = today,
+                    TotalRepeats = 1, // Устанавливаем TotalRepeats в 1
+                    TotalWordsStudied = 0 // Или любое другое начальное значение
+                };
+
+                // Добавляем новую запись в контекст
+                await _context.DailyStatistics.AddAsync(dailyStats);
+            }
+
+            // Сохраняем изменения в базе данных
             await _context.SaveChangesAsync();
         }
 
