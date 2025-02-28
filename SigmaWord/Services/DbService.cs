@@ -133,6 +133,13 @@ namespace SigmaWord.Services
                     .Where(fc => fc.Status == status && fc.NextRepeatDate <= DateTime.Now)
                     .ToListAsync();
             }
+            if(status == WordStatus.ToLearn)
+            {
+                return await _context.FlashCards
+                    .Where(fc => fc.Status == status)
+                    .Take(5)
+                    .ToListAsync();
+            }
             return await _context.FlashCards
                 .Where(fc => fc.Status == status)
                 .ToListAsync();

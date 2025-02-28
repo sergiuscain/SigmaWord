@@ -11,20 +11,21 @@ namespace SigmaWord.ViewModels
     public partial class TeachViewModel : ObservableObject
     {
         private DbService _dbService;
+
         public TeachViewModel()
         {
-            LoadStatistics();
+            _dbService = new DbService(new SigmaWordDbContext());
         }
+
         public ISeries[] Series { get; set; }
         public List<string> Dates { get; set; }
         public Axis XAxes { get; set; }
 
-        private async void LoadStatistics()
+        public async Task LoadStatistics()
         {
-            _dbService = new DbService(new SigmaWordDbContext());
             var statistics = await _dbService.GetDailyStatisticsAsync(14);
             Dates = statistics.Select(s => s.Date.ToString("dd/MM/yyyy")).ToList();
-            // Создание серий для TotalRepeats и TotalWordsStudied
+
             var repeatsSeries = new LineSeries<int>
             {
                 Values = statistics.Select(s => s.TotalRepeats).ToArray(),
@@ -36,15 +37,11 @@ namespace SigmaWord.ViewModels
                 Values = statistics.Select(s => s.TotalWordsStudied).ToArray(),
                 Name = "Количество выученных слов"
             };
-            //XAxes = new Axis
-            //{
 
-            //};
-
-            // Объединение серий
             Series = new ISeries[] { repeatsSeries, wordsStudiedSeries };
+            OnPropertyChanged(nameof(Series)); // Уведомляем об изменении Series
+            OnPropertyChanged(nameof(Dates)); // Уведомляем об изменении Dates
         }
-
         [RelayCommand]
         public async Task OpenCategoryMenu()
         {
@@ -76,4 +73,5 @@ namespace SigmaWord.ViewModels
             await Shell.Current.Navigation.PushAsync(page);
         }
     }
+
 }

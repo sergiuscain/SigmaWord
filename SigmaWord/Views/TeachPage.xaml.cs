@@ -1,12 +1,19 @@
-using SigmaWord.ViewModels;
+	using SigmaWord.ViewModels;
 
 namespace SigmaWord.Views;
 
 public partial class TeachPage : ContentPage
 {
-	public TeachPage(TeachViewModel vm)
+    private TeachViewModel _viewModel;
+    public TeachPage(TeachViewModel vm)
 	{
 		InitializeComponent();
+		_viewModel = vm;
 		BindingContext = vm;
 	}
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await _viewModel.LoadStatistics(); // Загружаем статистику при каждом появлении страницы
+    }
 }

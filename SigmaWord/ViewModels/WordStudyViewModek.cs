@@ -53,8 +53,15 @@ namespace SigmaWord.ViewModels
                 IAnswerEntrytVisible = true;
                 CurrentFlashCard = FlashCards[_currentIndex];
                 _currentIndex++;
+                if(CurrentFlashCard.Status == WordStatus.ToLearn)
+                {
+                    IsResultVisible = true;
+                    ResultTextColor = Colors.Yellow;
+                    ResultMessage = $"Перевол слова: {CurrentFlashCard.Translation}";
+                }
+                else
+                    IsResultVisible = false; // Скрыть сообщение при показе новой карточки
                 OnPropertyChanged(nameof(CurrentFlashCard));
-                IsResultVisible = false; // Скрыть сообщение при показе новой карточки
             }
             else
             {
@@ -72,6 +79,10 @@ namespace SigmaWord.ViewModels
         [RelayCommand]
         public async void CheckAnswer(string userAnswer)
         {
+            if (userAnswer == null)
+            {
+                return;
+            }
             bool isCorrectAnswer = false;
             foreach(string answer in CurrentFlashCard.Translation.Split(", "))
             {
