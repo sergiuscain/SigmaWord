@@ -6,7 +6,7 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:SelectCategoryToStudyViewModel">
-    <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
+    <VerticalStackLayout>
         <CollectionView ItemsSource="{Binding Categories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Category">

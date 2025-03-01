@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              Title="Изучение слов"
              x:DataType="viewmodel:WordStudyViewModek">
-    <VerticalStackLayout Style="{StaticResource DarkBackgroundStyle}">
+    <VerticalStackLayout>
         <Label Text="{Binding CurrentFlashCard.Word}"
                VerticalOptions="Center" 
                HorizontalOptions="Center" 

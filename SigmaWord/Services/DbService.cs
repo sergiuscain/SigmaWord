@@ -137,11 +137,17 @@ namespace SigmaWord.Services
             {
                 return await _context.FlashCards
                     .Where(fc => fc.Status == status)
-                    .Take(5)
                     .ToListAsync();
             }
             return await _context.FlashCards
                 .Where(fc => fc.Status == status)
+                .ToListAsync();
+        }
+        public async Task<List<FlashCard>> GetFlashCardsByStatusAsync(WordStatus status, int numberOfTake)
+        {
+            return await _context.FlashCards
+                .Where(fc => fc.Status == status)
+                .Take(numberOfTake)
                 .ToListAsync();
         }
         //Метод для добавления в базу данных слов из файла.
@@ -195,6 +201,12 @@ namespace SigmaWord.Services
                 })
                 .ToListAsync();
         }
+        public async Task<int> GetNeedToRepeatDataAsync()
+        {
+            var result = await _context.FlashCards
+                    .CountAsync(fc => fc.Status == WordStatus.Learning && fc.NextRepeatDate <= DateTime.Now);
+            return result;
+        }
         public async Task<List<DailyStatistics>> GetDailyStatisticsAsync()
         {
             return await _context.DailyStatistics.ToListAsync();
@@ -217,6 +229,10 @@ namespace SigmaWord.Services
                 .ToListAsync();
 
             return result;
+        }
+        public async Task<DailyStatistics> GetTodayStatisticsAsync()
+        {
+            return await _context.DailyStatistics.FirstOrDefaultAsync(ds => ds.Date == DateTime.Today);
         }
         public async Task InitializeStatisticsAsync()
         {
@@ -278,7 +294,7 @@ namespace SigmaWord.Services
 
             await _context.SaveChangesAsync();
         }
-        public async Task AddStudiedToStatistics()
+        public async Task AddStatistics(string statisticName)
         {
             // Получаем сегодняшнюю дату без времени
             var today = DateTime.Today;
@@ -290,7 +306,17 @@ namespace SigmaWord.Services
             // Если запись найдена, увеличиваем TotalRepeats
             if (dailyStats != null)
             {
-                dailyStats.TotalWordsStudied += 1; // Увеличиваем на 1
+                switch (statisticName)
+                {
+                    case "TotalRepeats":
+                        dailyStats.TotalRepeats += 1; break;
+                    case "TotalWordsStudied":
+                        dailyStats.TotalWordsStudied += 1; break;
+                    case "TotalWordsStarted":
+                        dailyStats.TotalWordsStarted += 1; break;
+                    case "TotalKnownWords":
+                        dailyStats.TotalKnownWords += 1; break;
+                }
             }
             else
             {
@@ -298,9 +324,18 @@ namespace SigmaWord.Services
                 dailyStats = new DailyStatistics
                 {
                     Date = today,
-                    TotalRepeats = 0, // Устанавливаем TotalRepeats в 1
-                    TotalWordsStudied = 1 // Или любое другое начальное значение
                 };
+                switch (statisticName)
+                {
+                    case "TotalRepeats":
+                        dailyStats.TotalRepeats += 1; break;
+                    case "TotalWordsStudied":
+                        dailyStats.TotalWordsStudied += 1; break;
+                    case "TotalWordsStarted":
+                        dailyStats.TotalWordsStarted += 1; break;
+                    case "TotalKnownWords":
+                        dailyStats.TotalKnownWords += 1; break;
+                }
 
                 // Добавляем новую запись в контекст
                 await _context.DailyStatistics.AddAsync(dailyStats);
@@ -309,39 +344,35 @@ namespace SigmaWord.Services
             // Сохраняем изменения в базе данных
             await _context.SaveChangesAsync();
         }
-
-    public async Task AddRepeatToStatistics()
+        
+        public async Task<UserSettings> GetSettings()
         {
-            // Получаем сегодняшнюю дату без времени
-            var today = DateTime.Today;
-
-            // Ищем статистику за сегодняшний день
-            var dailyStats = await _context.DailyStatistics
-                .FirstOrDefaultAsync(stats => stats.Date == today);
-
-            // Если запись найдена, увеличиваем TotalRepeats
-            if (dailyStats != null)
+            var settings = await _context.UserSettings.FirstOrDefaultAsync();
+            if (settings == null)
             {
-                dailyStats.TotalRepeats += 1; // Увеличиваем на 1
+                var newSettings = new UserSettings { DailyWordGoal = 5, SelectedTheme = Themes.DarkPurple.ToString() };
+                _context.UserSettings.Add(newSettings);
+                await _context.SaveChangesAsync();
+                return newSettings;
+            }
+            return settings;
+        }
+        public async Task UpdateSettings(UserSettings newSettings)
+        {
+            var settings = await _context.UserSettings.FirstOrDefaultAsync();
+            if (settings == null)
+            {
+                _context.UserSettings.Add(newSettings);
             }
             else
             {
-                // Если записи нет, создаем новую
-                dailyStats = new DailyStatistics
-                {
-                    Date = today,
-                    TotalRepeats = 1, // Устанавливаем TotalRepeats в 1
-                    TotalWordsStudied = 0 // Или любое другое начальное значение
-                };
-
-                // Добавляем новую запись в контекст
-                await _context.DailyStatistics.AddAsync(dailyStats);
+                if (newSettings.SelectedTheme != settings.SelectedTheme) 
+                    settings.SelectedTheme = newSettings.SelectedTheme;
+                if (newSettings.DailyWordGoal != settings.DailyWordGoal)
+                    settings.DailyWordGoal = newSettings.DailyWordGoal;
             }
-
-            // Сохраняем изменения в базе данных
             await _context.SaveChangesAsync();
         }
-
     }
 }
 

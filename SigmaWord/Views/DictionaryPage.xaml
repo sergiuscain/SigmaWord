@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:DictionaryViewModel">
-    <Grid Style="{StaticResource DarkGridStyle}">
+    <Grid>
         <CollectionView ItemsSource="{Binding Categories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Category">

@@ -9,11 +9,11 @@
     <!-- Цвета -->
     <Color x:Key="PrimaryBackgroundColor">#121212</Color>
     <Color x:Key="PrimaryTextColor">#FFFFFF</Color>
-    <Color x:Key="AccentColor">#593dac</Color>
+    <Color x:Key="AccentColor">#bdf1c4</Color>
     <Color x:Key="ButtonBackgroundColor">#1E1E1E</Color>
     <Color x:Key="ButtonTextColor">#FFFFFF</Color>
-    <Color x:Key="ButtonAccentColor">#593dac</Color>
+    <Color x:Key="ButtonAccentColor">#bdf1c4</Color>
     <Color x:Key="DarkBackgroundColor">#121212</Color>
-    <Color x:Key="DarkTabBarBackgroundColor">#50437a</Color>
+    <Color x:Key="DarkTabBarBackgroundColor">#bdf1c4</Color>
     <Color x:Key="DarkTabBarTextColor">#FFFFFF</Color>
 </ResourceDictionary>

@@ -10,7 +10,8 @@ namespace SigmaWord.ViewModels
     public partial class WordStudyViewModek : ObservableObject
     {
         private readonly DbService _dbService;
-        public ObservableCollection<FlashCard> FlashCards { get; set; }
+        [ObservableProperty]
+        public ObservableCollection<FlashCard> flashCards;
         public FlashCard CurrentFlashCard { get; set; }
         private int _currentIndex;
         [ObservableProperty]
@@ -33,10 +34,21 @@ namespace SigmaWord.ViewModels
             FlashCards = new ObservableCollection<FlashCard>();
             LoadFlashCards(status);
         }
-        private async void LoadFlashCards(WordStatus status)
+        private async Task LoadFlashCards(WordStatus status)
         {
-            var flashcards = await _dbService.GetFlashCardsByStatusAsync(status);
-            foreach (var card in flashcards)
+            List<FlashCard> flashCards = new List<FlashCard>();
+            if (status == WordStatus.ToLearn)
+            {
+                int wordStartedToLeran = (await _dbService.GetTodayStatisticsAsync()).TotalWordsStarted;
+                int dailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
+                int needToStartLearn = dailyGoal - wordStartedToLeran;
+                flashCards = await _dbService.GetFlashCardsByStatusAsync(status, needToStartLearn);
+            }
+            else
+            {
+                flashCards = await _dbService.GetFlashCardsByStatusAsync(WordStatus.Learning);
+            }
+            foreach (var card in flashCards)
             {
                 FlashCards.Add(card);
             }
@@ -70,6 +82,7 @@ namespace SigmaWord.ViewModels
                 IAnswerEntrytVisible = false;
                 ResultMessage = "Вы выучили все слова";
                 ResultTextColor = Colors.Green;
+                IsResultVisible = true;
                 IsButtonToBackVisible = true;
 
                 // Логика завершения, если карточки закончились
@@ -95,15 +108,27 @@ namespace SigmaWord.ViewModels
             if (isCorrectAnswer)
             {
 
+                // Правильный ответ
                 SetNextRepeatDate(CurrentFlashCard, CurrentFlashCard.GetLearningPercentage(),true);
                 CurrentFlashCard.LastRepeatDate = DateTime.Now;
                 CurrentFlashCard.CurrentRepetitions += 10;
-                CurrentFlashCard.Status = WordStatus.Learning;
-                // Правильный ответ
+                if (CurrentFlashCard.Status == WordStatus.ToLearn)
+                {
+                    CurrentFlashCard.Status = WordStatus.Learning;
+                    await _dbService.AddStatistics(TypeStatisticses.TotalWordsStarted.ToString());
+                }
+                else if (CurrentFlashCard.CurrentRepetitions < 100)
+                {
+                    await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
+                }
+                else if (CurrentFlashCard.CurrentRepetitions >= 100)
+                {
+                    CurrentFlashCard.Status = WordStatus.Mastered;
+                    await _dbService.AddStatistics(TypeStatisticses.TotalWordsStudied.ToString());
+                }
                 ResultMessage = "Правильный ответ!";
                 ResultTextColor = Colors.Green; // Установите цвет текста в зеленый
                 IsResultVisible = true;
-                await _dbService.AddRepeatToStatistics();
                 await _dbService.UpdateFlashCard(CurrentFlashCard);
                 await Task.Delay(2000); // Задержка в 2 секунды
                 ShowNextFlashCard();
