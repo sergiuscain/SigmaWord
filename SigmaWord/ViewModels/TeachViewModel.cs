@@ -29,16 +29,26 @@ namespace SigmaWord.ViewModels
             var repeatsSeries = new LineSeries<int>
             {
                 Values = statistics.Select(s => s.TotalRepeats).ToArray(),
-                Name = "Общее количество повторений"
+                Name = "Повторений:"
             };
 
             var wordsStudiedSeries = new StackedStepAreaSeries<int>
             {
                 Values = statistics.Select(s => s.TotalWordsStudied).ToArray(),
-                Name = "Количество выученных слов"
+                Name = "Полностью выученных:"
+            };
+            var knownSeries = new LineSeries<int>
+            {
+                Values = statistics.Select(s => s.TotalKnownWords).ToArray(),
+                Name = "Уже известно:"
+            };
+            var startedSeries = new LineSeries<int>
+            {
+                Values = statistics.Select(s => s.TotalWordsStarted).ToArray(),
+                Name = "Выучено новых слов:"
             };
 
-            Series = new ISeries[] { repeatsSeries, wordsStudiedSeries };
+            Series = new ISeries[] { repeatsSeries, wordsStudiedSeries, knownSeries, startedSeries };
             OnPropertyChanged(nameof(Series)); // Уведомляем об изменении Series
             OnPropertyChanged(nameof(Dates)); // Уведомляем об изменении Dates
         }

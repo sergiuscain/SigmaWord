@@ -12,5 +12,7 @@ namespace SigmaWord.Data.Entities
         public required DateTime Date { get; set; }
         public int TotalRepeats { get; set; }
         public int TotalWordsStudied { get; set; }
+        public int TotalWordsStarted { get; set; } = 0;
+        public int TotalKnownWords { get; set; } = 0; 
     }
 }

@@ -13,6 +13,7 @@ namespace SigmaWord.Services
         public DbSet<Category> Category { get; set; }
         public DbSet<ExampleSentence> ExampleSentence { get; set; }
         public DbSet<DailyStatistics> DailyStatistics { get; set; }
+        public DbSet<UserSettings> UserSettings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +21,13 @@ namespace SigmaWord.Services
             modelBuilder.Entity<DailyStatistics>()
                 .HasIndex(d => d.Date)
                 .IsUnique();
+            //Устоновка значений по умолчанию.
+            modelBuilder.Entity<DailyStatistics>()
+                .Property(d => d.TotalWordsStarted)
+                .HasDefaultValue(0);
+            modelBuilder.Entity<DailyStatistics>()
+                .Property(d => d.TotalKnownWords)
+                .HasDefaultValue(0);
 
             base.OnModelCreating(modelBuilder);
         }
