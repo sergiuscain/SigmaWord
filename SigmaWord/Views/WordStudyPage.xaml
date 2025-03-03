@@ -3,27 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SigmaWord.Views.WordStudyPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
+             xmlns:entity="clr-namespace:SigmaWord.Data.Entities"
              Title="Изучение слов"
              x:DataType="viewmodel:WordStudyViewModek">
     <VerticalStackLayout>
         <Label Text="{Binding CurrentFlashCard.Word}"
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
-               IsVisible="{Binding IsWordtVisible}"/>
-        <Entry x:Name="AnswerEntry"
-               Placeholder="Введите перевод"
-               VerticalOptions="End" 
-               HorizontalOptions="Center" 
-               IsVisible="{Binding IAnswerEntrytVisible}"/>
-        <Button Text="Проверить"
-                Command="{Binding CheckAnswerCommand}"
-                CommandParameter="{Binding Source={x:Reference AnswerEntry}, Path=Text}"  IsVisible="{Binding IsButtonCheckAnswerVisible}"/>
-        <!-- Label для отображения результата -->
+               IsVisible="{Binding IsWordVisible}"/>
+
+        <StackLayout IsVisible="{Binding IsExamplesVisible}">
+            <Label Text="Примеры предложений:" 
+                   FontAttributes="Bold" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Center"/>
+            <CollectionView ItemsSource="{Binding CurrentFlashCard.ExampleSentences}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="entity:ExampleSentence">
+                        <StackLayout>
+                            <Label Text="{Binding Sentence}" />
+                            <Label Text="{Binding Translation}" 
+                                   TextColor="Gray" 
+                                   FontAttributes="Italic" 
+                                   />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        
         <Label Text="{Binding ResultMessage}"
                VerticalOptions="End" 
                HorizontalOptions="Center"
                TextColor="{Binding ResultTextColor}"
                IsVisible="{Binding IsResultVisible}" />
+        <Label Text="{Binding CurrentFlashCard.Translation}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" 
+               IsVisible="{Binding IsTranslationVisible}"/>
+
+
+        <Button Text="Показать перевод"
+                Command="{Binding ShowTranslationCommand}"
+                IsVisible="{Binding IsShowVisibleTranslateButtonVisible}"/>
+
+        <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsButtonsVisible}" 
+              HorizontalOptions="FillAndExpand">
+                <Button Grid.Column="0" Text="Вспомнил"
+                        Command="{Binding RememberedCommand}"/>
+                <Button Grid.Column="1" Text="Не вспомнил"
+                        Command="{Binding NotRememberedCommand}"/>
+        </Grid>
+
         <Button Text="Назад" Command="{Binding GoBackCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

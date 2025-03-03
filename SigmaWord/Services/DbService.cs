@@ -131,6 +131,7 @@ namespace SigmaWord.Services
             if(status == WordStatus.Learning){
                 return await _context.FlashCards
                     .Where(fc => fc.Status == status && fc.NextRepeatDate <= DateTime.Now)
+                    .Include(fc => fc.ExampleSentences)
                     .ToListAsync();
             }
             if(status == WordStatus.ToLearn)
@@ -147,6 +148,7 @@ namespace SigmaWord.Services
         {
             return await _context.FlashCards
                 .Where(fc => fc.Status == status)
+                .Include(fc => fc.ExampleSentences)
                 .Take(numberOfTake)
                 .ToListAsync();
         }
