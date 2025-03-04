@@ -6,67 +6,68 @@
 
     <!-- Стили для кнопок -->
     <Style TargetType="Button">
-        <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
-        <Setter Property="TextColor" Value="{StaticResource ButtonTextColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
         <Setter Property="FontSize" Value="16" />
-        <Setter Property="CornerRadius" Value="5" />
-        <Setter Property="BorderColor" Value="{StaticResource ButtonAccentColor}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
         <Setter Property="BorderWidth" Value="1" />
+        <Setter Property="Padding" Value="15" />
         <Setter Property="Margin" Value="5" />
     </Style>
 
     <!-- Стили для Label -->
     <Style TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
         <Setter Property="FontSize" Value="14" />
         <Setter Property="Margin" Value="5" />
     </Style>
 
     <!-- Стили для Entry -->
     <Style TargetType="Entry">
-        <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
-        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
-        <Setter Property="PlaceholderColor" Value="#B0B0B0" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource PlaceholderColor}" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="Margin" Value="5" />
     </Style>
 
     <!-- Стили для Frame -->
     <Style TargetType="Frame">
-        <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
-        <Setter Property="BorderColor" Value="{StaticResource ButtonAccentColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
         <Setter Property="CornerRadius" Value="10" />
         <Setter Property="Padding" Value="10" />
     </Style>
 
     <!-- Фон -->
     <Style TargetType="VerticalStackLayout">
-        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
     </Style>
 
     <!-- Grid -->
     <Style TargetType="Grid">
-        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
         <Setter Property="Padding" Value="10" />
     </Style>
 
     <!-- Стиль для TabBar -->
     <Style x:Key="DarkTabBarStyle" TargetType="Shell">
-        <Setter Property="BackgroundColor" Value="{StaticResource DarkTabBarBackgroundColor}" />
-        <Setter Property="ForegroundColor" Value="{StaticResource DarkTabBarTextColor}" />
-        <Setter Property="Shell.BackButtonBehavior" Value="{StaticResource DarkTabBarTextColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="ForegroundColor" Value="{StaticResource TextColor}" />
+        <Setter Property="Shell.BackButtonBehavior" Value="{StaticResource TextColor}" />
     </Style>
 
     <!-- Стиль для ListView -->
     <Style x:Key="DarkListViewStyle" TargetType="ListView">
-        <Setter Property="BackgroundColor" Value="{StaticResource DarkBackgroundColor}" />
-        <Setter Property="SeparatorColor" Value="{StaticResource ButtonAccentColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="SeparatorColor" Value="{StaticResource BorderColor}" />
         <Setter Property="ItemTemplate">
             <Setter.Value>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Padding="10">
-                            <Label Text="{Binding Name}" TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="{Binding Name}" TextColor="{StaticResource TextColor}" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -74,11 +75,10 @@
         </Setter>
     </Style>
 
-
     <!-- Стиль для Picker -->
     <Style TargetType="Picker">
-        <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
-        <Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
         <Setter Property="Margin" Value="5" />
     </Style>
 </ResourceDictionary>

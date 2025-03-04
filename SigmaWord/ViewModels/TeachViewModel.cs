@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LiveChartsCore;
-using LiveChartsCore.Painting;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
 using SigmaWord.Data;
@@ -33,24 +32,51 @@ namespace SigmaWord.ViewModels
         [ObservableProperty]
         public string needToRepeatText;
 
+        [ObservableProperty]
+        public int totalRepeats;
+        [ObservableProperty]
+        public int totalWordsStudied;
+        [ObservableProperty]
+        public int totalKnownWords;
+        [ObservableProperty]
+        public int totalWordsStarted;
+
+        [ObservableProperty]
+        public int totalRepeatsForPeriod;
+        [ObservableProperty]
+        public int totalWordsStudiedForPeriod;
+        [ObservableProperty]
+        public int totalKnownWordsForPeriod;
+        [ObservableProperty]
+        public int totalWordsStartedForPeriod;
+
         public async Task LoadDailyGoal()
         {
             DailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
             DailyGoalText = $"Цель на день: {DailyGoal}";
         }
         [RelayCommand]
-        public async Task LoadStatistics(string days)
+        public async Task LoadStatistics(string daysString)
         {
-
-            var statistics = await _dbService.GetDailyStatisticsAsync(int.Parse(days));
+            int days = int.Parse(daysString);
+            var statistics = await _dbService.GetDailyStatisticsAsync(days);
             Dates = statistics.Select(s => s.Date.ToString("dd/MM/yyyy")).ToList();
 
             // Создаем массивы значений для графиков
-            var totalRepeats = statistics.Select(s => s.TotalRepeats).Reverse().ToArray();
-            var totalWordsStudied = statistics.Select(s => s.TotalWordsStudied).Reverse().ToArray();
-            var totalKnownWords = statistics.Select(s => s.TotalKnownWords).Reverse().ToArray();
-            var totalWordsStarted = statistics.Select(s => s.TotalWordsStarted).Reverse().ToArray();
+            var totalRepeatsArr = statistics.Select(s => s.TotalRepeats).Reverse().ToArray();
+            var totalWordsStudiedArr = statistics.Select(s => s.TotalWordsStudied).Reverse().ToArray();
+            var totalKnownWordsArr = statistics.Select(s => s.TotalKnownWords).Reverse().ToArray();
+            var totalWordsStartedArr = statistics.Select(s => s.TotalWordsStarted).Reverse().ToArray();
 
+            TotalWordsStarted = await _dbService.GetStatisticsCountForAllTime(TypeStatisticses.TotalWordsStarted);
+            TotalRepeats = await _dbService.GetStatisticsCountForAllTime(TypeStatisticses.TotalRepeats);
+            TotalKnownWords = await _dbService.GetStatisticsCountForAllTime(TypeStatisticses.TotalKnownWords);
+            TotalWordsStudied = await _dbService.GetStatisticsCountForAllTime(TypeStatisticses.TotalWordsStudied);
+
+            TotalWordsStartedForPeriod = await _dbService.GetStatisticsCountForPeriod(TypeStatisticses.TotalWordsStarted, days);
+            TotalRepeatsForPeriod = await _dbService.GetStatisticsCountForPeriod(TypeStatisticses.TotalRepeats, days);
+            TotalKnownWordsForPeriod = await _dbService.GetStatisticsCountForPeriod(TypeStatisticses.TotalKnownWords, days);
+            TotalWordsStudiedForPeriod = await _dbService.GetStatisticsCountForPeriod(TypeStatisticses.TotalWordsStudied, days);
             // Определяем цвета для каждой линии
             var seriesColors = new[]
             {
@@ -63,10 +89,10 @@ namespace SigmaWord.ViewModels
             // Создаем массив серий
             Series = new ISeries[]
             {
-                CreateLineSeries(totalRepeats, "Повторений:", seriesColors[0]),
-                CreateLineSeries(totalWordsStudied, "Полностью выученных:", seriesColors[1]),
-                CreateLineSeries(totalKnownWords, "Уже известно:", seriesColors[2]),
-                CreateLineSeries(totalWordsStarted, "Выучено новых слов:", seriesColors[3]),
+                CreateLineSeries(totalRepeatsArr, "Повторений:", seriesColors[0]),
+                CreateLineSeries(totalWordsStudiedArr, "Полностью выученных:", seriesColors[1]),
+                CreateLineSeries(totalKnownWordsArr, "Уже известно:", seriesColors[2]),
+                CreateLineSeries(totalWordsStartedArr, "Выучено новых слов:", seriesColors[3]),
             };
 
             // Уведомляем об изменении Series и Dates

@@ -375,6 +375,55 @@ namespace SigmaWord.Services
             }
             await _context.SaveChangesAsync();
         }
+        public async Task<int> GetStatisticsCountForPeriod(TypeStatisticses type, int days)
+        {
+            // Получаем текущую дату (сегодня)
+            var endDate = DateTime.Now.Date; // Сегодняшняя дата без времени
+                                             // Вычисляем дату, которая была `days` дней назад
+            var startDate = endDate.AddDays(-days); // Дата `days` дней назад
+
+            // Фильтруем записи за период от `startDate` до `endDate`
+            var query = _context.DailyStatistics
+                                .Where(s => s.Date >= startDate && s.Date <= endDate);
+
+            // Выбираем нужное поле в зависимости от типа статистики
+            switch (type)
+            {
+                case TypeStatisticses.TotalWordsStarted:
+                    return await query.SumAsync(s => s.TotalWordsStarted);
+
+                case TypeStatisticses.TotalRepeats:
+                    return await query.SumAsync(s => s.TotalRepeats);
+
+                case TypeStatisticses.TotalWordsStudied:
+                    return await query.SumAsync(s => s.TotalWordsStudied);
+
+                case TypeStatisticses.TotalKnownWords:
+                    return await query.SumAsync(s => s.TotalKnownWords);
+            }
+            return 0;
+        }
+        public async Task<int> GetStatisticsCountForAllTime(TypeStatisticses type)
+        {
+            // Выбираем нужное поле в зависимости от типа статистики
+            switch (type)
+            {
+                case TypeStatisticses.TotalWordsStarted:
+                    return await _context.DailyStatistics.SumAsync(s => s.TotalWordsStarted);
+
+                case TypeStatisticses.TotalRepeats:
+                    return await _context.DailyStatistics.SumAsync(s => s.TotalRepeats);
+
+                case TypeStatisticses.TotalWordsStudied:
+                    return await _context.DailyStatistics.SumAsync(s => s.TotalWordsStudied);
+
+                case TypeStatisticses.TotalKnownWords:
+                    return await _context.DailyStatistics.SumAsync(s => s.TotalKnownWords);
+
+                default:
+                    throw new ArgumentException("Invalid statistics type", nameof(type));
+            }
+        }
     }
 }
 
