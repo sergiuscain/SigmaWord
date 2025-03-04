@@ -37,9 +37,11 @@ namespace SigmaWord.ViewModels
             DailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
             DailyGoalText = $"Цель на день: {DailyGoal}";
         }
-        public async Task LoadStatistics()
+        [RelayCommand]
+        public async Task LoadStatistics(string days)
         {
-            var statistics = await _dbService.GetDailyStatisticsAsync(14);
+
+            var statistics = await _dbService.GetDailyStatisticsAsync(int.Parse(days));
             Dates = statistics.Select(s => s.Date.ToString("dd/MM/yyyy")).ToList();
 
             // Создаем массивы значений для графиков

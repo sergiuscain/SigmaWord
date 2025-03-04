@@ -16,7 +16,7 @@ namespace SigmaWord
         protected override async void OnStart()
         {
             await _dbService.InitializeDatabaseAsync();
-            await _dbService.InitializeStatisticsAsync();
+            await _dbService.InitializeStatisticsAsync(190);
         }
     }
 }

@@ -8,7 +8,7 @@
         <viewmodel:TeachViewModel/>
     </ContentPage.BindingContext>
     <ScrollView>
-        <Grid RowDefinitions="*,*,*,*,7*">
+        <Grid RowDefinitions="*,*,*,*,*,7*">
             <Button Grid.Row="0"
                 Text="{Binding DailyGoalText}"
                 Command="{Binding ChangeDailyGoalCommand}"/>
@@ -21,7 +21,34 @@
             <Button Grid.Row="3"
                 Text="{Binding NeedToRepeatText}"
                 Command="{Binding OpenReviewTabCommand}"/>
-            <Grid Grid.Row="4">
+            <Grid Grid.Row="4" ColumnDefinitions="*,*,*,*,*">
+                <Button 
+                    Grid.Column="0" 
+                    Text="7 D"
+                    Command="{Binding LoadStatisticsCommand}"
+                    CommandParameter="7"/>
+                <Button 
+                    Grid.Column="1" 
+                    Text="14 D"
+                    Command="{Binding LoadStatisticsCommand}"
+                    CommandParameter="14"/>
+                <Button 
+                    Grid.Column="2" 
+                    Text="1 M"  
+                    Command="{Binding LoadStatisticsCommand}"
+                    CommandParameter="30"/>
+                <Button 
+                    Grid.Column="3" 
+                    Text="3 M"   
+                    Command="{Binding LoadStatisticsCommand}"
+                    CommandParameter="90"/>
+                <Button 
+                    Grid.Column="4" 
+                    Text="6 M"   
+                    Command="{Binding LoadStatisticsCommand}"
+                    CommandParameter="180"/>
+            </Grid>
+            <Grid Grid.Row="5">
                 <lvc:CartesianChart Series="{Binding Series}" XAxes="{Binding XAxes}">
                 </lvc:CartesianChart>
             </Grid>

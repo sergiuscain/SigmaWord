@@ -222,7 +222,6 @@ namespace SigmaWord.Services
         {
             // Получаем дату, начиная с которой будем делать выборку
             var cutoffDate = DateTime.UtcNow.AddDays(-days);
-
             // Возвращаем последние 'days' записей, начиная с сегодняшнего дня
             var result = await _context.DailyStatistics
                 .Where(s => s.Date >= cutoffDate)
@@ -236,14 +235,14 @@ namespace SigmaWord.Services
         {
             return await _context.DailyStatistics.FirstOrDefaultAsync(ds => ds.Date == DateTime.Today);
         }
-        public async Task InitializeStatisticsAsync()
+        public async Task InitializeStatisticsAsync(int days)
         {
             // Получаем сегодняшнюю дату и дату две недели назад
             var today = DateTime.Today;
-            var twoWeeksAgo = today.AddDays(-14);
+            var twoWeeksAgo = today.AddDays(-days);
 
             // Получаем список дат от двух недель назад до сегодня
-            var dates = Enumerable.Range(0, 15)
+            var dates = Enumerable.Range(0, days)
                 .Select(i => today.AddDays(-i))
                 .ToList();
 

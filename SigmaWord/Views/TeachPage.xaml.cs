@@ -15,7 +15,7 @@ public partial class TeachPage : ContentPage
     {
         base.OnAppearing();
         await _viewModel.LoadDailyGoal(); //Загружаем Цель на день
-        await _viewModel.LoadStatistics(); // Загружаем статистику при каждом появлении страницы
+        await _viewModel.LoadStatistics("14"); // Загружаем статистику при каждом появлении страницы
         await _viewModel.LoadNeedToRepeatData(); //Загружаем данные о количестве повторений
     }
 }
