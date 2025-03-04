@@ -56,23 +56,14 @@
         <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
         <Setter Property="ForegroundColor" Value="{StaticResource TextColor}" />
         <Setter Property="Shell.BackButtonBehavior" Value="{StaticResource TextColor}" />
+        <Setter Property="Shell.TitleColor" Value="{StaticResource TextColor}" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource TextColor2}" />
     </Style>
 
     <!-- Стиль для ListView -->
     <Style x:Key="DarkListViewStyle" TargetType="ListView">
         <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
         <Setter Property="SeparatorColor" Value="{StaticResource BorderColor}" />
-        <Setter Property="ItemTemplate">
-            <Setter.Value>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding Name}" TextColor="{StaticResource TextColor}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </Setter.Value>
-        </Setter>
     </Style>
 
     <!-- Стиль для Picker -->
@@ -80,5 +71,9 @@
         <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
         <Setter Property="TextColor" Value="{StaticResource TextColor}" />
         <Setter Property="Margin" Value="5" />
+    </Style>
+    <!-- StackLayout -->
+    <Style TargetType="HorizontalStackLayout">
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}"/>
     </Style>
 </ResourceDictionary>

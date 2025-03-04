@@ -11,6 +11,10 @@
                VerticalOptions="Center" 
                HorizontalOptions="Center" 
                IsVisible="{Binding IsWordVisible}"/>
+        <Label Text="{Binding CurrentFlashCard.Translation}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" 
+               IsVisible="{Binding IsTranslationVisible}"/>
 
         <StackLayout IsVisible="{Binding IsExamplesVisible}">
             <Label Text="Примеры предложений:" 
@@ -31,17 +35,15 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
-        
+
         <Label Text="{Binding ResultMessage}"
                VerticalOptions="End" 
                HorizontalOptions="Center"
                TextColor="{Binding ResultTextColor}"
                IsVisible="{Binding IsResultVisible}" />
-        <Label Text="{Binding CurrentFlashCard.Translation}"
-               VerticalOptions="Center" 
-               HorizontalOptions="Center" 
-               IsVisible="{Binding IsTranslationVisible}"/>
 
+        <Button Grid.Column="1" Text="Уже знаю"
+        Command="{Binding AleadyKnowCommand}" IsVisible="{Binding IsAlreadyKnow}"/>
 
         <Button Text="Показать перевод"
                 Command="{Binding ShowTranslationCommand}"
@@ -49,12 +51,12 @@
 
         <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsButtonsVisible}" 
               HorizontalOptions="FillAndExpand">
-                <Button Grid.Column="0" Text="Вспомнил"
+            <Button Grid.Column="0" Text="Вспомнил"
                         Command="{Binding RememberedCommand}"/>
-                <Button Grid.Column="1" Text="Не вспомнил"
+            <Button Grid.Column="1" Text="Не вспомнил"
                         Command="{Binding NotRememberedCommand}"/>
         </Grid>
-
+        
         <Button Text="Назад" Command="{Binding GoBackCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

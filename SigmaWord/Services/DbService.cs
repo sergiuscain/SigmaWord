@@ -277,21 +277,21 @@ namespace SigmaWord.Services
                 await _context.SaveChangesAsync();
             }
         }
-        public async Task AddCategoryToLearning(Category category)
+        public async Task AddCategoryToLearning(int categoryId)
         {
             // Обновляем статус карточек, относящихся к данной категории и имеющих статус Unknown
             await _context.FlashCards
-                .Where(fc => fc.Categories.Any(c => c.Id == category.Id) && fc.Status == WordStatus.Unknown)
+                .Where(fc => fc.Categories.Any(c => c.Id == categoryId) && fc.Status == WordStatus.Unknown)
                 .ForEachAsync(fc => fc.Status = WordStatus.ToLearn);
 
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteCategoryFromLearning(Category category)
+        public async Task DeleteCategoryFromLearning(int categoryId)
         {
             // Обновляем статус карточек, относящихся к данной категории и имеющих статус ToLearn
             await _context.FlashCards
-                .Where(fc => fc.Categories.Any(c => c.Id == category.Id) && fc.Status == WordStatus.ToLearn)
+                .Where(fc => fc.Categories.Any(c => c.Id == categoryId) && fc.Status == WordStatus.ToLearn)
                 .ForEachAsync(fc => fc.Status = WordStatus.Unknown);
 
             await _context.SaveChangesAsync();

@@ -33,6 +33,8 @@ namespace SigmaWord.ViewModels
 
         [ObservableProperty]
         private bool isResultVisible;
+        [ObservableProperty]
+        private bool isAlreadyKnow = false;
 
         [ObservableProperty]
         private Color resultTextColor;
@@ -54,6 +56,7 @@ namespace SigmaWord.ViewModels
             List<FlashCard> flashCards = new List<FlashCard>();
             if (status == WordStatus.ToLearn)
             {
+                IsAlreadyKnow = true;
                 int wordStartedToLearn = (await _dbService.GetTodayStatisticsAsync()).TotalWordsStarted;
                 int dailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
                 int needToStartLearn = dailyGoal - wordStartedToLearn;
@@ -61,6 +64,7 @@ namespace SigmaWord.ViewModels
             }
             else
             {
+                IsAlreadyKnow = false;
                 flashCards = await _dbService.GetFlashCardsByStatusAsync(WordStatus.Learning);
             }
             foreach (var card in flashCards)
@@ -87,7 +91,15 @@ namespace SigmaWord.ViewModels
             }
             else
             {
-                // Логика завершения
+                IsButtonsVisible = false;
+                IsShowVisibleTranslateButtonVisible = false;
+                IsExamplesVisible = false;
+                IsWordVisible = false;
+                IsTranslationVisible = false;
+                IsAlreadyKnow = false;
+                IsResultVisible = true;
+                ResultTextColor = Colors.Yellow;
+                ResultMessage = "Вы выучили все доступные слова!\nЧтобы учить больше, увеличьте цель на день\nили добавьте новые категории для изучения (вкладка категорий открывается с задержкой, нужно просто немного подождать. В будущем я оптимизирую это)\nСлова для повторения появятся спустя время!";
             }
         }
 
@@ -231,6 +243,16 @@ namespace SigmaWord.ViewModels
                 CurrentFlashCard.Status = WordStatus.Mastered;
                 await _dbService.AddStatistics(TypeStatisticses.TotalWordsStudied.ToString());
             }
+        }
+
+        [RelayCommand]
+        private async Task AleadyKnow()
+        {
+            await _dbService.AddStatistics(TypeStatisticses.TotalKnownWords.ToString());
+            CurrentFlashCard.Status = WordStatus.Known;
+            CurrentFlashCard.CurrentRepetitions = 100;
+            await _dbService.UpdateFlashCard(CurrentFlashCard);
+            ShowNextFlashCard();
         }
 
         [RelayCommand]

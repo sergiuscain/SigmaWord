@@ -9,5 +9,6 @@
             Text="{Binding Text}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button Text="Для работодателей^^" Command="{Binding GoToResumeCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

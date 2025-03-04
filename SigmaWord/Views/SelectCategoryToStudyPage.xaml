@@ -6,7 +6,7 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              x:DataType="viewmodel:SelectCategoryToStudyViewModel">
-    <VerticalStackLayout>
+    <ScrollView>
         <CollectionView ItemsSource="{Binding Categories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Category">
@@ -15,15 +15,14 @@
                         <Button Grid.Column="1" 
                             Text="Учить" 
                             Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.StartLearningCommand}" 
-                            CommandParameter="{Binding}" />
+                            CommandParameter="{Binding Id}" />
                         <Button Grid.Column="2" 
                             Text="Не учить" 
                             Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.StopLearningCommand}" 
-                            CommandParameter="{Binding}" />
+                            CommandParameter="{Binding Id}" />
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

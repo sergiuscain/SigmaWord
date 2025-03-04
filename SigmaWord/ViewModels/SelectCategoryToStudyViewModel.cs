@@ -2,12 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SigmaWord.ViewModels
 {
@@ -16,21 +10,24 @@ namespace SigmaWord.ViewModels
     {
         private readonly DbService _dbService;
         [ObservableProperty]
-        public ObservableCollection<Category> categories;
-        public SelectCategoryToStudyViewModel(DbService dbService, List<Category> categories)
+        public List<Category> categories;
+        public SelectCategoryToStudyViewModel(DbService dbService)
         {
             _dbService = dbService;
-            this.categories = new ObservableCollection<Category>(categories);
         }
         [RelayCommand]
-        public async Task StartLearning(Category category)
+        public async Task StartLearning(int categoryId)
         {
-            await _dbService.AddCategoryToLearning(category);
+            await _dbService.AddCategoryToLearning(categoryId);
         }
         [RelayCommand]
-        public async Task StopLearning(Category category)
+        public async Task StopLearning(int categoryId)
         {
-            await _dbService.DeleteCategoryFromLearning(category);
+            await _dbService.DeleteCategoryFromLearning(categoryId);
+        }
+        public async Task LoadCategories()
+        {
+            Categories = await _dbService.GetAllCategoriesAsync();
         }
     }
 }

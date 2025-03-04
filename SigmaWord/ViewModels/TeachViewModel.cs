@@ -125,8 +125,9 @@ namespace SigmaWord.ViewModels
         {
             List<Category> categories = await _dbService.GetAllCategoriesAsync();
             // Создаем новую страницу и устанавливаем свойство
-            var viewModel = new SelectCategoryToStudyViewModel(_dbService, categories);
+            var viewModel = new SelectCategoryToStudyViewModel(_dbService);
             var page = new SelectCategoryToStudyPage(viewModel);
+            await viewModel.LoadCategories();
             await Shell.Current.Navigation.PushAsync(page);
         }
         [RelayCommand]

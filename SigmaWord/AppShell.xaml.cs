@@ -11,6 +11,7 @@ namespace SigmaWord
             Routing.RegisterRoute(nameof(WordsPage), typeof(WordsPage));
             Routing.RegisterRoute(nameof(SelectCategoryToStudyPage), typeof(SelectCategoryToStudyPage));
             Routing.RegisterRoute(nameof(WordStudyPage), typeof(WordStudyPage));
+            Routing.RegisterRoute(nameof(ResumePage), typeof(ResumePage));
         }
 
     }
