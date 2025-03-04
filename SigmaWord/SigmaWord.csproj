@@ -60,6 +60,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Data\Migrations\**" />
+	  <Compile Remove="Data\Migrations\**" />
+	  <EmbeddedResource Remove="Data\Migrations\**" />
+	  <MauiCss Remove="Data\Migrations\**" />
+	  <MauiXaml Remove="Data\Migrations\**" />
+	  <None Remove="Data\Migrations\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\AppIcon\appicon.jpeg" />
 	  <None Remove="Resources\Splash\splash.png" />
 	  <None Remove="Resources\Words\SigmaWordDb.db" />
@@ -109,7 +118,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Data\Migrations\" />
 	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 

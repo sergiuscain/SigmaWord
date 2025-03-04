@@ -4,6 +4,7 @@ using LiveChartsCore;
 using LiveChartsCore.Painting;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
+using SigmaWord.Data;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
 using SigmaWord.Views;
@@ -17,7 +18,7 @@ namespace SigmaWord.ViewModels
 
         public TeachViewModel()
         {
-            _dbService = new DbService(new SigmaWordDbContext());
+            _dbService = new DbService(new AppDbContext());
         }
 
         public ISeries[] Series { get; set; }

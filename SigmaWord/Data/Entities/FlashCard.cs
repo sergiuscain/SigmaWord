@@ -1,6 +1,6 @@
 ﻿namespace SigmaWord.Data.Entities
 {
-    public class FlashCard
+    public partial class FlashCard
     {
         public int Id { get; set; } // Уникальный идентификатор карточки
         public string Word { get; set; } // Само слово
@@ -12,19 +12,5 @@
         public DateTime NextRepeatDate { get; set; } //Дата следующего повторения.
         public DateTime LastRepeatDate { get; set; } //Дата последнего повторения.
         public WordStatus Status { get; set; } // Статус слова
-
-        public string GetLearningStatus()
-        {
-            if (Status == WordStatus.Learning)
-            {
-                double percentage = (double)CurrentRepetitions / RequiredRepetitions * 100;
-                return $"Изучается: {percentage}%";
-            }
-            return string.Empty;
-        }
-        public double GetLearningPercentage()
-        {
-            return  (double)CurrentRepetitions / RequiredRepetitions * 100;
-        }
     }
 }

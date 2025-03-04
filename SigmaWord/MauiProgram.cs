@@ -1,5 +1,6 @@
 ﻿using LiveChartsCore.SkiaSharpView.Maui;
 using Microsoft.Extensions.Logging;
+using SigmaWord.Data;
 using SigmaWord.Services;
 using SigmaWord.ViewModels;
 using SigmaWord.Views;
@@ -26,7 +27,7 @@ namespace SigmaWord
             builder.Services.AddSingleton<VocabularyService>();
 
             //Добавляем сервис для работы с базой данных SQLite
-            builder.Services.AddDbContext<SigmaWordDbContext>();
+            builder.Services.AddDbContext<AppDbContext>();
             builder.Services.AddTransient<DbService>();
 
             //Сервисы для каждой вьбшки и её модели представления.

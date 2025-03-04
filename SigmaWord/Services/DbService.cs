@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Maui.Storage;
+using SigmaWord.Data;
 using SigmaWord.Data.Entities;
 using SigmaWord.Models;
 using System.Reflection;
@@ -8,8 +9,8 @@ namespace SigmaWord.Services
 {
     public class DbService
     {
-        private readonly SigmaWordDbContext _context;
-        public DbService(SigmaWordDbContext context)
+        private readonly AppDbContext _context;
+        public DbService(AppDbContext context)
         {
             _context = context;
         }
@@ -92,7 +93,7 @@ namespace SigmaWord.Services
         public async Task<Category> AddCategoryAsync(string categoryName)
         {
             var category = new Category { Name = categoryName };
-            await _context.Category.AddAsync(category);
+            await _context.Categories.AddAsync(category);
             await _context.SaveChangesAsync();
             return category;
         }
@@ -108,13 +109,13 @@ namespace SigmaWord.Services
         // Получение всех категорий
         public async Task<List<Category>> GetAllCategoriesAsync()
         {
-            return await _context.Category.ToListAsync();
+            return await _context.Categories.ToListAsync();
         }
 
         // Удаление категории
         public async Task DeleteCategoryAsync(Category category)
         {
-            _context.Category.Remove(category);
+            _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
         }
 

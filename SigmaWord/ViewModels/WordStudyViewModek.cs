@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Microsoft.Maui.Graphics;
 using CommunityToolkit.Mvvm.Input;
 using SigmaWord.Data.Entities;
 using SigmaWord.Services;
@@ -142,17 +141,17 @@ namespace SigmaWord.ViewModels
         public async void UpdateFlashCard(bool isCorrect)
         {
             DateTime now = DateTime.Now;
-
+            int countToAdd = 10;
             // Корректировка процента выученности при неправильном ответе
             if (!isCorrect)
             {
-                CurrentFlashCard.CurrentRepetitions = Math.Max(0, CurrentFlashCard.CurrentRepetitions - 10); // Уменьшаем на 10%, не ниже 0
+                CurrentFlashCard.CurrentRepetitions = Math.Max(0, CurrentFlashCard.CurrentRepetitions -= countToAdd); // Уменьшаем на 10%, не ниже 0
             }
             else if (CurrentFlashCard.CurrentRepetitions == 0)
             {
                 // 0% - добавляем 30 минут
                 CurrentFlashCard.NextRepeatDate = now.AddMinutes(30);
-                CurrentFlashCard.CurrentRepetitions += 10;
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 if (CurrentFlashCard.Status == WordStatus.ToLearn)
                 {
                     await _dbService.AddStatistics(TypeStatisticses.TotalWordsStarted.ToString());
@@ -163,43 +162,72 @@ namespace SigmaWord.ViewModels
                     await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
                 }
             }
+            else if (CurrentFlashCard.CurrentRepetitions <= 10)
+            {
+                // 1-10% - добавляем 1 день
+                CurrentFlashCard.NextRepeatDate = now.AddDays(1);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
+                await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
+            }
             else if (CurrentFlashCard.CurrentRepetitions <= 20)
             {
-                // 1-20% - добавляем 1 день
-                CurrentFlashCard.NextRepeatDate = now.AddDays(1);
-                CurrentFlashCard.CurrentRepetitions += 10;
+                // 11-20% - добавляем 3 дня
+                CurrentFlashCard.NextRepeatDate = now.AddDays(3);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
+                await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
+            }
+            else if (CurrentFlashCard.CurrentRepetitions <= 30)
+            {
+                // 21-30% - добавляем 1 неделю
+                CurrentFlashCard.NextRepeatDate = now.AddDays(7);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
             }
             else if (CurrentFlashCard.CurrentRepetitions <= 40)
             {
-                // 21-40% - добавляем 3 дня
-                CurrentFlashCard.NextRepeatDate = now.AddDays(3);
-                CurrentFlashCard.CurrentRepetitions += 10;
+                // 31-40% - добавляем 2 недели
+                CurrentFlashCard.NextRepeatDate = now.AddDays(14);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
+                await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
+            }
+            else if (CurrentFlashCard.CurrentRepetitions <= 50)
+            {
+                // 41-50% - добавляем 1 месяц
+                CurrentFlashCard.NextRepeatDate = now.AddMonths(1);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
             }
             else if (CurrentFlashCard.CurrentRepetitions <= 60)
             {
-                // 41-60% - добавляем 1 неделю
-                CurrentFlashCard.NextRepeatDate = now.AddDays(7);
-                CurrentFlashCard.CurrentRepetitions += 10;
+                // 41-60% - добавляем 1 месяц и 15 дней
+                CurrentFlashCard.NextRepeatDate = now.AddMonths(1).AddDays(15);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
+                await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
+            }
+            else if (CurrentFlashCard.CurrentRepetitions <= 70)
+            {
+                // 41-60% - добавляем 1 месяц
+                CurrentFlashCard.NextRepeatDate = now.AddMonths(2);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
             }
             else if (CurrentFlashCard.CurrentRepetitions <= 80)
             {
-                // 61-80% - добавляем 2 недели
-                CurrentFlashCard.NextRepeatDate = now.AddDays(14);
-                CurrentFlashCard.CurrentRepetitions += 10;
+                // 41-60% - добавляем 2 месяца и 7 дней
+                CurrentFlashCard.NextRepeatDate = now.AddMonths(2).AddDays(7);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
             }
-            else if(CurrentFlashCard.CurrentRepetitions < 99)
+            else if (CurrentFlashCard.CurrentRepetitions <= 90)
             {
-                // 81-99% - добавляем 1 месяц
-                CurrentFlashCard.NextRepeatDate = now.AddMonths(1);
-                CurrentFlashCard.CurrentRepetitions += 10;
+                // 61-80% - добавляем 2 месяца и 14 дней
+                CurrentFlashCard.NextRepeatDate = now.AddMonths(2).AddDays(14);
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 await _dbService.AddStatistics(TypeStatisticses.TotalRepeats.ToString());
             }
             else
             {
+                CurrentFlashCard.CurrentRepetitions += countToAdd;
                 CurrentFlashCard.Status = WordStatus.Mastered;
                 await _dbService.AddStatistics(TypeStatisticses.TotalWordsStudied.ToString());
             }

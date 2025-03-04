@@ -1,11 +1,15 @@
 ﻿namespace SigmaWord.Data.Entities
 {
-    public class ExampleSentence
+    public partial class ExampleSentence
     {
-        public int Id { get; set; } // Уникальный идентификатор примера
-        public string Sentence { get; set; } // Предложение с изучаемым словом
-        public string Translation { get; set; } // Перевод предложения
-        public int WordCardId { get; set; } // Идентификатор карточки слова
-        public FlashCard WordCard { get; set; } // Связь с карточкой слова
+        public int Id { get; set; }
+
+        public string Sentence { get; set; } = null!;
+
+        public string Translation { get; set; } = null!;
+
+        public int WordCardId { get; set; }
+
+        public virtual FlashCard WordCard { get; set; } = null!;
     }
 }
