@@ -188,9 +188,11 @@ namespace SigmaWord.Services
         }
         public async Task<List<FlashCard>> GetWordsByCategoryNameAsync(string categoryName)
         {
-            return await _context.FlashCards
+            var result = await _context.FlashCards
+             .AsNoTracking()
              .Where(fc => fc.Categories.Any(c => c.Name == categoryName))
              .ToListAsync();
+            return result;
         }
         public async Task<List<FlashCardDto>> GetWordsDtoByCategoryNameAsync(string categoryName)
         {

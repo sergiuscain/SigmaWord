@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using SigmaWord.Data.Entities;
-using SigmaWord.Models;
+
 using SigmaWord.Services;
 using System.Collections.ObjectModel;
 
@@ -19,7 +19,7 @@ namespace SigmaWord.ViewModels
         }
         public async Task LoadWords()
         {
-            var words = await _dbService.GetWordsByCategoryNameAsync(categoryName);
+            var words = await _dbService.GetWordsByCategoryNameAsync(CategoryName);
             Words = new ObservableCollection<FlashCard>(words);
         }
     }
