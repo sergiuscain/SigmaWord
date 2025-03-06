@@ -26,11 +26,14 @@ namespace SigmaWord
             //Сервис по обработки слов.
             builder.Services.AddSingleton<VocabularyService>();
 
+            //Сервис синтеза речи
+            builder.Services.AddTransient<SpeechService>();
+
             //Добавляем сервис для работы с базой данных SQLite
             builder.Services.AddDbContext<AppDbContext>();
             builder.Services.AddTransient<DbService>();
 
-            //Сервисы для каждой вьбшки и её модели представления.
+            //Сервисы для каждой вьюшки и её модели представления.
             builder.Services.AddTransient<DictionaryViewModel>();
             builder.Services.AddTransient<DictionaryPage>();
             builder.Services.AddTransient<TeachViewModel>();

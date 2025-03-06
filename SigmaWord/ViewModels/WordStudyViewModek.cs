@@ -9,6 +9,7 @@ namespace SigmaWord.ViewModels
     public partial class WordStudyViewModek : ObservableObject
     {
         private readonly DbService _dbService;
+        private readonly SpeechService _speechService;
 
         [ObservableProperty]
         public ObservableCollection<FlashCard> flashCards;
@@ -48,6 +49,7 @@ namespace SigmaWord.ViewModels
         public WordStudyViewModek(DbService dbService, WordStatus status)
         {
             _dbService = dbService;
+            _speechService = new SpeechService();
             FlashCards = new ObservableCollection<FlashCard>();
             IsToLearnButtonsVisible = status == WordStatus.ToLearn;
             IsButtonsVisible = status == WordStatus.Learning;
@@ -76,7 +78,7 @@ namespace SigmaWord.ViewModels
             ShowNextFlashCard();
         }
 
-        public void ShowNextFlashCard()
+        public async void ShowNextFlashCard()
         {
             if (_currentIndex < FlashCards.Count)
             {
@@ -88,6 +90,8 @@ namespace SigmaWord.ViewModels
                 IsShowVisibleTranslateButtonVisible = true;
                 CurrentFlashCard = FlashCards[_currentIndex];
                 _currentIndex++;
+                //Озвучиваем слово. В будущем озвучка будет включаться и выключаться в настройках
+                await _speechService.Speak(CurrentFlashCard.Word); 
             }
             else
             {
