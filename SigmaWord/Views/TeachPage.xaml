@@ -54,8 +54,11 @@
 
             <!-- График статистики -->
             <Frame>
-                <lvc:CartesianChart Series="{Binding Series}" XAxes="{Binding XAxes}"
-                                    HeightRequest="300" VerticalOptions="Start"/>
+                <lvc:CartesianChart Series="{Binding Series}" 
+                                    XAxes="{Binding XAxes}" 
+                                    YAxes="{Binding YAxes}"
+                                    HeightRequest="300" 
+                                    VerticalOptions="Start"/>
             </Frame>
 
             <!-- Таблица статистики -->

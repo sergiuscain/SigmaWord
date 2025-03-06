@@ -1,4 +1,4 @@
-	using SigmaWord.ViewModels;
+using SigmaWord.ViewModels;
 
 namespace SigmaWord.Views;
 
