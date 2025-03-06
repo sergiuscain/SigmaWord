@@ -26,9 +26,14 @@ namespace SigmaWord.ViewModels
             await Shell.Current.Navigation.PushAsync(page);
         }
         [RelayCommand]
+        private async Task GoToTG()
+        {
+            await Launcher.OpenAsync(new Uri("https://t.me/+zf_utiYiZsY1MjBi"));
+        }
+        [RelayCommand]
         private async Task Speak()
         {
-            await _speechService.Speak("Hello, i am test. Х-хи-хи, а теперь я озвучиваю русскую речь");
+            await _speechService.Speak("Привет, я умею говорить на 250ти тысячах языков. I'ts true, i'm brilliant");
         }
     }
 }

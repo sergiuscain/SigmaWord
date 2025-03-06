@@ -10,6 +10,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Button Text="Для работодателей^^" Command="{Binding GoToResumeCommand}"/>
+        <Button Text="Тг-канал по вопросам, предложениям и новостях о разработке" Command="{Binding GoToTGCommand}"/>
         <Button Text="Speak" Command="{Binding SpeakCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
