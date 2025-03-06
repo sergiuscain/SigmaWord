@@ -8,15 +8,13 @@
              x:DataType="viewmodel:WordStudyViewModek">
     <VerticalStackLayout>
         <!-- Карточка слова -->
-        <Frame Style="{StaticResource FrameStyle}">
+        <Frame>
             <VerticalStackLayout>
                 <Label Text="{Binding CurrentFlashCard.Word}"
-                       Style="{StaticResource LabelStyle}"
                        VerticalOptions="Center" 
                        HorizontalOptions="Center" 
                        IsVisible="{Binding IsWordVisible}"/>
                 <Label Text="{Binding CurrentFlashCard.Translation}"
-                       Style="{StaticResource LabelStyle}"
                        VerticalOptions="Center" 
                        HorizontalOptions="Center" 
                        IsVisible="{Binding IsTranslationVisible}"/>
@@ -24,10 +22,9 @@
         </Frame>
 
         <!-- Примеры предложений -->
-        <Frame Style="{StaticResource FrameStyle}" IsVisible="{Binding IsExamplesVisible}">
+        <Frame IsVisible="{Binding IsExamplesVisible}">
             <VerticalStackLayout>
-                <Label Text="Примеры предложений:" 
-                       Style="{StaticResource LabelStyle}"
+                <Label Text="Примеры предложений:"
                        FontAttributes="Bold" 
                        VerticalOptions="Start" 
                        HorizontalOptions="Center"/>
@@ -35,9 +32,8 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="entity:ExampleSentence">
                             <StackLayout>
-                                <Label Text="{Binding Sentence}" Style="{StaticResource LabelStyle}"/>
-                                <Label Text="{Binding Translation}" 
-                                       Style="{StaticResource LabelStyle}"
+                                <Label Text="{Binding Sentence}"/>
+                                <Label Text="{Binding Translation}"
                                        TextColor="Gray" 
                                        FontAttributes="Italic" />
                             </StackLayout>
@@ -72,7 +68,6 @@
 
         <!-- Сообщение о завершении слов -->
         <Label Text="{Binding ResultMessage}"
-               Style="{StaticResource LabelStyle}"
                VerticalOptions="Center" 
                HorizontalOptions="Center"
                TextColor="{Binding ResultTextColor}"

@@ -13,29 +13,25 @@
         </Grid.RowDefinitions>
 
         <!-- Заголовки таблицы -->
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Text="Слово" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Label Grid.Column="1" Text="Перевод" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Label Grid.Column="2" Text="Статус" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Label Grid.Column="3" Text="Прогресс" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Grid Grid.Row="0" Padding="10" ColumnDefinitions="*,*,*,*">
+            <Label Grid.Column="0" Text="Слово" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
+            <Label Grid.Column="1" Text="Перевод" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
+            <Label Grid.Column="2" Text="Статус" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
+            <Label Grid.Column="3" Text="Прогресс" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
         </Grid>
 
         <!-- Таблица с данными -->
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Words}">
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Words}" Margin="2">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:FlashCard">
-                    <Grid ColumnDefinitions="*,*,*,*">
-                        <Label Grid.Column="0" Text="{Binding Word}" />
-                        <Label Grid.Column="1" Text="{Binding Translation}" />
-                        <Label Grid.Column="2" Text="{Binding Status}" />
-                        <Label Grid.Column="3" Text="{Binding CurrentRepetitions}" />
-                    </Grid>
+                    <Frame CornerRadius="10" Padding="2" Margin="2" HasShadow="True" BackgroundColor="{StaticResource SecondaryColor}">
+                        <Grid ColumnDefinitions="2*,4*,2*,*" VerticalOptions="Center">
+                            <Label Grid.Column="0" Text="{Binding Word}" VerticalOptions="Center"/>
+                            <Label Grid.Column="1" Text="{Binding Translation}" VerticalOptions="Center"/>
+                            <Label Grid.Column="2" Text="{Binding Status}" VerticalOptions="Center"/>
+                            <Label Grid.Column="3" Text="{Binding CurrentRepetitions}" VerticalOptions="Center"/>
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

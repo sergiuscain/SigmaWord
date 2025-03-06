@@ -84,7 +84,7 @@ namespace SigmaWord.ViewModels
         {
             int days = int.Parse(daysString);
             var statistics = await _dbService.GetDailyStatisticsAsync(days);
-            Dates = statistics.Select(s => s.Date.ToString("dd/MM/yyyy")).ToList();
+            Dates = statistics.Select(s => s.Date.ToString("dd/MM")).Reverse().ToList();
 
             // Создаем массивы значений для графиков
             var totalRepeatsArr = statistics.Select(s => s.TotalRepeats).Reverse().ToArray();
@@ -205,7 +205,7 @@ namespace SigmaWord.ViewModels
         public async Task OpenStudyTab()
         {
             var viewModel = new WordStudyViewModek(_dbService, WordStatus.ToLearn);
-            var page = new WordStudyPage(viewModel);
+            var page = new WordStudyPage(viewModel, WordStatus.ToLearn);
             await Shell.Current.Navigation.PushAsync(page);
         }
 
@@ -213,7 +213,7 @@ namespace SigmaWord.ViewModels
         public async Task OpenReviewTab()
         {
             var viewModel = new WordStudyViewModek(_dbService, WordStatus.Learning);
-            var page = new WordStudyPage(viewModel);
+            var page = new WordStudyPage(viewModel, WordStatus.Learning);
             await Shell.Current.Navigation.PushAsync(page);
         }
     }

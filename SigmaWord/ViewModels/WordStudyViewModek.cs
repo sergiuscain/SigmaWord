@@ -112,6 +112,24 @@ namespace SigmaWord.ViewModels
             IsToLearnButtonsVisible = CurrentFlashCard.Status == WordStatus.ToLearn;
             IsShowVisibleTranslateButtonVisible = false;
         }
+        [RelayCommand]
+        private async Task AleadyKnow()
+        {
+            await _dbService.AddStatistics(TypeStatisticses.TotalKnownWords.ToString());
+            CurrentFlashCard.Status = WordStatus.Known;
+            CurrentFlashCard.CurrentRepetitions = 100;
+            await _dbService.UpdateFlashCard(CurrentFlashCard);
+            ShowNextFlashCard();
+        }
+        [RelayCommand]
+        private async Task StartLearning()  
+        {
+            await _dbService.AddStatistics(TypeStatisticses.TotalWordsStarted.ToString());
+            CurrentFlashCard.Status = WordStatus.Learning;
+            CurrentFlashCard.CurrentRepetitions = 10; // Начинаем с 10%
+            await _dbService.UpdateFlashCard(CurrentFlashCard);
+            ShowNextFlashCard();
+        }
 
         [RelayCommand]
         public async void Remembered()
@@ -241,24 +259,6 @@ namespace SigmaWord.ViewModels
             }
         }
 
-        [RelayCommand]
-        private async Task AleadyKnow()
-        {
-            await _dbService.AddStatistics(TypeStatisticses.TotalKnownWords.ToString());
-            CurrentFlashCard.Status = WordStatus.Known;
-            CurrentFlashCard.CurrentRepetitions = 100;
-            await _dbService.UpdateFlashCard(CurrentFlashCard);
-            ShowNextFlashCard();
-        }
-        [RelayCommand]
-        private async Task StartLearning()  
-        {
-            await _dbService.AddStatistics(TypeStatisticses.TotalKnownWords.ToString());
-            CurrentFlashCard.Status = WordStatus.Learning;
-            CurrentFlashCard.CurrentRepetitions = 10; // Начинаем с 10%
-            await _dbService.UpdateFlashCard(CurrentFlashCard);
-            ShowNextFlashCard();
-        }
 
         [RelayCommand]
         public async void GoBack()
