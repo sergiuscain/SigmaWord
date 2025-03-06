@@ -12,8 +12,10 @@ namespace SigmaWord.ViewModels
 
         [ObservableProperty]
         public ObservableCollection<FlashCard> flashCards;
+
         [ObservableProperty]
         public FlashCard currentFlashCard;
+
         private int _currentIndex;
 
         [ObservableProperty]
@@ -26,28 +28,29 @@ namespace SigmaWord.ViewModels
         private bool isExamplesVisible;
 
         [ObservableProperty]
-        private string exampleTranslations;
-
-        [ObservableProperty]
         private string resultMessage;
 
         [ObservableProperty]
         private bool isResultVisible;
-        [ObservableProperty]
-        private bool isAlreadyKnow = false;
 
         [ObservableProperty]
         private Color resultTextColor;
 
         [ObservableProperty]
-        private bool isButtonsVisible; // Для управления видимостью кнопок "Вспомнил" и "Не вспомнил"
+        private bool isButtonsVisible;
+
         [ObservableProperty]
         private bool isShowVisibleTranslateButtonVisible;
+
+        [ObservableProperty]
+        private bool isToLearnButtonsVisible;
 
         public WordStudyViewModek(DbService dbService, WordStatus status)
         {
             _dbService = dbService;
             FlashCards = new ObservableCollection<FlashCard>();
+            IsToLearnButtonsVisible = status == WordStatus.ToLearn;
+            IsButtonsVisible = status == WordStatus.Learning;
             LoadFlashCards(status).Wait();
         }
 
@@ -56,7 +59,6 @@ namespace SigmaWord.ViewModels
             List<FlashCard> flashCards = new List<FlashCard>();
             if (status == WordStatus.ToLearn)
             {
-                IsAlreadyKnow = true;
                 int wordStartedToLearn = (await _dbService.GetTodayStatisticsAsync()).TotalWordsStarted;
                 int dailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
                 int needToStartLearn = dailyGoal - wordStartedToLearn;
@@ -64,7 +66,6 @@ namespace SigmaWord.ViewModels
             }
             else
             {
-                IsAlreadyKnow = false;
                 flashCards = await _dbService.GetFlashCardsByStatusAsync(WordStatus.Learning);
             }
             foreach (var card in flashCards)
@@ -80,72 +81,67 @@ namespace SigmaWord.ViewModels
             if (_currentIndex < FlashCards.Count)
             {
                 IsWordVisible = true;
-                IsTranslationVisible = false; // Скрываем перевод
-                IsExamplesVisible = true; // Показываем примеры
-                IsButtonsVisible = false; // Скрываем кнопки "Вспомнил" и "Не вспомнил"
+                IsTranslationVisible = false;
+                IsExamplesVisible = true;
+                IsButtonsVisible = FlashCards[_currentIndex].Status == WordStatus.Learning;
+                IsToLearnButtonsVisible = FlashCards[_currentIndex].Status == WordStatus.ToLearn;
                 IsShowVisibleTranslateButtonVisible = true;
                 CurrentFlashCard = FlashCards[_currentIndex];
                 _currentIndex++;
-
-                OnPropertyChanged(nameof(CurrentFlashCard));
             }
             else
             {
+                // Скрываем все кнопки и показываем сообщение
                 IsButtonsVisible = false;
+                IsToLearnButtonsVisible = false;
                 IsShowVisibleTranslateButtonVisible = false;
                 IsExamplesVisible = false;
                 IsWordVisible = false;
                 IsTranslationVisible = false;
-                IsAlreadyKnow = false;
                 IsResultVisible = true;
                 ResultTextColor = Colors.Yellow;
-                ResultMessage = "Вы выучили все доступные слова!\nЧтобы учить больше, увеличьте цель на день\nили добавьте новые категории для изучения (вкладка категорий открывается с задержкой, нужно просто немного подождать. В будущем я оптимизирую это)\nСлова для повторения появятся спустя время!";
+                ResultMessage = "Вы выучили все доступные слова!\nЧтобы учить больше, увеличьте цель на день\nили добавьте новые категории для изучения.";
             }
         }
 
         [RelayCommand]
         public void ShowTranslation()
         {
-            IsTranslationVisible = true; // Показываем перевод
-            IsButtonsVisible = true; // Показываем кнопки "Вспомнил" и "Не вспомнил"
-            IsShowVisibleTranslateButtonVisible = false; //Скрываем кнопку для отображения перевода
+            IsTranslationVisible = true;
+            IsButtonsVisible = CurrentFlashCard.Status == WordStatus.Learning;
+            IsToLearnButtonsVisible = CurrentFlashCard.Status == WordStatus.ToLearn;
+            IsShowVisibleTranslateButtonVisible = false;
         }
 
         [RelayCommand]
         public async void Remembered()
         {
-            // Логика, как в методе CheckAnswer при правильном ответе
             await CheckAnswerLogic(true);
         }
 
         [RelayCommand]
         public async void NotRemembered()
         {
-            // Логика, как в методе CheckAnswer при неправильном ответе
             await CheckAnswerLogic(false);
-            await _dbService.UpdateFlashCard(CurrentFlashCard);
         }
 
         private async Task CheckAnswerLogic(bool isCorrect)
         {
-            // Логика обработки ответа
             if (isCorrect)
             {
-                // Правильный ответ
                 ResultMessage = "Правильный ответ!";
                 ResultTextColor = Colors.Green;
                 UpdateFlashCard(true);
             }
             else
             {
-                // Неправильный ответ
                 ResultMessage = "Неправильный ответ.";
                 ResultTextColor = Colors.Red;
                 UpdateFlashCard(false);
             }
             IsResultVisible = true;
-            await Task.Delay(500); // Задержка в 2 секунды
-            ResultMessage = "";
+            await Task.Delay(500);
+            IsResultVisible = false;
             await _dbService.UpdateFlashCard(CurrentFlashCard);
             ShowNextFlashCard();
         }
@@ -251,6 +247,15 @@ namespace SigmaWord.ViewModels
             await _dbService.AddStatistics(TypeStatisticses.TotalKnownWords.ToString());
             CurrentFlashCard.Status = WordStatus.Known;
             CurrentFlashCard.CurrentRepetitions = 100;
+            await _dbService.UpdateFlashCard(CurrentFlashCard);
+            ShowNextFlashCard();
+        }
+        [RelayCommand]
+        private async Task StartLearning()  
+        {
+            await _dbService.AddStatistics(TypeStatisticses.TotalKnownWords.ToString());
+            CurrentFlashCard.Status = WordStatus.Learning;
+            CurrentFlashCard.CurrentRepetitions = 10; // Начинаем с 10%
             await _dbService.UpdateFlashCard(CurrentFlashCard);
             ShowNextFlashCard();
         }

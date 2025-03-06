@@ -7,56 +7,78 @@
              Title="Изучение слов"
              x:DataType="viewmodel:WordStudyViewModek">
     <VerticalStackLayout>
-        <Label Text="{Binding CurrentFlashCard.Word}"
-               VerticalOptions="Center" 
-               HorizontalOptions="Center" 
-               IsVisible="{Binding IsWordVisible}"/>
-        <Label Text="{Binding CurrentFlashCard.Translation}"
-               VerticalOptions="Center" 
-               HorizontalOptions="Center" 
-               IsVisible="{Binding IsTranslationVisible}"/>
+        <!-- Карточка слова -->
+        <Frame Style="{StaticResource FrameStyle}">
+            <VerticalStackLayout>
+                <Label Text="{Binding CurrentFlashCard.Word}"
+                       Style="{StaticResource LabelStyle}"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       IsVisible="{Binding IsWordVisible}"/>
+                <Label Text="{Binding CurrentFlashCard.Translation}"
+                       Style="{StaticResource LabelStyle}"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       IsVisible="{Binding IsTranslationVisible}"/>
+            </VerticalStackLayout>
+        </Frame>
 
-        <StackLayout IsVisible="{Binding IsExamplesVisible}">
-            <Label Text="Примеры предложений:" 
-                   FontAttributes="Bold" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Center"/>
-            <CollectionView ItemsSource="{Binding CurrentFlashCard.ExampleSentences}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="entity:ExampleSentence">
-                        <StackLayout>
-                            <Label Text="{Binding Sentence}" />
-                            <Label Text="{Binding Translation}" 
-                                   TextColor="Gray" 
-                                   FontAttributes="Italic" 
-                                   />
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+        <!-- Примеры предложений -->
+        <Frame Style="{StaticResource FrameStyle}" IsVisible="{Binding IsExamplesVisible}">
+            <VerticalStackLayout>
+                <Label Text="Примеры предложений:" 
+                       Style="{StaticResource LabelStyle}"
+                       FontAttributes="Bold" 
+                       VerticalOptions="Start" 
+                       HorizontalOptions="Center"/>
+                <CollectionView ItemsSource="{Binding CurrentFlashCard.ExampleSentences}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="entity:ExampleSentence">
+                            <StackLayout>
+                                <Label Text="{Binding Sentence}" Style="{StaticResource LabelStyle}"/>
+                                <Label Text="{Binding Translation}" 
+                                       Style="{StaticResource LabelStyle}"
+                                       TextColor="Gray" 
+                                       FontAttributes="Italic" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </Frame>
 
-        <Label Text="{Binding ResultMessage}"
-               VerticalOptions="End" 
-               HorizontalOptions="Center"
-               TextColor="{Binding ResultTextColor}"
-               IsVisible="{Binding IsResultVisible}" />
+        <!-- Кнопки для статуса ToLearn -->
+        <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsToLearnButtonsVisible}" 
+              HorizontalOptions="FillAndExpand">
+            <Button Grid.Column="0" Text="Начать учить"
+                    Command="{Binding StartLearningCommand}"/>
+            <Button Grid.Column="1" Text="Уже знаю"
+                    Command="{Binding AleadyKnowCommand}"/>
+        </Grid>
 
-        <Button Grid.Column="1" Text="Уже знаю"
-        Command="{Binding AleadyKnowCommand}" IsVisible="{Binding IsAlreadyKnow}"/>
+        <!-- Кнопки для статуса Learning -->
+        <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsButtonsVisible}" 
+              HorizontalOptions="FillAndExpand">
+            <Button Grid.Column="0" Text="Вспомнил"
+                    Command="{Binding RememberedCommand}"/>
+            <Button Grid.Column="1" Text="Не вспомнил"
+                    Command="{Binding NotRememberedCommand}"/>
+        </Grid>
 
+        <!-- Кнопка "Показать перевод" -->
         <Button Text="Показать перевод"
                 Command="{Binding ShowTranslationCommand}"
                 IsVisible="{Binding IsShowVisibleTranslateButtonVisible}"/>
 
-        <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsButtonsVisible}" 
-              HorizontalOptions="FillAndExpand">
-            <Button Grid.Column="0" Text="Вспомнил"
-                        Command="{Binding RememberedCommand}"/>
-            <Button Grid.Column="1" Text="Не вспомнил"
-                        Command="{Binding NotRememberedCommand}"/>
-        </Grid>
-        
+        <!-- Сообщение о завершении слов -->
+        <Label Text="{Binding ResultMessage}"
+               Style="{StaticResource LabelStyle}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               TextColor="{Binding ResultTextColor}"
+               IsVisible="{Binding IsResultVisible}" />
+
+        <!-- Кнопка "Назад" -->
         <Button Text="Назад" Command="{Binding GoBackCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

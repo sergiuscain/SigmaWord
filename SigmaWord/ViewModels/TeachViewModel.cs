@@ -92,7 +92,7 @@ namespace SigmaWord.ViewModels
                 CreateLineSeries(totalRepeatsArr, "Повторений:", seriesColors[0]),
                 CreateLineSeries(totalWordsStudiedArr, "Полностью выученных:", seriesColors[1]),
                 CreateLineSeries(totalKnownWordsArr, "Уже известно:", seriesColors[2]),
-                CreateLineSeries(totalWordsStartedArr, "Выучено новых слов:", seriesColors[3]),
+                CreateLineSeries(totalWordsStartedArr, "Начато учиться:", seriesColors[3]),
             };
 
             // Уведомляем об изменении Series и Dates
