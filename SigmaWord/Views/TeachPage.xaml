@@ -31,23 +31,23 @@
             <!-- Кнопки выбора периода статистики -->
             <Grid ColumnDefinitions="*,*,*,*,*" HorizontalOptions="Center">
                 <Button Grid.Column="0" 
-                        Text="7 D"
+                        Text="7D"
                         Command="{Binding LoadStatisticsCommand}"
                         CommandParameter="7"/>
                 <Button Grid.Column="1" 
-                        Text="14 D"
+                        Text="14D"
                         Command="{Binding LoadStatisticsCommand}"
                         CommandParameter="14"/>
                 <Button Grid.Column="2" 
-                        Text="1 M"  
+                        Text="1M"  
                         Command="{Binding LoadStatisticsCommand}"
                         CommandParameter="30"/>
                 <Button Grid.Column="3" 
-                        Text="3 M"   
+                        Text="3M"   
                         Command="{Binding LoadStatisticsCommand}"
                         CommandParameter="90"/>
                 <Button Grid.Column="4" 
-                        Text="6 M"   
+                        Text="6M"   
                         Command="{Binding LoadStatisticsCommand}"
                         CommandParameter="180"/>
             </Grid>
@@ -60,11 +60,11 @@
 
             <!-- Таблица статистики -->
             <Frame>
-                <Grid ColumnDefinitions="2*,*,*,*" RowDefinitions="*,*,*"
+                <Grid ColumnDefinitions="2*,*,*" RowDefinitions="*,*,*,*"
                       HorizontalOptions="Center" VerticalOptions="Start">
+                    <Label Grid.Column="0" Grid.Row="0" Text="--------"/>
                     <Label Grid.Column="1" Grid.Row="0" Text="Всего"/>
                     <Label Grid.Column="2" Grid.Row="0" Text="За период"/>
-                    <Label Grid.Column="3" Grid.Row="0" Text="За всё время"/>
 
                     <Label Grid.Column="0" Grid.Row="1" Text="Новых"/>
                     <Label Grid.Column="0" Grid.Row="2" Text="Повторений"/>
