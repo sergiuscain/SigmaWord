@@ -1,4 +1,6 @@
 ﻿
+using Plugin.TextToSpeech;
+
 namespace SigmaWord.Services
 {
     public class SpeechService
@@ -10,7 +12,7 @@ namespace SigmaWord.Services
         }
         public async Task Speak(string wordOrText)
         {
-            await TextToSpeech.SpeakAsync(wordOrText);
+            await CrossTextToSpeech.Current.Speak(wordOrText);
         }
     }
 }
