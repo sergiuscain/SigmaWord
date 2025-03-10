@@ -23,8 +23,7 @@ namespace SigmaWord.Services
         {
             if (File.Exists(_settingsFilePath))
             {
-                var json = File.ReadAllText(_settingsFilePath);
-                _appSettings = JsonConvert.DeserializeObject<AppSettings>(json);
+                LoadSettings();
             }
             else
             {
@@ -37,6 +36,13 @@ namespace SigmaWord.Services
                 await SaveSettingsAsync();
             }
         }
+
+        private void LoadSettings()
+        {
+            var json = File.ReadAllText(_settingsFilePath);
+            _appSettings = JsonConvert.DeserializeObject<AppSettings>(json);
+        }
+
         /// <summary>
         /// Записываает настройки из _appSettings в файл
         /// </summary>
@@ -51,6 +57,7 @@ namespace SigmaWord.Services
         /// <returns></returns>
         public int GetDailyWordGoal()
         {
+            LoadSettings();
             return _appSettings.DailyWordGoal;
         }
         /// <summary>
@@ -61,6 +68,7 @@ namespace SigmaWord.Services
         {
             if (goal > 1)
             {
+                LoadSettings();
                 _appSettings.DailyWordGoal = goal;
                 await SaveSettingsAsync();
             }
@@ -71,6 +79,7 @@ namespace SigmaWord.Services
         /// <returns></returns>
         public bool GetPronunciationEnabled()
         {
+            LoadSettings();
             return _appSettings.IsPronunciationEnabled;
         }
         /// <summary>
@@ -79,6 +88,7 @@ namespace SigmaWord.Services
         /// <param name="isEnabled"></param>
         public async Task SetPronunciationEnabledAsync(bool isEnabled)
         {
+            LoadSettings();
             _appSettings.IsPronunciationEnabled = isEnabled;
             await SaveSettingsAsync();
         }

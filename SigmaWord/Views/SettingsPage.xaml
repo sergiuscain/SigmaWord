@@ -5,12 +5,16 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              x:DataType="viewmodel:SettingsViewModel">
     <VerticalStackLayout>
-        <Label 
-            Text="{Binding Text}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <!--Переход к резюме-->
         <Button Text="Для работодателей^^" Command="{Binding GoToResumeCommand}"/>
-        <Button Text="Тг-канал по вопросам, предложениям и новостях о разработке" Command="{Binding GoToTGCommand}"/>
+        <!-- Кнопка ежедневной цели -->
+        <Button Text="{Binding DailyGoalText}"
+            Command="{Binding ChangeDailyGoalCommand}"/>
+        <!--Изменить статус озвучки-->
+        <Button Text="{Binding IsPronunciationEnabledText}"
+            Command="{Binding ChangePronunciationStatusCommand}"/>
+        <!--Переход в тг-->
+        <Button Text="Тг-канал" Command="{Binding GoToTGCommand}"/>
         <Button Text="Speak" Command="{Binding SpeakCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

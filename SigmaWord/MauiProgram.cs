@@ -26,6 +26,8 @@ namespace SigmaWord
             //Сервис по обработки слов.
             builder.Services.AddSingleton<VocabularyService>();
 
+            builder.Services.AddSingleton<SettingsService>();
+
             //Сервис синтеза речи
             builder.Services.AddTransient<SpeechService>();
 
