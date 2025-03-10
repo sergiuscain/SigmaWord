@@ -46,6 +46,7 @@ namespace SigmaWord.ViewModels
         [ObservableProperty]
         private bool isToLearnButtonsVisible;
         private readonly SettingsService _settingsService;
+        public bool IsPronunciationEnabled;
 
         public WordStudyViewModek(DbService dbService, WordStatus status)
         {
@@ -84,16 +85,25 @@ namespace SigmaWord.ViewModels
         {
             if (_currentIndex < FlashCards.Count)
             {
+                // Устанавливаем текущую карточку
+                CurrentFlashCard = FlashCards[_currentIndex];
+
+                // Показываем элементы интерфейса
                 IsWordVisible = true;
                 IsTranslationVisible = false;
                 IsExamplesVisible = true;
                 IsButtonsVisible = FlashCards[_currentIndex].Status == WordStatus.Learning;
                 IsToLearnButtonsVisible = FlashCards[_currentIndex].Status == WordStatus.ToLearn;
                 IsShowVisibleTranslateButtonVisible = true;
-                CurrentFlashCard = FlashCards[_currentIndex];
+
+                // Используем Dispatcher для выполнения озвучки после обновления UI
+                Application.Current.Dispatcher.Dispatch(async () =>
+                {
+                    if (IsPronunciationEnabled)
+                        await _speechService.Speak(CurrentFlashCard.Word);
+                });
+
                 _currentIndex++;
-                //Озвучиваем слово. В будущем озвучка будет включаться и выключаться в настройках
-                await _speechService.Speak(CurrentFlashCard.Word); 
             }
             else
             {
