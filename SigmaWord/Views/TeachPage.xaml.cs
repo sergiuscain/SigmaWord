@@ -14,7 +14,7 @@ public partial class TeachPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        await _viewModel.LoadDailyGoal(); //Загружаем Цель на день
+        _viewModel.LoadDailyGoal(); //Загружаем Цель на день
         await _viewModel.LoadStatistics("14"); // Загружаем статистику при каждом появлении страницы
         await _viewModel.LoadNeedToRepeatData(); //Загружаем данные о количестве повторений
     }

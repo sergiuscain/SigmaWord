@@ -14,12 +14,12 @@ namespace SigmaWord.Services
         public SettingsService()
         {
             _settingsFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "settings.json");
-            LoadOrCreateSettings();
+            LoadOrCreateSettingsAsync().Wait();
         }
         /// <summary>
         /// Загружает в _appSettings данные из файла с настройками или создает новый файл
         /// </summary>
-        private void LoadOrCreateSettings()
+        private async Task LoadOrCreateSettingsAsync()
         {
             if (File.Exists(_settingsFilePath))
             {
@@ -34,16 +34,16 @@ namespace SigmaWord.Services
                     IsPronunciationEnabled = false,
                     SelectedTheme = Themes.DarkPurple.ToString(),
                 };
-                SaveSettings();
+                await SaveSettingsAsync();
             }
         }
         /// <summary>
         /// Записываает настройки из _appSettings в файл
         /// </summary>
-        private void SaveSettings()
+        private async Task SaveSettingsAsync()
         {
             var json = JsonConvert.SerializeObject(_appSettings);
-            File.WriteAllText(_settingsFilePath, json);
+            await File.WriteAllTextAsync(_settingsFilePath, json);
         }
         /// <summary>
         /// Возвращает Ежедневную цель по изучению слов из настроек
@@ -57,12 +57,12 @@ namespace SigmaWord.Services
         /// Устонавливает новое значение ежедневной цели по изучению слов
         /// </summary>
         /// <param name="goal"></param>
-        public void SetDailyWordGoal(int goal)
+        public async Task SetDailyWordGoalAsync(int goal)
         {
             if (goal > 1)
             {
                 _appSettings.DailyWordGoal = goal;
-                SaveSettings();
+                await SaveSettingsAsync();
             }
         }
         /// <summary>
@@ -77,10 +77,10 @@ namespace SigmaWord.Services
         /// Устонавливает настройку отвечающую за включение озвучки
         /// </summary>
         /// <param name="isEnabled"></param>
-        public void SetPronunciationEnabled(bool isEnabled)
+        public async Task SetPronunciationEnabledAsync(bool isEnabled)
         {
             _appSettings.IsPronunciationEnabled = isEnabled;
-            SaveSettings();
+            await SaveSettingsAsync();
         }
     }
 }

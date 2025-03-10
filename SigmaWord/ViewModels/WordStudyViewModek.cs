@@ -45,11 +45,13 @@ namespace SigmaWord.ViewModels
 
         [ObservableProperty]
         private bool isToLearnButtonsVisible;
+        private readonly SettingsService _settingsService;
 
         public WordStudyViewModek(DbService dbService, WordStatus status)
         {
             _dbService = dbService;
             _speechService = new SpeechService();
+            _settingsService = new SettingsService();
             FlashCards = new ObservableCollection<FlashCard>();
             IsToLearnButtonsVisible = status == WordStatus.ToLearn;
             IsButtonsVisible = status == WordStatus.Learning;
@@ -62,7 +64,7 @@ namespace SigmaWord.ViewModels
             if (status == WordStatus.ToLearn)
             {
                 int wordStartedToLearn = (await _dbService.GetTodayStatisticsAsync()).TotalWordsStarted;
-                int dailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
+                int dailyGoal = _settingsService.GetDailyWordGoal();
                 int needToStartLearn = dailyGoal - wordStartedToLearn;
                 flashCards = await _dbService.GetFlashCardsByStatusAsync(status, needToStartLearn);
             }

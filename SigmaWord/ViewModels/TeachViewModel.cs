@@ -8,19 +8,18 @@ using SigmaWord.Data.Entities;
 using SigmaWord.Services;
 using SigmaWord.Views;
 using SkiaSharp;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SigmaWord.ViewModels
 {
     public partial class TeachViewModel : ObservableObject
     {
         private DbService _dbService;
+        private SettingsService _settingsService;
 
         public TeachViewModel()
         {
             _dbService = new DbService(new AppDbContext());
+            _settingsService = new SettingsService();
         }
 
         public ISeries[] Series { get; set; }
@@ -73,9 +72,9 @@ namespace SigmaWord.ViewModels
             new SKColor(0, 102, 204, 255)  // Яркий голубой
         };
 
-        public async Task LoadDailyGoal()
+        public void LoadDailyGoal()
         {
-            DailyGoal = (await _dbService.GetSettings()).DailyWordGoal;
+            DailyGoal = _settingsService.GetDailyWordGoal();
             DailyGoalText = $"Цель на день: {DailyGoal}";
         }
 
@@ -190,10 +189,8 @@ namespace SigmaWord.ViewModels
 
             if (int.TryParse(result, out int newGoal))
             {
-                var setting = await _dbService.GetSettings();
-                setting.DailyWordGoal = newGoal;
-                await _dbService.UpdateSettings(setting);
-                await LoadDailyGoal();
+                await _settingsService.SetDailyWordGoalAsync(newGoal);
+                LoadDailyGoal();
             }
             else if (!string.IsNullOrEmpty(result))
             {

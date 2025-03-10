@@ -349,34 +349,6 @@ namespace SigmaWord.Services
             await _context.SaveChangesAsync();
         }
         
-        public async Task<UserSettings> GetSettings()
-        {
-            var settings = await _context.UserSettings.FirstOrDefaultAsync();
-            if (settings == null)
-            {
-                var newSettings = new UserSettings { DailyWordGoal = 5, SelectedTheme = Themes.DarkPurple.ToString() };
-                _context.UserSettings.Add(newSettings);
-                await _context.SaveChangesAsync();
-                return newSettings;
-            }
-            return settings;
-        }
-        public async Task UpdateSettings(UserSettings newSettings)
-        {
-            var settings = await _context.UserSettings.FirstOrDefaultAsync();
-            if (settings == null)
-            {
-                _context.UserSettings.Add(newSettings);
-            }
-            else
-            {
-                if (newSettings.SelectedTheme != settings.SelectedTheme) 
-                    settings.SelectedTheme = newSettings.SelectedTheme;
-                if (newSettings.DailyWordGoal != settings.DailyWordGoal)
-                    settings.DailyWordGoal = newSettings.DailyWordGoal;
-            }
-            await _context.SaveChangesAsync();
-        }
         public async Task<int> GetStatisticsCountForPeriod(TypeStatisticses type, int days)
         {
             // Получаем текущую дату (сегодня)
