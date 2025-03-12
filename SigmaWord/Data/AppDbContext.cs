@@ -21,7 +21,6 @@ namespace SigmaWord.Data
 
         public virtual DbSet<FlashCard> FlashCards { get; set; }
         public DbSet<DailyStatistics> DailyStatistics { get; set; }
-        public DbSet<UserSettings> UserSettings { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
