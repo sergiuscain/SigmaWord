@@ -1,4 +1,5 @@
 ﻿using SigmaWord.Resources.Styles;
+using SigmaWord.Resources.Themes;
 using SigmaWord.Services;
 
 namespace SigmaWord
@@ -20,7 +21,7 @@ namespace SigmaWord
 
             // Загружаем тему при запуске приложения
             var settingsService = new SettingsService();
-            var selectedTheme = settingsService.GetTheme(); // Добавьте метод GetSelectedTheme в SettingsService
+            var selectedTheme = settingsService.GetTheme();
             ApplyTheme(selectedTheme); // Применяем тему ко всему приложению
         }
         private void OnRequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
@@ -46,9 +47,27 @@ namespace SigmaWord
                 case "Темная":
                     Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
                     break;
+                case "Закат":
+                    Application.Current.Resources.MergedDictionaries.Add(new SunsetTheme());
+                    break;
+                case "Зима":
+                    Application.Current.Resources.MergedDictionaries.Add(new WinterTheme());
+                    break;
+                case "Космос":
+                    Application.Current.Resources.MergedDictionaries.Add(new SpaceTheme());
+                    break;
+                case "Лесная":
+                    Application.Current.Resources.MergedDictionaries.Add(new ForestTheme());
+                    break;
+                case "Океан":
+                    Application.Current.Resources.MergedDictionaries.Add(new SeaTheme());
+                    break;
+                    case "Pink_Dream":
+                    Application.Current.Resources.MergedDictionaries.Add(new PinkDreamTheme());
+                    break;
                 default:
                     // Если тема не выбрана или не распознана, применяем тему по умолчанию
-                    Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
+                    Application.Current.Resources.MergedDictionaries.Add(new DarkPurpleTheme());
                     break;
             }
         }

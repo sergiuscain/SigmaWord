@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using SigmaWord.Models;
 using SigmaWord.Resources.Styles;
+using SigmaWord.Resources.Themes;
 
 namespace SigmaWord.Services
 {
@@ -115,6 +116,30 @@ namespace SigmaWord.Services
             else if (selectedTheme == ThemesEnum.Темная.ToString())
             {
                 Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Закат.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new SunsetTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Зима.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new WinterTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Космос.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new SpaceTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Лесная.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new ForestTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Океан.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new SeaTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Pink_Dream.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new PinkDreamTheme());
             }
         }
         public void SetTheme(string theme)
