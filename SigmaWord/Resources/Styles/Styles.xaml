@@ -6,11 +6,11 @@
 
     <!-- Стили для кнопок -->
     <Style TargetType="Button">
-        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
-        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="CornerRadius" Value="10" />
-        <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="BorderColor" Value="{DynamicResource BorderColor}" />
         <Setter Property="BorderWidth" Value="1" />
         <Setter Property="Padding" Value="15" />
         <Setter Property="Margin" Value="5" />
@@ -18,7 +18,7 @@
 
     <!-- Стили для Label -->
     <Style TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="Margin" Value="5" />
         <Setter Property="VerticalOptions" Value="Center" />
@@ -26,17 +26,17 @@
 
     <!-- Стили для Entry -->
     <Style TargetType="Entry">
-        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
-        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
-        <Setter Property="PlaceholderColor" Value="{StaticResource PlaceholderColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+        <Setter Property="PlaceholderColor" Value="{DynamicResource PlaceholderColor}" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="Margin" Value="2" />
     </Style>
 
     <!-- Стили для Frame -->
     <Style TargetType="Frame">
-        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
-        <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+        <Setter Property="BorderColor" Value="{DynamicResource BorderColor}" />
         <Setter Property="CornerRadius" Value="10" />
         <Setter Property="Padding" Value="15" />
         <Setter Property="HasShadow" Value="True" />
@@ -45,38 +45,38 @@
 
     <!-- Фон -->
     <Style TargetType="VerticalStackLayout">
-        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
     </Style>
 
     <!-- Grid -->
     <Style TargetType="Grid">
-        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
         <Setter Property="Padding" Value="10" />
     </Style>
 
     <!-- Стиль для TabBar -->
     <Style x:Key="DarkTabBarStyle" TargetType="Shell">
-        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
-        <Setter Property="ForegroundColor" Value="{StaticResource TextColor}" />
-        <Setter Property="Shell.BackButtonBehavior" Value="{StaticResource TextColor}" />
-        <Setter Property="Shell.TitleColor" Value="{StaticResource TextColor}" />
-        <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource TextColor2}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+        <Setter Property="ForegroundColor" Value="{DynamicResource TextColor}" />
+        <Setter Property="Shell.BackButtonBehavior" Value="{DynamicResource TextColor}" />
+        <Setter Property="Shell.TitleColor" Value="{DynamicResource TextColor}" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource TextColor2}" />
     </Style>
 
     <!-- Стиль для ListView -->
     <Style x:Key="DarkListViewStyle" TargetType="ListView">
-        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
-        <Setter Property="SeparatorColor" Value="{StaticResource BorderColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="SeparatorColor" Value="{DynamicResource BorderColor}" />
     </Style>
 
     <!-- Стиль для Picker -->
     <Style TargetType="Picker">
-        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
-        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
         <Setter Property="Margin" Value="5" />
     </Style>
     <!-- StackLayout -->
     <Style TargetType="HorizontalStackLayout">
-        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}"/>
     </Style>
 </ResourceDictionary>

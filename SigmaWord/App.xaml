@@ -6,7 +6,12 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <!--Темы (наборы цветов)-->
+                <ResourceDictionary Source="Resources/Themes/DarkPurpleTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Themes/DarkTheme.xaml"/>
+                <ResourceDictionary Source="Resources/Themes/LightTheme.xaml"/>
+
+                <!--Стили-->
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

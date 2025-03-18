@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using LiveChartsCore.Themes;
+using SigmaWord.Resources.Styles;
 using SigmaWord.Services;
 using SigmaWord.Views;
 
@@ -19,10 +21,15 @@ namespace SigmaWord.ViewModels
         private bool isPronunciationEnabled;
         [ObservableProperty]
         private string isPronunciationEnabledText;
+        [ObservableProperty]
+        private string selectedTheme;
+        public List<string> Themes { get; }
         public SettingsViewModel(SpeechService speechService)
         {
             _speechService = speechService;
             _settingsService = new SettingsService();
+            Themes = new List<string> { "Темная", "Светлая", "Темно_фиолетовая"};
+            // Изначально скрываем Picker
         }
         public void LoadDailyGoal()
         {
@@ -76,9 +83,24 @@ namespace SigmaWord.ViewModels
             await Launcher.OpenAsync(new Uri("https://t.me/+zf_utiYiZsY1MjBi"));
         }
         [RelayCommand]
-        private async Task Speak()
+         partial void OnSelectedThemeChanged(string selectedTheme)
         {
-            await _speechService.Speak("Привет, я умею говорить на 250ти тысячах языков. I'ts true, i'm brilliant");
+            // Удаляем все текущие темы
+            Application.Current.Resources.MergedDictionaries.Clear();
+
+            if (selectedTheme == ThemesEnum.Светлая.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Темно_фиолетовая.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new DarkPurpleTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Темная.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
+            }
+            Preferences.Set("SelectedTheme", selectedTheme.ToString());
         }
     }
 }

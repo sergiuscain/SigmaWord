@@ -15,6 +15,9 @@
             Command="{Binding ChangePronunciationStatusCommand}"/>
         <!--Переход в тг-->
         <Button Text="Тг-канал" Command="{Binding GoToTGCommand}"/>
-        <Button Text="Speak" Command="{Binding SpeakCommand}"/>
+        <Label Text="Выбор темы:"/>
+        <Picker ItemsSource="{Binding Themes}" 
+            SelectedItem="{Binding SelectedTheme}" 
+            Title="Выбор темы"/>
     </VerticalStackLayout>
 </ContentPage>

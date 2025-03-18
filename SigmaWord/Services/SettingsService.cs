@@ -31,7 +31,7 @@ namespace SigmaWord.Services
                 {
                     DailyWordGoal = 10,
                     IsPronunciationEnabled = false,
-                    SelectedTheme = Themes.DarkPurple.ToString(),
+                    SelectedTheme = ThemesEnum.Темная.ToString(),
                 };
                 await SaveSettingsAsync();
             }
@@ -90,6 +90,17 @@ namespace SigmaWord.Services
         {
             LoadSettings();
             _appSettings.IsPronunciationEnabled = isEnabled;
+            
+        }
+        public async Task<string> GetThemeAsync()
+        {
+            LoadSettings();
+            var theme = _appSettings.SelectedTheme;
+            return theme;
+        }
+        public async Task SetThemeAsync(string theme)
+        {
+            _appSettings.SelectedTheme = theme;
             await SaveSettingsAsync();
         }
     }

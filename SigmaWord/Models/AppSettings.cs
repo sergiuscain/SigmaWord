@@ -19,6 +19,6 @@ namespace SigmaWord.Models
         /// <summary>
         /// Выбранная тема приложения
         /// </summary>
-        public string SelectedTheme { get; set; } = Themes.DarkPurple.ToString();
+        public string SelectedTheme { get; set; } = ThemesEnum.Темная.ToString();
     }
 }
