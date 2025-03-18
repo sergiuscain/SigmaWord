@@ -8,9 +8,6 @@ namespace SigmaWord.ViewModels
 {
     public partial class SettingsViewModel : ObservableObject
     {
-        [ObservableProperty]
-        string text = "В будущем здесь что-то будет))";
-        private readonly SpeechService _speechService;
         private readonly SettingsService _settingsService;
         [ObservableProperty]
         private int dailyGoal;
@@ -25,9 +22,8 @@ namespace SigmaWord.ViewModels
         public List<string> Themes { get; }
         public SettingsViewModel(SpeechService speechService)
         {
-            _speechService = speechService;
             _settingsService = new SettingsService();
-            Themes = new List<string> { "Светлая", "Темно_фиолетовая", "Темная" };
+            Themes = new List<string> { "Светлая", "Темно_фиолетовая", "Темная", "Лесная", "Pink_Dream", "Океан", "Космос", "Закат", "Зима"};
             // Изначально скрываем Picker
         }
         public void LoadDailyGoal()
