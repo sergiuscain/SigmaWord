@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using SigmaWord.Models;
+using SigmaWord.Resources.Styles;
 
 namespace SigmaWord.Services
 {
@@ -92,16 +93,44 @@ namespace SigmaWord.Services
             _appSettings.IsPronunciationEnabled = isEnabled;
             
         }
-        public async Task<string> GetThemeAsync()
-        {
-            LoadSettings();
-            var theme = _appSettings.SelectedTheme;
-            return theme;
-        }
         public async Task SetThemeAsync(string theme)
         {
             _appSettings.SelectedTheme = theme;
             await SaveSettingsAsync();
+        }
+        public void LoadTheme(string selectedTheme)
+        {
+            
+            // Удаляем все текущие темы
+            Application.Current.Resources.MergedDictionaries.Clear();
+
+            if (selectedTheme == ThemesEnum.Светлая.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Темно_фиолетовая.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new DarkPurpleTheme());
+            }
+            else if (selectedTheme == ThemesEnum.Темная.ToString())
+            {
+                Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
+            }
+        }
+        public void SetTheme(string theme)
+        {
+            _appSettings.SelectedTheme = theme;
+            var json = JsonConvert.SerializeObject(_appSettings);
+            File.WriteAllText(_settingsFilePath, json);
+        }
+        public string GetTheme()
+        {
+            LoadSettings();
+            return _appSettings.SelectedTheme;
+        }
+        public async Task LoadTheme()
+        {
+            LoadTheme(_appSettings.SelectedTheme);
         }
     }
 }

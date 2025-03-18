@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using LiveChartsCore.Themes;
 using SigmaWord.Resources.Styles;
 using SigmaWord.Services;
 using SigmaWord.Views;
@@ -28,7 +27,7 @@ namespace SigmaWord.ViewModels
         {
             _speechService = speechService;
             _settingsService = new SettingsService();
-            Themes = new List<string> { "Темная", "Светлая", "Темно_фиолетовая"};
+            Themes = new List<string> { "Светлая", "Темно_фиолетовая", "Темная" };
             // Изначально скрываем Picker
         }
         public void LoadDailyGoal()
@@ -83,24 +82,11 @@ namespace SigmaWord.ViewModels
             await Launcher.OpenAsync(new Uri("https://t.me/+zf_utiYiZsY1MjBi"));
         }
         [RelayCommand]
-         partial void OnSelectedThemeChanged(string selectedTheme)
+        partial void OnSelectedThemeChanged(string selectedTheme)
         {
-            // Удаляем все текущие темы
-            Application.Current.Resources.MergedDictionaries.Clear();
-
-            if (selectedTheme == ThemesEnum.Светлая.ToString())
-            {
-                Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
-            }
-            else if (selectedTheme == ThemesEnum.Темно_фиолетовая.ToString())
-            {
-                Application.Current.Resources.MergedDictionaries.Add(new DarkPurpleTheme());
-            }
-            else if (selectedTheme == ThemesEnum.Темная.ToString())
-            {
-                Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
-            }
-            Preferences.Set("SelectedTheme", selectedTheme.ToString());
+            var settingsService = new SettingsService();
+            settingsService.SetTheme(selectedTheme); // Сохраняем тему в настройках
+            ((App)Application.Current).ApplyTheme(selectedTheme); // Применяем тему ко всему приложению
         }
     }
 }

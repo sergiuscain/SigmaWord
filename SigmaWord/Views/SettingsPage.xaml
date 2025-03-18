@@ -2,22 +2,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SigmaWord.Views.SettingsPage"
-             xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
-             x:DataType="viewmodel:SettingsViewModel">
-    <VerticalStackLayout>
-        <!--Переход к резюме-->
-        <Button Text="Для работодателей^^" Command="{Binding GoToResumeCommand}"/>
-        <!-- Кнопка ежедневной цели -->
-        <Button Text="{Binding DailyGoalText}"
-            Command="{Binding ChangeDailyGoalCommand}"/>
-        <!--Изменить статус озвучки-->
-        <Button Text="{Binding IsPronunciationEnabledText}"
-            Command="{Binding ChangePronunciationStatusCommand}"/>
-        <!--Переход в тг-->
-        <Button Text="Тг-канал" Command="{Binding GoToTGCommand}"/>
-        <Label Text="Выбор темы:"/>
-        <Picker ItemsSource="{Binding Themes}" 
-            SelectedItem="{Binding SelectedTheme}" 
-            Title="Выбор темы"/>
-    </VerticalStackLayout>
+             Title="Настройки"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="Padding" Value="15" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+            <Button Text="Для работодателей^^" 
+                    Command="{Binding GoToResumeCommand}" />
+            <Button Text="{Binding DailyGoalText}"
+                    Command="{Binding ChangeDailyGoalCommand}" />
+            <Button Text="{Binding IsPronunciationEnabledText}"
+                    Command="{Binding ChangePronunciationStatusCommand}" />
+            <Button Text="Тг-канал" 
+                    Command="{Binding GoToTGCommand}" />
+            <Label Text="Выбор темы:" />
+            <Picker ItemsSource="{Binding Themes}" 
+                    SelectedItem="{Binding SelectedTheme}" 
+                    Title="Выбор темы" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -5,22 +5,48 @@
              Title="SelectCategoryToStudyPage"
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
-             x:DataType="viewmodel:SelectCategoryToStudyViewModel">
+             x:DataType="viewmodel:SelectCategoryToStudyViewModel"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="BorderColor" Value="{DynamicResource BorderColor}" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </ContentPage.Resources>
+
     <ScrollView>
         <CollectionView ItemsSource="{Binding Categories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Category">
-                    <Grid ColumnDefinitions="*,*,*">
-                        <Label Grid.Column="0" Text="{Binding Name}" />
-                        <Button Grid.Column="1" 
-                            Text="Учить" 
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.StartLearningCommand}" 
-                            CommandParameter="{Binding Id}" />
-                        <Button Grid.Column="2" 
-                            Text="Не учить" 
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.StopLearningCommand}" 
-                            CommandParameter="{Binding Id}" />
-                    </Grid>
+                    <Frame CornerRadius="10" Padding="10" Margin="5">
+                        <Grid ColumnDefinitions="*,*,*">
+                            <Label Grid.Column="0" Text="{Binding Name}" />
+                            <Button Grid.Column="1" 
+                                    Text="Учить" 
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.StartLearningCommand}" 
+                                    CommandParameter="{Binding Id}" />
+                            <Button Grid.Column="2" 
+                                    Text="Не учить" 
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.StopLearningCommand}" 
+                                    CommandParameter="{Binding Id}" />
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

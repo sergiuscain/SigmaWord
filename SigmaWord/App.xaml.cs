@@ -10,7 +10,6 @@ namespace SigmaWord
         {
             InitializeComponent();
             Application.Current.RequestedThemeChanged += OnRequestedThemeChanged;
-            ApplyTheme(Application.Current.RequestedTheme);
             MainPage = new AppShell();
             _dbService = dbService;
         }
@@ -18,30 +17,39 @@ namespace SigmaWord
         {
             await _dbService.InitializeDatabaseAsync();
             await _dbService.InitializeStatisticsAsync(190);
+
+            // Загружаем тему при запуске приложения
+            var settingsService = new SettingsService();
+            var selectedTheme = settingsService.GetTheme(); // Добавьте метод GetSelectedTheme в SettingsService
+            ApplyTheme(selectedTheme); // Применяем тему ко всему приложению
         }
         private void OnRequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
         {
-            ApplyTheme(e.RequestedTheme);
+            var settingsService = new SettingsService();
+            var selectedTheme = settingsService.GetTheme();
+            ApplyTheme(selectedTheme); // Применяем сохранённую тему, а не системную
         }
-        private void ApplyTheme(AppTheme theme)
+        public void ApplyTheme(string selectedTheme)
         {
-            if (theme == AppTheme.Dark)
+            // Очищаем все текущие темы
+            Application.Current.Resources.MergedDictionaries.Clear();
+
+            // Применяем выбранную тему
+            switch (selectedTheme)
             {
-                var lightTheme = Application.Current.Resources.MergedDictionaries.FirstOrDefault(md => md is LightTheme);
-                if (lightTheme != null)
-                {
-                    Application.Current.Resources.MergedDictionaries.Remove(lightTheme);
-                }
-                Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
-            }
-            else
-            {
-                var darkTheme = Application.Current.Resources.MergedDictionaries.FirstOrDefault(md => md is DarkTheme);
-                if (darkTheme != null)
-                {
-                    Application.Current.Resources.MergedDictionaries.Remove(darkTheme);
-                }
-                Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
+                case "Светлая":
+                    Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
+                    break;
+                case "Темно_фиолетовая":
+                    Application.Current.Resources.MergedDictionaries.Add(new DarkPurpleTheme());
+                    break;
+                case "Темная":
+                    Application.Current.Resources.MergedDictionaries.Add(new DarkTheme());
+                    break;
+                default:
+                    // Если тема не выбрана или не распознана, применяем тему по умолчанию
+                    Application.Current.Resources.MergedDictionaries.Add(new LightTheme());
+                    break;
             }
         }
     }

@@ -5,7 +5,37 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:models="clr-namespace:SigmaWord.Data.Entities"
              xmlns:modelsDto="clr-namespace:SigmaWord.Models"
-             x:DataType="viewmodel:WordsViewModel">
+             x:DataType="viewmodel:WordsViewModel"
+             Title="Словарь"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+
+    <ContentPage.Resources>
+        <!-- Стили для Label -->
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+
+        <!-- Стили для Frame -->
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+            <Setter Property="BorderColor" Value="{DynamicResource BorderColor}" />
+            <Setter Property="CornerRadius" Value="1" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="HasShadow" Value="True" />
+        </Style>
+
+        <!-- Стили для Grid -->
+        <Style TargetType="Grid">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="0" />
+        </Style>
+    </ContentPage.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,23 +43,25 @@
         </Grid.RowDefinitions>
 
         <!-- Заголовки таблицы -->
-        <Grid Grid.Row="0" Padding="10" ColumnDefinitions="*,*,*,*">
-            <Label Grid.Column="0" Text="Слово" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
-            <Label Grid.Column="1" Text="Перевод" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
-            <Label Grid.Column="2" Text="Статус" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
-            <Label Grid.Column="3" Text="Прогресс" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
-        </Grid>
+        <Frame Grid.Row="0" CornerRadius="10" Padding="5" Margin="10">
+            <Grid ColumnDefinitions="*,*,*,*">
+                <Label Grid.Column="0" Text="Слово" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Column="1" Text="Перевод" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Column="2" Text="Статус" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Grid.Column="3" Text="Прогресс" FontAttributes="Bold" HorizontalOptions="Center"/>
+            </Grid>
+        </Frame>
 
         <!-- Таблица с данными -->
-        <CollectionView Grid.Row="1" ItemsSource="{Binding Words}" Margin="2">
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Words}" Margin="5">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:FlashCard">
-                    <Frame CornerRadius="10" Padding="2" Margin="2" HasShadow="True" BackgroundColor="{StaticResource SecondaryColor}">
+                    <Frame CornerRadius="10" Padding="5" Margin="7">
                         <Grid ColumnDefinitions="2*,4*,2*,*" VerticalOptions="Center">
-                            <Label Grid.Column="0" Text="{Binding Word}" VerticalOptions="Center"/>
-                            <Label Grid.Column="1" Text="{Binding Translation}" VerticalOptions="Center"/>
-                            <Label Grid.Column="2" Text="{Binding Status}" VerticalOptions="Center"/>
-                            <Label Grid.Column="3" Text="{Binding CurrentRepetitions}" VerticalOptions="Center"/>
+                            <Label Grid.Column="0" Text="{Binding Word}" />
+                            <Label Grid.Column="1" Text="{Binding Translation}" />
+                            <Label Grid.Column="2" Text="{Binding Status}" />
+                            <Label Grid.Column="3" Text="{Binding CurrentRepetitions}" />
                         </Grid>
                     </Frame>
                 </DataTemplate>

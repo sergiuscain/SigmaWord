@@ -5,35 +5,70 @@
              xmlns:viewmodel="clr-namespace:SigmaWord.ViewModels"
              xmlns:entity="clr-namespace:SigmaWord.Data.Entities"
              Title="Изучение слов"
-             x:DataType="viewmodel:WordStudyViewModek">
+             x:DataType="viewmodel:WordStudyViewModek"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+
+    <!-- Стили для страницы -->
+    <ContentPage.Resources>
+        <!-- Стили для Label -->
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+
+        <!-- Стили для Frame -->
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="BorderColor" Value="{DynamicResource BorderColor}" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="HasShadow" Value="True" />
+        </Style>
+
+        <!-- Стили для Button -->
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="CornerRadius" Value="0" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+
+        <!-- Стили для Grid -->
+        <Style TargetType="Grid">
+            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Padding" Value="0" />
+        </Style>
+    </ContentPage.Resources>
+
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Spacing="20" Padding="0">
             <!-- Карточка слова -->
             <Frame>
-                <VerticalStackLayout>
+                <VerticalStackLayout Spacing="0">
                     <Label Text="{Binding CurrentFlashCard.Word}"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center" 
-                           IsVisible="{Binding IsWordVisible}"/>
+                           IsVisible="{Binding IsWordVisible}" />
                     <Label Text="{Binding CurrentFlashCard.Translation}"
-                           VerticalOptions="Center" 
-                           HorizontalOptions="Center" 
-                           IsVisible="{Binding IsTranslationVisible}"/>
+                           IsVisible="{Binding IsTranslationVisible}" />
                 </VerticalStackLayout>
             </Frame>
 
             <!-- Примеры предложений -->
             <Frame IsVisible="{Binding IsExamplesVisible}">
-                <VerticalStackLayout>
+                <VerticalStackLayout Spacing="0">
                     <Label Text="Примеры предложений:"
-                           FontAttributes="Bold" 
-                           VerticalOptions="Start" 
-                           HorizontalOptions="Center"/>
+                           FontAttributes="Bold" />
                     <CollectionView ItemsSource="{Binding CurrentFlashCard.ExampleSentences}">
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="entity:ExampleSentence">
                                 <StackLayout>
-                                    <Label Text="{Binding Sentence}"/>
+                                    <Label Text="{Binding Sentence}" />
                                     <Label Text="{Binding Translation}"
                                            TextColor="Gray" 
                                            FontAttributes="Italic" />
@@ -45,37 +80,33 @@
             </Frame>
 
             <!-- Кнопки для статуса ToLearn -->
-            <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsToLearnButtonsVisible}" 
-                  HorizontalOptions="FillAndExpand">
+            <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsToLearnButtonsVisible}">
                 <Button Grid.Column="0" Text="Начать учить"
-                        Command="{Binding StartLearningCommand}"/>
+                        Command="{Binding StartLearningCommand}" />
                 <Button Grid.Column="1" Text="Уже знаю"
-                        Command="{Binding AleadyKnowCommand}"/>
+                        Command="{Binding AleadyKnowCommand}" />
             </Grid>
 
             <!-- Кнопки для статуса Learning -->
-            <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsButtonsVisible}" 
-                  HorizontalOptions="FillAndExpand">
+            <Grid ColumnDefinitions="*,*" IsVisible="{Binding IsButtonsVisible}">
                 <Button Grid.Column="0" Text="Вспомнил"
-                        Command="{Binding RememberedCommand}"/>
+                        Command="{Binding RememberedCommand}" />
                 <Button Grid.Column="1" Text="Не вспомнил"
-                        Command="{Binding NotRememberedCommand}"/>
+                        Command="{Binding NotRememberedCommand}" />
             </Grid>
 
             <!-- Кнопка "Показать перевод" -->
             <Button Text="Показать перевод"
                     Command="{Binding ShowTranslationCommand}"
-                    IsVisible="{Binding IsShowVisibleTranslateButtonVisible}"/>
+                    IsVisible="{Binding IsShowVisibleTranslateButtonVisible}" />
 
             <!-- Сообщение о завершении слов -->
             <Label Text="{Binding ResultMessage}"
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center"
                    TextColor="{Binding ResultTextColor}"
                    IsVisible="{Binding IsResultVisible}" />
 
             <!-- Кнопка "Назад" -->
-            <Button Text="Назад" Command="{Binding GoBackCommand}"/>
+            <Button Text="Назад" Command="{Binding GoBackCommand}" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
