@@ -13,10 +13,17 @@
         </Style>
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
-            <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            <Setter Property="TextColor" Value="{DynamicResource TextColor2}" />
             <Setter Property="CornerRadius" Value="10" />
             <Setter Property="Padding" Value="15" />
             <Setter Property="Margin" Value="5" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="15" />
+            <Setter Property="Margin" Value="10" />
         </Style>
     </ContentPage.Resources>
 
@@ -24,22 +31,21 @@
         <VerticalStackLayout Spacing="20" Padding="20">
             <!-- Заголовок -->
             <Label Text="Сергей Королев"
-                   FontSize="24"
+                   FontSize="28"
                    FontAttributes="Bold"
                    HorizontalOptions="Center" />
 
             <!-- Краткое описание -->
             <Label Text="Fullstack-разработчик с опытом работы в веб, desktop и Android приложениях. Специализируюсь на .NET, ASP.NET Core, Maui и немного JS и React и других современных технологиях."
                    HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center" />
+                   HorizontalTextAlignment="Center"
+                   FontSize="16" />
 
             <!-- Секция с технологиями -->
-            <Frame BackgroundColor="{DynamicResource SecondaryColor}"
-                   CornerRadius="10"
-                   Padding="15">
+            <Frame>
                 <VerticalStackLayout Spacing="10">
                     <Label Text="Технологии:"
-                           FontSize="18"
+                           FontSize="20"
                            FontAttributes="Bold" />
                     <FlexLayout Wrap="Wrap" JustifyContent="Start">
                         <Label Text="Windows Forms" Margin="5" />
@@ -72,12 +78,10 @@
             </Frame>
 
             <!-- Секция с ссылками -->
-            <Frame BackgroundColor="{DynamicResource SecondaryColor}"
-                   CornerRadius="10"
-                   Padding="15">
+            <Frame>
                 <VerticalStackLayout Spacing="10">
                     <Label Text="Ссылки:"
-                           FontSize="18"
+                           FontSize="20"
                            FontAttributes="Bold" />
                     <Button Text="GitHub"
                             Clicked="OnGitHubClicked" />
