@@ -21,7 +21,7 @@ namespace SigmaWord
 
             // Загружаем тему при запуске приложения
             var settingsService = new SettingsService();
-            var selectedTheme = settingsService.GetTheme(); // Добавьте метод GetSelectedTheme в SettingsService
+            var selectedTheme = settingsService.GetTheme();
             ApplyTheme(selectedTheme); // Применяем тему ко всему приложению
         }
         private void OnRequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
