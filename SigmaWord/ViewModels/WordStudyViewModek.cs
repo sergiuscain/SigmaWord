@@ -188,6 +188,7 @@ namespace SigmaWord.ViewModels
             if (!isCorrect)
             {
                 CurrentFlashCard.CurrentRepetitions = Math.Max(0, CurrentFlashCard.CurrentRepetitions -= countToAdd); // Уменьшаем на 10%, не ниже 0
+                FlashCards.Add(CurrentFlashCard);
             }
             else if (CurrentFlashCard.CurrentRepetitions == 0)
             {
